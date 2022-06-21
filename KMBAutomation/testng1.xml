@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="CommonUtility.TestListeners" />
+	</listeners>
+
+	<test name="CRM HL Lead Generation Test">
+		<classes>
+			<class name="TestCases.CRMHLLeadGeneration" />
+		</classes>
+	</test> 
+	
+	<test name="Secured CC DAP Test">
+		<classes>
+			<class name="TestCases.SecuredCCDAP" />
+		</classes>
+	</test> 
+	
+	<test name ="HLDAP Salaried Home loan Indian">
+		<classes>
+			<class  name ="TestCases.HLDAPSalariedHomeLoanIndian" />
+		</classes>
+	</test>
+
+	<test name="HLDAP Salaried Home loan NRI">
+		<classes>
+			<class name ="TestCases.HLDAPSalariedHomeLoanNRI" />
+		</classes>
+	</test>
+
+	<test name="HLDAP SelfEmployed Individual Home loan ">
+		<classes>
+			<class name ="TestCases.HLDAPSelfEmpIndividualHomeLoan" />
+		</classes>
+	</test>
+
+	<test name="HLDAP SelfEmployed NonIndividual Home loan ">
+		<classes>
+			<class name ="TestCases.HLDAPSelfEmpNonIndividualHomeLoan" />
+		</classes>
+	</test>
+  
+ 	 <test name="HLDAP Salaried Balance Transfer Indian ">
+		<classes>
+			<class name ="TestCases.HLDAPSalariedBalanceTransferIndian" />
+		</classes>
+	</test>
+  
+</suite> <!-- Suite -->

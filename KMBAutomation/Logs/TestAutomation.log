@@ -1,0 +1,904 @@
+2022-04-28 10:12:59 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 10:12:59 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 10:13:01 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 10:13:02 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 10:13:02 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 10:13:06 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 10:13:08 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 10:13:08 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 10:13:18 INFO  leadCreationTest1 - =========NEW Lead Creation=============
+2022-04-28 10:13:19 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 10:13:23 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 10:16:19 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 10:16:19 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 10:16:21 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 10:16:22 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 10:16:22 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 10:16:26 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 10:16:28 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 10:16:28 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 10:39:23 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 10:39:23 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 10:39:25 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 10:39:26 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 10:39:26 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 10:39:29 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 10:39:29 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 10:39:30 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 10:39:30 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 10:39:31 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 10:39:31 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 10:39:32 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 10:39:32 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 10:39:32 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 10:39:32 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 10:39:33 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 10:39:33 INFO  CommonMethods - Data Sucessfully entered in [[ChromeDriver: chrome on WINDOWS (de6c7c53af19fbe4a80b0ffc8fb06956)] -> xpath: //input[@id='TxtName']]
+2022-04-28 10:39:34 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 10:39:34 INFO  CommonMethods - Data Sucessfully entered in [[ChromeDriver: chrome on WINDOWS (de6c7c53af19fbe4a80b0ffc8fb06956)] -> xpath: //input[@id='TxtPassword']]
+2022-04-28 10:39:41 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 10:39:41 INFO  leadCreationTest1 - =========NEW Lead Creation=============
+2022-04-28 10:39:43 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 10:39:46 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 10:39:46 INFO  CommonMethods - Data Sucessfully Selected from dropdown [[ChromeDriver: chrome on WINDOWS (de6c7c53af19fbe4a80b0ffc8fb06956)] -> xpath: //div[@data-autoid='header_loginroles']/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]]
+2022-04-28 10:39:46 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 10:39:46 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 11:17:16 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 11:17:16 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 11:17:18 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 11:17:21 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 11:17:21 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 11:17:23 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 11:17:23 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 11:17:24 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 11:17:24 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 11:17:24 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 11:17:25 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 11:17:26 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 11:17:26 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 11:17:26 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 11:17:26 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 11:17:27 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 11:17:27 INFO  CommonMethods - Data Sucessfully entered in 
+2022-04-28 11:17:27 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 11:17:27 INFO  CommonMethods - Data Sucessfully entered in 
+2022-04-28 11:17:35 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 11:17:35 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d7c826dfb9ad7e7c09cea4292a820494, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63935}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63935/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d7c826dfb9ad7e7c09cea4292a820494
+2022-04-28 11:17:35 INFO  leadCreationTest1 - =========NEW Lead Creation=============
+2022-04-28 11:17:36 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 11:17:39 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 11:17:39 INFO  CommonMethods - Data Sucessfully Selected from dropdown Asset User Admin
+Checker
+Customer Experience Center
+Direct Sales Agency
+Direct Sales Team
+LAS_RM
+Relationship Manager
+Relationship Manager_RMT
+Relationship Officer
+SMS Team
+WC RM
+2022-04-28 11:17:40 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 11:17:40 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 11:17:45 INFO  ScreenShot - AShot captured sales || Status :Pass
+2022-04-28 11:17:49 INFO  ScreenShot - AShot captured NewLead || Status :Pass
+2022-04-28 11:38:38 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 11:38:38 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 11:38:40 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 11:38:40 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 11:38:40 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 11:38:42 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 11:38:42 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 11:38:43 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 11:38:43 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 11:38:44 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 11:38:44 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 11:38:45 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 11:38:45 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 11:38:45 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 11:38:45 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 11:38:46 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 11:38:46 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 11:38:46 INFO  CommonMethods - Data Sucessfully entered on UserName = rm7
+2022-04-28 11:38:47 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 11:38:47 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 11:38:47 INFO  CommonMethods - Data Sucessfully entered on SecureTextBox.Text = acid_qa
+2022-04-28 11:38:50 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 11:38:50 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2b2e7e205db8e1ac49cfeda42105c4cc, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64789}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64789/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2b2e7e205db8e1ac49cfeda42105c4cc
+2022-04-28 11:38:50 INFO  leadCreationTest1 - =========NEW Lead Creation=============
+2022-04-28 11:38:51 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 11:38:54 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 11:38:54 INFO  CommonMethods - Data Sucessfully Selected from dropdown Asset User Admin
+Checker
+Customer Experience Center
+Direct Sales Agency
+Direct Sales Team
+LAS_RM
+Relationship Manager
+Relationship Manager_RMT
+Relationship Officer
+SMS Team
+WC RM
+2022-04-28 11:38:54 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 11:38:54 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 11:38:59 INFO  ScreenShot - AShot captured sales || Status :Pass
+2022-04-28 11:47:53 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 11:47:53 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 11:47:54 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 11:47:55 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 11:47:55 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 11:47:57 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 11:47:57 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 11:47:58 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 11:47:58 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 11:47:58 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 11:47:59 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 11:48:00 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 11:48:00 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 11:48:00 INFO  leadCreationTest1 - =========CRM LOGIN INITIATE=============
+2022-04-28 11:48:00 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 11:48:01 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 11:48:01 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 11:48:01 INFO  CommonMethods - Data Sucessfully entered on User Name = rm7
+2022-04-28 11:48:02 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 11:48:03 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 11:48:03 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-04-28 11:48:05 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 11:48:05 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29fad69cbfc763fa6ec313237bdb3ae2, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65173}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65173/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 29fad69cbfc763fa6ec313237bdb3ae2
+2022-04-28 11:48:06 INFO  SetUp - Browser Closed..
+2022-04-28 12:00:16 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 12:00:16 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 12:00:18 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 12:00:19 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 12:00:19 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 12:00:20 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 12:00:21 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 12:00:22 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 12:00:22 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 12:00:22 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 12:00:23 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 12:00:23 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 12:00:24 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 12:00:24 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 12:00:24 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 12:00:24 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 12:00:25 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 12:00:25 INFO  CommonMethods - Data Sucessfully entered on User Name = rm7
+2022-04-28 12:00:26 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 12:00:26 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 12:00:26 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-04-28 12:00:29 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 12:00:29 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2146a78a0824c3100fea047fb5d8906e, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:65376}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65376/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2146a78a0824c3100fea047fb5d8906e
+2022-04-28 12:00:29 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 12:00:30 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 12:00:33 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 12:00:33 INFO  CommonMethods - Data Sucessfully Selected from dropdown Asset User Admin
+Checker
+Customer Experience Center
+Direct Sales Agency
+Direct Sales Team
+LAS_RM
+Relationship Manager
+Relationship Manager_RMT
+Relationship Officer
+SMS Team
+WC RM
+2022-04-28 12:00:33 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 12:00:33 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 12:00:38 INFO  ScreenShot - AShot captured sales || Status :Pass
+2022-04-28 12:00:42 INFO  ScreenShot - AShot captured NewLead || Status :Pass
+2022-04-28 12:00:53 INFO  ExcelOperation - Excel Data : Direct
+2022-04-28 12:00:53 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Cross Sell
+Digital
+Connector
+Direct
+DSA
+2022-04-28 12:00:55 INFO  ExcelOperation - Excel Data : RM
+2022-04-28 12:00:55 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+DST
+RM
+SBE RM
+2022-04-28 12:00:56 INFO  ExcelOperation - Excel Data : Hot
+2022-04-28 12:00:56 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Hot
+Warm
+Cold
+2022-04-28 12:00:56 INFO  ExcelOperation - Excel Data : Salaried
+2022-04-28 12:00:57 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Self Employed Professional
+Unemployed
+Self Employed Non Professional
+Salaried
+Public Ltd
+Pvt Ltd
+Income Not Considered
+Partnership
+Hindu Undivided Family
+Proprietorship
+Trust
+Society
+Limited Liability Partnership
+2022-04-28 12:00:57 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:00:57 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Affordable Housing Loan
+Balance Transfer
+Commercial BT & Top Up
+Corporate Home Loan
+Express Top Up
+Home Equity - Salaried LAP
+Home Improvement Loan
+Home Loan
+Home Loan OD
+Kotak Smart Home
+Loan For Commercial Property Purchase
+Loan For Funding Insurance
+Residential BT & Top Up
+Top Up Loan
+WC HF Combo
+2022-04-28 12:00:58 INFO  ExcelOperation - Excel Data : MRS.
+2022-04-28 12:00:58 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+MR.
+DR.
+MRS.
+MISS
+ADV.
+BISHOP
+BRIG
+BROTHER
+CAPT
+CDR
+COL
+FATHER
+HH
+JUSTICE
+LT
+LT COL
+MAJ.GEN
+MAJOR
+MASTER
+MESSERS
+PROF.
+REV
+SHRI
+SIR
+SISTER
+SMT.
+WG CDR
+2022-04-28 12:00:59 INFO  ExcelOperation - Excel Data : Auto
+2022-04-28 12:00:59 INFO  ExcelOperation - Excel Data : Auto
+2022-04-28 12:00:59 INFO  CommonMethods - Data Sucessfully entered on First Name = Auto
+2022-04-28 12:01:00 INFO  ExcelOperation - Excel Data : HLNew Lead 2
+2022-04-28 12:01:00 INFO  ExcelOperation - Excel Data : HLNew Lead 2
+2022-04-28 12:01:00 INFO  CommonMethods - Data Sucessfully entered on Last Name = HLNew Lead 2
+2022-04-28 12:01:01 INFO  ExcelOperation - Excel Data : 9898989898
+2022-04-28 12:01:02 INFO  ExcelOperation - Excel Data : 9898989898
+2022-04-28 12:01:02 INFO  CommonMethods - Data Sucessfully entered on  = 9898989898
+2022-04-28 12:01:02 INFO  ExcelOperation - Excel Data : HLNewLead2@gmail.com
+2022-04-28 12:01:03 INFO  ExcelOperation - Excel Data : 12121970
+2022-04-28 12:01:04 INFO  ExcelOperation - Excel Data : 1500000
+2022-04-28 12:01:04 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 12:01:05 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Yes
+No
+2022-04-28 12:01:05 INFO  ExcelOperation - Excel Data : 1200000
+2022-04-28 12:01:07 INFO  ExcelOperation - Excel Data : 36
+2022-04-28 12:01:07 INFO  ScreenShot - ScreenShot captured Leadcreate || Status :Pass
+2022-04-28 12:01:42 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =0 | Data =TC01
+2022-04-28 12:01:44 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =1 | Data =9898989898
+2022-04-28 12:01:47 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =2 | Data =00102618
+2022-04-28 12:01:49 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =3 | Data =New Lead
+2022-04-28 12:01:51 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =4 | Data =28/04/2022 12:00 PM
+2022-04-28 12:01:55 INFO  ScreenShot - ScreenShot captured Leadcreate3 || Status :Pass
+2022-04-28 12:01:55 INFO  ExcelOperation - Excel Data : New Lead
+2022-04-28 12:01:56 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =5 | Data =PASS
+2022-04-28 12:02:02 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:02:02 INFO  CommonMethods - Data Sucessfully Selected from dropdown Home Loan
+Business Loan
+Loan Against Property
+CASA/TD/RD/MF/CMS
+Car/Tractor/Demat/Trading Products
+Others-Cards/Insurance/Trinity And More Product
+My Leads
+Working Capital
+CC Restructure
+Loan Against Securities
+Credit Card
+HL Sales App
+2022-04-28 12:02:03 INFO  ExcelOperation - Excel Data : New Lead
+2022-04-28 12:02:04 INFO  CommonMethods - Data Sucessfully Selected from dropdown New Lead
+Follow-Up New
+Appointment Fixed
+Follow-Up Appointment
+Documents Pending
+Documents Collected
+Sent To LOS
+Login - Testing
+With LOS Credit
+Reject Re-Open Leads
+Credit Reject
+Disbursed
+Cured
+Query Raised
+Sanctioned
+Ready For Disbursement
+Not Eligible
+With CRM Credit
+Not Interested
+Not Contactable
+DAP - New Lead
+Sent To Operations
+Sent For Disbursement
+LOS Failure Leads
+Sales App Leads CRM View
+Lead Lost
+2022-04-28 12:02:06 INFO  ExcelOperation - Excel Data : 00102618
+2022-04-28 12:02:20 INFO  ExcelOperation - Excel Data : 11.00AM
+2022-04-28 12:02:21 INFO  ExcelOperation - Excel Data : List of documents sent to customer
+2022-04-28 12:02:21 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+List Of Documents Sent To Customer
+Call Back
+Customer To Arrange Documents
+Message/What'S App Sent
+Not Picking Up Call
+Not Contactable
+2022-04-28 12:02:23 INFO  ExcelOperation - Excel Data : Follow up to applicant to check  List of documents sent to customer
+2022-04-28 12:02:25 INFO  ScreenShot - ScreenShot captured FollowupNewForm || Status :Pass
+2022-04-28 12:02:40 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =3 | Data =Follow-Up New
+2022-04-28 12:02:43 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =4 | Data =28/04/2022 12:01 PM
+2022-04-28 12:02:44 INFO  ExcelOperation - Excel Data : Follow-Up New
+2022-04-28 12:02:45 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =5 | Data =PASS
+2022-04-28 12:02:48 INFO  ScreenShot - ScreenShot captured FollowupNew2 || Status :Pass
+2022-04-28 12:02:49 INFO  leadCreationTest1 - TC01=========Customer Acceptance=============
+2022-04-28 12:02:52 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:02:52 INFO  CommonMethods - Data Sucessfully Selected from dropdown Home Loan
+Business Loan
+Loan Against Property
+CASA/TD/RD/MF/CMS
+Car/Tractor/Demat/Trading Products
+Others-Cards/Insurance/Trinity And More Product
+My Leads
+Working Capital
+CC Restructure
+Loan Against Securities
+Credit Card
+HL Sales App
+2022-04-28 12:02:54 INFO  ExcelOperation - Excel Data : Follow-Up New
+2022-04-28 12:02:54 INFO  CommonMethods - Data Sucessfully Selected from dropdown New Lead
+Follow-Up New
+Appointment Fixed
+Follow-Up Appointment
+Documents Pending
+Documents Collected
+Sent To LOS
+Login - Testing
+With LOS Credit
+Reject Re-Open Leads
+Credit Reject
+Disbursed
+Cured
+Query Raised
+Sanctioned
+Ready For Disbursement
+Not Eligible
+With CRM Credit
+Not Interested
+Not Contactable
+DAP - New Lead
+Sent To Operations
+Sent For Disbursement
+LOS Failure Leads
+Sales App Leads CRM View
+Lead Lost
+2022-04-28 12:02:56 INFO  ExcelOperation - Excel Data : 00102618
+2022-04-28 12:03:08 INFO  ExcelOperation - Excel Data : 11.00AM
+2022-04-28 12:03:09 INFO  ExcelOperation - Excel Data : Dahisar
+2022-04-28 12:03:24 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =3 | Data =Appointment Fixed
+2022-04-28 12:03:26 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =4 | Data =28/04/2022 12:02 PM
+2022-04-28 12:03:30 INFO  ScreenShot - AShot captured Appointment Fixed || Status :Pass
+2022-04-28 12:03:33 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:03:33 INFO  CommonMethods - Data Sucessfully Selected from dropdown Home Loan
+Business Loan
+Loan Against Property
+CASA/TD/RD/MF/CMS
+Car/Tractor/Demat/Trading Products
+Others-Cards/Insurance/Trinity And More Product
+My Leads
+Working Capital
+CC Restructure
+Loan Against Securities
+Credit Card
+HL Sales App
+2022-04-28 12:03:35 INFO  ExcelOperation - Excel Data : Appointment Fixed
+2022-04-28 12:03:35 INFO  CommonMethods - Data Sucessfully Selected from dropdown New Lead
+Follow-Up New
+Appointment Fixed
+Follow-Up Appointment
+Documents Pending
+Documents Collected
+Sent To LOS
+Login - Testing
+With LOS Credit
+Reject Re-Open Leads
+Credit Reject
+Disbursed
+Cured
+Query Raised
+Sanctioned
+Ready For Disbursement
+Not Eligible
+With CRM Credit
+Not Interested
+Not Contactable
+DAP - New Lead
+Sent To Operations
+Sent For Disbursement
+LOS Failure Leads
+Sales App Leads CRM View
+Lead Lost
+2022-04-28 12:03:38 INFO  ExcelOperation - Excel Data : 00102618
+2022-04-28 12:03:49 INFO  ExcelOperation - Excel Data : C:\Users\Vrunda Vibhute\git\KMBSeleniumJavaFramework1\KotakHL_Lead\TestData\\8.jpg
+2022-04-28 12:03:52 INFO  ExcelOperation - Excel Data : C:\Users\Vrunda Vibhute\git\KMBSeleniumJavaFramework1\KotakHL_Lead\TestData\\8.jpg
+2022-04-28 12:04:05 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =3 | Data =Documents Pending
+2022-04-28 12:04:08 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =4 | Data =28/04/2022 12:03 PM
+2022-04-28 12:04:10 INFO  ExcelOperation - Excel Data : Documents Pending
+2022-04-28 12:04:11 INFO  ExcelOperation - Write to excel with : Row=6 | Cell =5 | Data =PASS
+2022-04-28 12:04:14 INFO  ScreenShot - AShot captured DocPending || Status :Pass
+2022-04-28 12:04:15 INFO  leadCreationTest1 - TC01=======FileClosedInCRM=======
+2022-04-28 12:04:18 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:04:18 INFO  CommonMethods - Data Sucessfully Selected from dropdown Home Loan
+Business Loan
+Loan Against Property
+CASA/TD/RD/MF/CMS
+Car/Tractor/Demat/Trading Products
+Others-Cards/Insurance/Trinity And More Product
+My Leads
+Working Capital
+CC Restructure
+Loan Against Securities
+Credit Card
+HL Sales App
+2022-04-28 12:04:19 INFO  ExcelOperation - Excel Data : Documents Pending
+2022-04-28 12:04:19 INFO  CommonMethods - Data Sucessfully Selected from dropdown New Lead
+Follow-Up New
+Appointment Fixed
+Follow-Up Appointment
+Documents Pending
+Documents Collected
+Sent To LOS
+Login - Testing
+With LOS Credit
+Reject Re-Open Leads
+Credit Reject
+Disbursed
+Cured
+Query Raised
+Sanctioned
+Ready For Disbursement
+Not Eligible
+With CRM Credit
+Not Interested
+Not Contactable
+DAP - New Lead
+Sent To Operations
+Sent For Disbursement
+LOS Failure Leads
+Sales App Leads CRM View
+Lead Lost
+2022-04-28 12:04:22 INFO  ExcelOperation - Excel Data : 00102618
+2022-04-28 12:04:29 INFO  ExcelOperation - Excel Data : Individual
+2022-04-28 12:04:29 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Individual
+Non-Individual
+2022-04-28 12:04:30 INFO  ExcelOperation - Excel Data : CRM Next
+2022-04-28 12:04:36 INFO  ExcelOperation - Excel Data : JRIOI1745V
+2022-04-28 12:04:37 INFO  ExcelOperation - Excel Data : 3-5 years
+2022-04-28 12:04:37 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+<3 Years
+3-5 Years
+5-8 Years
+>8 Years
+2022-04-28 12:04:38 INFO  ExcelOperation - Excel Data : Sanction
+2022-04-28 12:04:38 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Sanction
+Disbursal
+Physical
+Testedtedtedted
+2022-04-28 12:04:39 INFO  ExcelOperation - Excel Data : Residence Address
+2022-04-28 12:04:40 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Residence Address
+Office Address
+2022-04-28 12:04:44 INFO  ExcelOperation - Excel Data : 400068
+2022-04-28 12:04:47 INFO  ExcelOperation - Excel Data : A-302, Dahisar Sagar Chs, Near Western express highway, Dahisar
+2022-04-28 12:04:48 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 12:04:48 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Yes
+No
+2022-04-28 12:04:49 INFO  ExcelOperation - Excel Data : Female
+2022-04-28 12:04:49 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Male
+Female
+2022-04-28 12:04:51 INFO  ExcelOperation - Excel Data : AutoTest1
+2022-04-28 12:04:53 INFO  ExcelOperation - Excel Data : Married
+2022-04-28 12:04:53 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Single
+Married
+Others
+2022-04-28 12:04:54 INFO  ExcelOperation - Excel Data : Private Sector
+2022-04-28 12:04:55 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Service
+Private Sector
+Public Sector
+Professional
+Self Employed
+Retired
+Housewife
+Student
+Business
+Others
+Not Categorised
+2022-04-28 12:04:56 INFO  ExcelOperation - Excel Data : 5-10 lakhs
+2022-04-28 12:04:56 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+0-2 Lakhs
+2- 5 Lakhs
+5-10 Lakhs
+10-25 Lakhs
+25 Lakhs And Above
+2022-04-28 12:04:58 INFO  ExcelOperation - Excel Data : Post Graduate
+2022-04-28 12:04:58 INFO  CommonMethods - Data Sucessfully Selected from dropdown --Select Value--
+Non-Graduate
+Graduate
+Post Graduate
+Others
+2022-04-28 12:05:16 INFO  ScreenShot - AShot captured FileClosedInCRM1 || Status :Pass
+2022-04-28 12:06:32 INFO  ScreenShot - ScreenShot captured Faiure in Document Collected  || Status :Fail
+2022-04-28 12:06:37 INFO  ExcelOperation - Excel Data : Home Loan
+2022-04-28 12:06:37 INFO  CommonMethods - Data Sucessfully Selected from dropdown Home Loan
+Business Loan
+Loan Against Property
+CASA/TD/RD/MF/CMS
+Car/Tractor/Demat/Trading Products
+Others-Cards/Insurance/Trinity And More Product
+My Leads
+Working Capital
+CC Restructure
+Loan Against Securities
+Credit Card
+HL Sales App
+2022-04-28 12:06:38 INFO  ExcelOperation - Excel Data : Documents Pending
+2022-04-28 12:06:38 INFO  CommonMethods - Data Sucessfully Selected from dropdown New Lead
+Follow-Up New
+Appointment Fixed
+Follow-Up Appointment
+Documents Pending
+Documents Collected
+Sent To LOS
+Login - Testing
+With LOS Credit
+Reject Re-Open Leads
+Credit Reject
+Disbursed
+Cured
+Query Raised
+Sanctioned
+Ready For Disbursement
+Not Eligible
+With CRM Credit
+Not Interested
+Not Contactable
+DAP - New Lead
+Sent To Operations
+Sent For Disbursement
+LOS Failure Leads
+Sales App Leads CRM View
+Lead Lost
+2022-04-28 12:06:41 INFO  ExcelOperation - Excel Data : 00102618
+2022-04-28 12:18:23 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 12:18:23 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 12:18:25 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 12:18:26 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 12:18:26 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 12:18:27 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 12:18:28 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 12:18:29 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 12:18:29 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 12:18:29 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 12:18:30 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 12:18:30 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 12:18:30 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 12:18:30 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 12:18:30 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 12:18:31 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 12:18:32 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 12:18:32 INFO  CommonMethods - Data Sucessfully entered on User Name = rm7
+2022-04-28 12:18:33 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 12:18:33 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 12:18:33 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-04-28 12:18:36 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 12:18:36 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [093ed46c0014c052ba37cc692bfabc45, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50351}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50351/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 093ed46c0014c052ba37cc692bfabc45
+2022-04-28 12:18:41 INFO  SetUp - Browser Closed..
+2022-04-28 14:23:04 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:23:04 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:23:06 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:23:07 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:23:07 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:23:09 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:23:09 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:23:10 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:23:10 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:23:11 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:23:11 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:23:12 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:23:12 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:23:12 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:23:12 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:23:12 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:23:13 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:23:13 INFO  CommonMethods - Text of Web element :
+2022-04-28 14:23:14 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:23:14 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:27:32 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:27:32 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:27:34 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:27:35 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:27:35 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:27:37 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:27:37 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:27:38 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:27:38 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:27:38 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:27:39 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:27:39 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:27:39 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:27:39 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:27:40 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:27:40 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:27:41 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:27:41 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:27:41 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:27:41 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:27:41 ERROR LoginPage - Error message display as Password is RequiredClicking on Login
+2022-04-28 14:27:42 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:27:42 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:32:44 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:32:44 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:32:46 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:32:47 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:32:47 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:32:48 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:32:49 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:32:50 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:32:50 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:32:50 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:32:51 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:32:52 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:32:52 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:32:52 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:32:52 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:32:52 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:32:53 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:32:53 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:32:53 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:32:53 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:32:53 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:32:54 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:32:54 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:35:16 ERROR leadCreationTest1 - ExecuteScript exception :Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //body/div[@id='main']/div[1]/div[1]/ul[1]/li[3]/div[1]/div[1]/a[1]' (tried for 70 second(s) with 500 milliseconds interval)
+2022-04-28 14:35:16 INFO  ScreenShot - ScreenShot captured Failure in Execute Script || Status :Fail
+2022-04-28 14:35:17 INFO  SetUp - Browser Closed..
+2022-04-28 14:36:45 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:36:45 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:36:47 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:36:47 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:36:48 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:36:49 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:36:49 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:36:50 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:36:50 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:36:51 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:36:51 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:36:52 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:36:52 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:36:52 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:36:52 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:36:52 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:36:53 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:36:53 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:36:53 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:36:53 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:36:53 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:36:54 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:36:54 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:42:50 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:42:50 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:42:52 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:42:53 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:42:53 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:42:54 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:42:55 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:42:56 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:42:56 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:42:56 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:42:57 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:42:57 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:42:57 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:42:57 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:42:57 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:42:58 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:42:59 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:42:59 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:42:59 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:42:59 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:42:59 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:43:00 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:43:00 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:44:05 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:44:05 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:44:07 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:44:07 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:44:07 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:44:09 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:44:09 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:44:10 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:44:10 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:44:11 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:44:11 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:44:12 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:44:12 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:44:12 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:44:12 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:44:13 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:44:13 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:44:13 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:44:13 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:44:13 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:44:13 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:44:15 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:44:15 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:48:34 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:48:34 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:48:36 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:48:36 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:48:37 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:48:38 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:48:38 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:48:39 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:48:39 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:48:40 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:48:40 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:48:41 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:48:41 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:48:41 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:48:41 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:48:41 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:48:42 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:48:42 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:48:42 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:48:42 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:48:42 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:48:43 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:48:43 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:51:45 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:51:45 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:51:47 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:51:47 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:51:47 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:51:49 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:51:49 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:51:50 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:51:50 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:51:50 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:51:51 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:51:51 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:51:51 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:51:52 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:51:52 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:51:52 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:51:53 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:51:53 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:51:53 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:51:53 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:51:53 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:51:54 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:51:54 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:56:56 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:56:56 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:56:58 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:56:59 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:56:59 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:57:00 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:57:01 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:57:02 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:57:02 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:57:02 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:57:03 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:57:03 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:57:03 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:57:03 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:57:03 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:57:04 ERROR CommonMethods - Data Not Sucessfully entered in User Name
+2022-04-28 14:57:05 ERROR CommonMethods - Data Not Sucessfully entered in Password
+2022-04-28 14:57:05 INFO  CommonMethods - Text of Web element :User Name is Required
+2022-04-28 14:57:05 ERROR LoginPage - Error message display as User Name is RequiredClicking on Login
+2022-04-28 14:57:05 INFO  CommonMethods - Text of Web element :Password is Required
+2022-04-28 14:57:05 ERROR LoginPage - Error message display as Password is Required Clicking on Login
+2022-04-28 14:57:06 INFO  ScreenShot - AShot captured HomePage || Status :Pass
+2022-04-28 14:57:06 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:58:48 INFO  WebDriverManager - Using chromedriver 101.0.4951.41 (resolved driver for Chrome 101)
+2022-04-28 14:58:48 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\101.0.4951.41\chromedriver.exe
+2022-04-28 14:58:50 INFO  SetUp - Chrome Browser Launched..
+2022-04-28 14:58:51 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-04-28 14:58:51 INFO  leadCreationTest1 - =====================KMB AUtomation Started============================
+2022-04-28 14:58:53 INFO  ExcelOperation - Excel Data : RunMode
+2022-04-28 14:58:53 INFO  ExcelOperation - Excel Data : TCID
+2022-04-28 14:58:54 INFO  ExcelOperation - Excel Data : Description
+2022-04-28 14:58:54 INFO  leadCreationTest1 - Run  Mode is :RunMode| TestCase ID Name :TCID| Test Case Description : Description
+2022-04-28 14:58:54 INFO  ExcelOperation - Excel Data : Yes
+2022-04-28 14:58:55 INFO  ExcelOperation - Excel Data : TC01
+2022-04-28 14:58:55 INFO  ExcelOperation - Excel Data : Create HL New Lead
+2022-04-28 14:58:55 INFO  leadCreationTest1 - Run  Mode is :Yes| TestCase ID Name :TC01| Test Case Description : Create HL New Lead
+2022-04-28 14:58:55 INFO  leadCreationTest1 - TC01=========CRM LOGIN INITIATE=============
+2022-04-28 14:58:56 INFO  ScreenShot - ScreenShot captured Login || Status :Pass
+2022-04-28 14:58:56 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 14:58:57 INFO  ExcelOperation - Excel Data : rm7
+2022-04-28 14:58:57 INFO  CommonMethods - Data Sucessfully entered on User Name = rm7
+2022-04-28 14:58:59 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 14:58:59 INFO  ExcelOperation - Excel Data : acid_qa
+2022-04-28 14:58:59 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-04-28 14:59:04 INFO  ScreenShot - ScreenShot captured Login Exception || Status :Fail
+2022-04-28 14:59:04 ERROR LoginPage - Login Exception :no such element: Unable to locate element: {"method":"xpath","selector":"//input[@name='command']"}
+  (Session info: chrome=101.0.4951.41)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4afc9eef4232e36f08c0d50ef23b8417, findElement {using=xpath, value=//input[@name='command']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.41, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61917/devtoo..., se:cdpVersion: 101.0.4951.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4afc9eef4232e36f08c0d50ef23b8417
+2022-04-28 14:59:04 INFO  leadCreationTest1 - TC01=========NEW Lead Creation=============
+2022-04-28 14:59:05 INFO  LeadCreation - Clicked on Profile icon
+2022-04-28 14:59:07 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 14:59:08 INFO  CommonMethods - Data Sucessfully Selected from dropdown [[ChromeDriver: chrome on WINDOWS (4afc9eef4232e36f08c0d50ef23b8417)] -> xpath: //div[@data-autoid='header_loginroles']/div[1]/div[1]/div[1]/div[1]/div[1]/select[1]]
+2022-04-28 14:59:08 INFO  ExcelOperation - Excel Data : Relationship Manager
+2022-04-28 14:59:08 INFO  LeadCreation - User role selected as Relationship Manager
+2022-04-28 14:59:16 INFO  ScreenShot - AShot captured sales || Status :Pass

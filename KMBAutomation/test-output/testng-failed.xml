@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="CommonUtility.TestListeners"/>
+  </listeners>
+  <test thread-count="5" name="CRM HL Lead Generation Test(failed)">
+    <classes>
+      <class name="TestCases.CRMHLLeadGeneration">
+        <methods>
+          <include name="CRMHLLeadgeneration"/>
+        </methods>
+      </class> <!-- TestCases.CRMHLLeadGeneration -->
+    </classes>
+  </test> <!-- CRM HL Lead Generation Test(failed) -->
+  <test thread-count="5" name="Secured CC DAP Test(failed)">
+    <classes>
+      <class name="TestCases.SecuredCCDAP">
+        <methods>
+          <include name="SecuredCCDap"/>
+        </methods>
+      </class> <!-- TestCases.SecuredCCDAP -->
+    </classes>
+  </test> <!-- Secured CC DAP Test(failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home loan Indian(failed)">
+    <classes>
+      <class name="TestCases.HLDAPSalariedHomeLoanIndian">
+        <methods>
+          <include name="HLDAPSalariedHomeloanIndian"/>
+        </methods>
+      </class> <!-- TestCases.HLDAPSalariedHomeLoanIndian -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home loan Indian(failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home loan NRI(failed)">
+    <classes>
+      <class name="TestCases.HLDAPSalariedHomeLoanNRI">
+        <methods>
+          <include name="HLDAPSalariedHomeloanNRI"/>
+        </methods>
+      </class> <!-- TestCases.HLDAPSalariedHomeLoanNRI -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home loan NRI(failed) -->
+  <test thread-count="5" name="HLDAP SelfEmployed Individual Home loan (failed)">
+    <classes>
+      <class name="TestCases.HLDAPSelfEmpIndividualHomeLoan">
+        <methods>
+          <include name="HLDAPSelfEmpIndividualHomeloan"/>
+        </methods>
+      </class> <!-- TestCases.HLDAPSelfEmpIndividualHomeLoan -->
+    </classes>
+  </test> <!-- HLDAP SelfEmployed Individual Home loan (failed) -->
+  <test thread-count="5" name="HLDAP SelfEmployed NonIndividual Home loan (failed)">
+    <classes>
+      <class name="TestCases.HLDAPSelfEmpNonIndividualHomeLoan">
+        <methods>
+          <include name="HLDAPSelfEmpNonIndividualHomeloan"/>
+        </methods>
+      </class> <!-- TestCases.HLDAPSelfEmpNonIndividualHomeLoan -->
+    </classes>
+  </test> <!-- HLDAP SelfEmployed NonIndividual Home loan (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Balance Transfer Indian (failed)">
+    <classes>
+      <class name="TestCases.HLDAPSalariedBalanceTransferIndian">
+        <methods>
+          <include name="HLDAPSalariedBalanceTransferInd"/>
+        </methods>
+      </class> <!-- TestCases.HLDAPSalariedBalanceTransferIndian -->
+    </classes>
+  </test> <!-- HLDAP Salaried Balance Transfer Indian (failed) -->
+</suite> <!-- Failed suite [Suite] -->
