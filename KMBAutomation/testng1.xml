@@ -46,5 +46,17 @@
 			<class name ="TestCases.HLDAPSalariedBalanceTransferIndian" />
 		</classes>
 	</test>
+	
+	<test name="HLDAP Salaried Balance Transfer NRI ">
+		<classes>
+			<class name ="TestCases.HLDAPSalariedBalanceTransferNRI" />
+		</classes>
+	</test>
+	
+	<test name="HLDAP Salaried Only Top Up Indian ">
+		<classes>
+			<class name ="TestCases.HLDAPSalariedOnlyTopUpIndian" />
+		</classes>
+	</test>
   
 </suite> <!-- Suite -->

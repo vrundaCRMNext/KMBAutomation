@@ -223,7 +223,7 @@ public class HLDAPIntialJourney extends SetUp
 		
 			String ProductNameFromExcel = ExcelOperation.getCellData(sheetName,"Product Type", 1);
 			//To iterate product list and click on given product from excel
-			log.info("Header of screen : "+CommonMethods.getElementText(productScreenHeader));
+			log.info(CommonMethods.getElementText(productScreenHeader));
 			assertEquals(CommonMethods.getElementText(productScreenHeader),"Select Product type customer is interested in?");
 		
 			log.info("Product to select from excel sheet : "+ProductNameFromExcel);
@@ -359,8 +359,8 @@ public class HLDAPIntialJourney extends SetUp
 					try {
 					Thread.sleep(2000);
 					CommonMethods.Click(monthLOVs);
-					//CommonMethods.selectByText(monthLOVs,sheetName,"DOBMonth", 2); 
-					CommonMethods.selectByValue(monthLOVs, sheetName,"DOBMonth", 1);
+					CommonMethods.selectByText(monthLOVs,sheetName,"DOBMonth", 1); 
+					//CommonMethods.selectByValue(monthLOVs, sheetName,"DOBMonth", 1);
 					}catch(Exception e) 
 					{
 						log.error("Month selection Exception occured due to "+e.getMessage()); 

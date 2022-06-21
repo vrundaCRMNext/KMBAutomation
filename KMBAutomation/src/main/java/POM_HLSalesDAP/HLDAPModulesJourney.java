@@ -338,7 +338,7 @@ public class HLDAPModulesJourney extends SetUp
 	public void incomeDetails(String sheetName)throws Exception
 	{
 		
-			CommonMethods.waitForURL("incomedetail");
+			//CommonMethods.waitForURL("incomedetail");
 			log.info(CommonMethods.getElementText(incomeHdr));
 			
 				if(ExcelOperation.getCellData(sheetName, "Applicant Type", 1).equalsIgnoreCase("Salaried"))
@@ -459,7 +459,7 @@ public void selfEmpIncomeDetails(String sheetName)throws Exception
 	{
 		
 			Thread.sleep(1000);
-			CommonMethods.ExWait(workDetailsHeader);
+			//CommonMethods.ExWait(workDetailsHeader);
 			log.info("Fill "+CommonMethods.getElementText(workDetailsHeader));
 			
 			CommonMethods.input(orgNameFld, sheetName, "Employer Name", 1);
@@ -488,7 +488,7 @@ public void selfEmpIncomeDetails(String sheetName)throws Exception
 	public void karzaWaitingScreen(String sheetName) throws Exception
 	{
 			//Karza waiting screen
-			CommonMethods.waitForURL("karza_check");
+			//CommonMethods.waitForURL("karza_check");
 			log.info("Karza Waiting screen open" +CommonMethods.getElementText(karzaWtingmsg));
 			ScreenShot.takeSnapShot("KarzaWaitingScreen", "Pass");
 			CommonMethods.highLight(skipProceedOnKarza);
@@ -567,7 +567,7 @@ public void selfEmpIncomeDetails(String sheetName)throws Exception
 	
 	public void propertyDetailsScreen(String sheetName)throws Exception
 	{
-			CommonMethods.waitForURL("propdetails");
+			//CommonMethods.waitForURL("propdetails");
 			log.info(CommonMethods.getElementText(propDetailsHdr));
 			ScreenShot.takeSnapShot("PropertyDetailsScreen", "Pass");
 			
@@ -665,7 +665,7 @@ private WebElement 	SkipProceedPerfios;
 public void bankStmtUpload(String sheetName)throws Exception
 {
 	
-		CommonMethods.waitForURL("statementup");
+		//CommonMethods.waitForURL("statementup");
 		//CommonMethods.ExWait(bankStUploadHedr);
 		log.info(CommonMethods.getElementText(bankStUploadHedr));
 		String bankUploadBy =ExcelOperation.getCellData(sheetName, "Bank Statement Upload", 1);
@@ -731,7 +731,7 @@ private WebElement ContinuePerfiosFailBtn;
 public void perfiosFailure(String sheetName)throws Exception
 {
 	
-		CommonMethods.waitForURL("statementfail");
+		//CommonMethods.waitForURL("statementfail");
 		ScreenShot.takeSnapShot("BankStmtUpalodFailure", "Pass");
 		log.info("Bank Statement upload Fails due to " +CommonMethods.getElementText(BankSTFailureMsg));
 		

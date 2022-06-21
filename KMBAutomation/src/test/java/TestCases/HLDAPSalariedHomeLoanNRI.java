@@ -43,7 +43,6 @@ public class HLDAPSalariedHomeLoanNRI extends SetUp{
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
 			HLSalesModule.Digital_InprincipleSanction(sheetName);
-			//HLSalesIntial.resumeWithLink();
 
 			HLSalesModule.NRIPANCibilScreen(sheetName);
 			HLSalesModule.incomeDetails(sheetName);

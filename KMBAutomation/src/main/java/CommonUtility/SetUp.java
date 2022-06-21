@@ -106,7 +106,7 @@ public class SetUp implements AutoConst
 					driver.manage().window().maximize();
 					//wait = new WebDriverWait(driver,Duration.ofSeconds(70));
 				}
-				else if(TestCaseIDName.equalsIgnoreCase("TC03") || TestCaseIDName.equalsIgnoreCase("TC04") || TestCaseIDName.equalsIgnoreCase("TC05") || TestCaseIDName.equalsIgnoreCase("TC06") || TestCaseIDName.equalsIgnoreCase("TC07"))
+				else if(TestCaseIDName.equalsIgnoreCase("TC03") || TestCaseIDName.equalsIgnoreCase("TC04") || TestCaseIDName.equalsIgnoreCase("TC05") || TestCaseIDName.equalsIgnoreCase("TC06") || TestCaseIDName.equalsIgnoreCase("TC07") || TestCaseIDName.equalsIgnoreCase("TC08"))
 				{
 					driver.get(URL);
 					log.info("URL : "+URL);

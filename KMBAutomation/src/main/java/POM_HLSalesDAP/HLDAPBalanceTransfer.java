@@ -45,7 +45,7 @@ private WebElement propertyPriceFld;
 @FindBy(xpath="//span[contains(text(),'EMI Paid currently')]")		//EMI Lbl
 private WebElement EMILbl;
 
-@FindBy(xpath="//span[contains(text(),'EMI Paid currently')]/following::div[1] //input")		//EMI fld
+@FindBy(xpath="//span[contains(text(),'EMI Paid ')]/following::div[1] //input")		//EMI fld
 private WebElement EMIFld;
 
 @FindBy(xpath="//span[contains(text(),'Outstanding Tenure')]")		//tenure Lbl
