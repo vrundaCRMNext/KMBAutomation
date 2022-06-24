@@ -106,7 +106,7 @@ public class SetUp implements AutoConst
 					driver.manage().window().maximize();
 					//wait = new WebDriverWait(driver,Duration.ofSeconds(70));
 				}
-				else if(TestCaseIDName.equalsIgnoreCase("TC03") || TestCaseIDName.equalsIgnoreCase("TC04") || TestCaseIDName.equalsIgnoreCase("TC05") || TestCaseIDName.equalsIgnoreCase("TC06") || TestCaseIDName.equalsIgnoreCase("TC07") || TestCaseIDName.equalsIgnoreCase("TC08"))
+				else if(TestCaseIDName.equalsIgnoreCase("TC03") || TestCaseIDName.equalsIgnoreCase("TC04") || TestCaseIDName.equalsIgnoreCase("TC05") || TestCaseIDName.equalsIgnoreCase("TC06") || TestCaseIDName.equalsIgnoreCase("TC07") || TestCaseIDName.equalsIgnoreCase("TC08")|| TestCaseIDName.equalsIgnoreCase("TC09"))
 				{
 					driver.get(URL);
 					log.info("URL : "+URL);
@@ -125,6 +125,37 @@ public class SetUp implements AutoConst
 		
 	}
 
+	public void setUpTest1(String sheetName)throws Exception
+	{
+		Properties prop=new Properties();
+		String currentDir =System.getProperty("user.dir");
+		FileInputStream fis =new FileInputStream(currentDir+"\\src\\main\\java\\CommonUtility\\Config.properties");
+
+		prop.load(fis);
+		String browserName=prop.getProperty("Browser");
+		//using webdriver manager
+		if(browserName.equalsIgnoreCase("Chrome"))
+		{
+			ChromeOptions chromeOptions = new ChromeOptions();
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(chromeOptions);
+			log.info("Chrome Browser Launched..");
+		}
+		else if(browserName.equalsIgnoreCase("Firefox"))
+		{
+			
+			FirefoxOptions firefoxOptions = new FirefoxOptions();
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver(firefoxOptions);
+			log.info("Firefox Browser Launched..");
+		}
+		
+		String URL =ExcelOperation.getCellData(sheetName, "URL", 1);
+		driver.get(URL);
+		log.info("URL : "+URL);
+		driver.manage().window().maximize();
+		
+	}
 	//@AfterTest
 	public void tearDownTest() 
 	{

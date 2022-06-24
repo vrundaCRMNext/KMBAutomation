@@ -32,8 +32,7 @@ public class HLDAPEndJourney extends SetUp
 	
 	public void runEndJourney(String sheetName) throws Exception
 	{
-		//h1.resumeWithLink();
-
+		
 		EligibilityScreen(sheetName);
 		ProcessingFeeScreen(sheetName);
 		ReferenceDetailsScreen(sheetName);
@@ -77,10 +76,12 @@ private WebElement LoanAmtDeviationBtn;
 	
 public void EligibilityScreen(String sheetName)throws Exception
 {
+		CommonMethods.waitForURL("ligib");
 		ScreenShot.Ashot("EligibilityScreen", "Pass");
-		String eligibilityOption = ExcelOperation.getCellData(sheetName, "Eligibility Screen Option", 2);
-		log.info("Eligibility Screen Option to Proceed :" +eligibilityOption);
 		CommonMethods.scrollAtBottom();
+		
+		String eligibilityOption = ExcelOperation.getCellData(sheetName, "Eligibility Screen Option", 1);
+		log.info("Eligibility Screen Option to Proceed :" +eligibilityOption);
 		
 		if(eligibilityOption.equalsIgnoreCase("Continue to Sanction Letter"))
 		{
@@ -184,7 +185,7 @@ public void ReferenceDetailsScreen(String sheetName)throws Exception
 		log.info(CommonMethods.getElementText(screenHdr2));
 
 		
-		String skipUploadPhysicalForm = ExcelOperation.getCellData(sheetName, "Skip and Upload Physical App Form", 2);
+		String skipUploadPhysicalForm = ExcelOperation.getCellData(sheetName, "Skip and Upload Physical App Form", 1);
 		if(skipUploadPhysicalForm.equalsIgnoreCase("No"))
 		{
 			//Reference Name 1
@@ -512,7 +513,7 @@ public void nonFinancialCoAppScreen1(String sheetName) throws Exception
 		CommonMethods.input(CoAppMobileNoFld, sheetName, "CoApp Mobile", 1);
 		log.info(CommonMethods.getElementText(MobileNoLbl)+" = "+CommonMethods.getElementValue(CoAppMobileNoFld));
 		
-		ScreenShot.takeSnapShot("FinancialCoAppScreen", "Pass");
+		ScreenShot.takeSnapShot("NonFinCoAppScreen1", "Pass");
 		CommonMethods.highLight(proceedBtn);
 		CommonMethods.Click(proceedBtn);
 		
@@ -673,9 +674,9 @@ private WebElement pincodeFld;
 @FindBy(xpath="//div[@name='sendToreview']/button")			//Send TO review button
 private WebElement sendToReviewBtn;
 
-public void nonFinancialCoAppScreen2(String sheetName)
+public void nonFinancialCoAppScreen2(String sheetName)throws Exception
 {
-	try {
+	
 			CommonMethods.waitForURL("nonfincapp2");
 			log.info(CommonMethods.getElementText(relationshipLbl));
 			CommonMethods.selectByText(relationshipLOVS, sheetName, "RelationShipWithApplicant", 1);
@@ -686,14 +687,10 @@ public void nonFinancialCoAppScreen2(String sheetName)
 			CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
 			log.info(CommonMethods.getElementText(pincodeLbl)+" = "+CommonMethods.getElementValue(pincodeFld));
 			
-			ScreenShot.takeSnapShot("NoFinancialCoappScreen2", "Pass");
+			ScreenShot.takeSnapShot("NonFinCoappScreen2", "Pass");
 			CommonMethods.highLight(sendToReviewBtn);
 			CommonMethods.Click(sendToReviewBtn);
-			
-			
-	} catch (Exception e) {
-		log.error("NonFinancial CoApplicant Screen2 exception occured due to "+e.getMessage());
-	}
+	
 }
 
 /*****************************Non Financial CO-applicant Screen 2 *************************************/	

@@ -7,56 +7,70 @@
 
 	<test name="CRM HL Lead Generation Test">
 		<classes>
-			<class name="TestCases.CRMHLLeadGeneration" />
+			<class name="TestCases.TC01CRMHLLeadGeneration" />
 		</classes>
 	</test> 
 	
 	<test name="Secured CC DAP Test">
 		<classes>
-			<class name="TestCases.SecuredCCDAP" />
+			<class name="TestCases.TC02SecuredCCDAP" />
 		</classes>
 	</test> 
 	
 	<test name ="HLDAP Salaried Home loan Indian">
 		<classes>
-			<class  name ="TestCases.HLDAPSalariedHomeLoanIndian" />
+			<class  name ="TestCases.TC03HLDAPSalariedHomeLoanIndian" />
 		</classes>
 	</test>
 
 	<test name="HLDAP Salaried Home loan NRI">
 		<classes>
-			<class name ="TestCases.HLDAPSalariedHomeLoanNRI" />
+			<class name ="TestCases.TC04HLDAPSalariedHomeLoanNRI" />
 		</classes>
 	</test>
 
 	<test name="HLDAP SelfEmployed Individual Home loan ">
 		<classes>
-			<class name ="TestCases.HLDAPSelfEmpIndividualHomeLoan" />
+			<class name ="TestCases.TC05HLDAPSelfEmpIndividualHomeLoan" />
 		</classes>
 	</test>
 
 	<test name="HLDAP SelfEmployed NonIndividual Home loan ">
 		<classes>
-			<class name ="TestCases.HLDAPSelfEmpNonIndividualHomeLoan" />
+			<class name ="TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan" />
 		</classes>
 	</test>
   
  	 <test name="HLDAP Salaried Balance Transfer Indian ">
 		<classes>
-			<class name ="TestCases.HLDAPSalariedBalanceTransferIndian" />
+			<class name ="TestCases.TC07HLDAPSalariedBalanceTransferIndian" />
 		</classes>
 	</test>
 	
 	<test name="HLDAP Salaried Balance Transfer NRI ">
 		<classes>
-			<class name ="TestCases.HLDAPSalariedBalanceTransferNRI" />
+			<class name ="TestCases.TC08HLDAPSalariedBalanceTransferNRI" />
 		</classes>
 	</test>
 	
+	
+	
+	
+	
+	
 	<test name="HLDAP Salaried Only Top Up Indian ">
 		<classes>
-			<class name ="TestCases.HLDAPSalariedOnlyTopUpIndian" />
+			<class name ="TestCases.TC11HLDAPSalariedOnlyTopUpIndian" />
 		</classes>
 	</test>
-  
+	
+	 <test name="HLDAP Salaried Only Top Up NRI ">
+			<classes>
+				<class name ="TestCases.TC12HLDAPSalariedOnlyTopUpNRI" />
+			</classes>
+	</test>
+	
+	
+	
+	
 </suite> <!-- Suite -->

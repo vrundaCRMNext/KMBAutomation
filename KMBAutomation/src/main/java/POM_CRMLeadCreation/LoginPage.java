@@ -52,26 +52,24 @@ public class LoginPage extends TestListeners
 	public void CRMLogin(String sheetName) throws Exception
 	{
 	
-				extentInfo("Login Intiated");
+				extentInfo("Login for "+ sheetName +" Intiated");
 				CommonMethods.input(userName,sheetName,"Username", 1);
 				CommonMethods.input(password,sheetName ,"Password", 1);
-				
-				//CommonMethods.highLight(loginBtn);
 				CommonMethods.Click(loginBtn);
 				extentInfo("Login Sucessfully");
-				try 
-				{
-					String errMsg1= CommonMethods.getElementText(usernameErrorMsg);
-					log.error("Error message display as "+errMsg1+ "Clicking on "+loginBtn.getAttribute("value"));
-					
-					String errMsg2= CommonMethods.getElementText(passwordErrorMsg);
-					log.error("Error message display as "+errMsg2+ " Clicking on "+loginBtn.getAttribute("value"));
-					
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
-				
-				ScreenShot.takeSnapShot("HomePage","Pass");
+//				try 
+//				{
+//					String errMsg1= CommonMethods.getElementText(usernameErrorMsg);
+//					log.error("Error message display as "+errMsg1+ "Clicking on "+loginBtn.getAttribute("value"));
+//					
+//					String errMsg2= CommonMethods.getElementText(passwordErrorMsg);
+//					log.error("Error message display as "+errMsg2+ " Clicking on "+loginBtn.getAttribute("value"));
+//					
+//				} catch (Exception e) {
+//					// TODO: handle exception
+//				}
+//				
+				//ScreenShot.takeSnapShot("HomePage","Pass");
 
 	}
 	
@@ -84,23 +82,14 @@ public class LoginPage extends TestListeners
 		return logOutBtn;
 	}
 	
-	public void Logout()
+	public void Logout() throws Exception
 	{
-		try 
-		{
-			Thread.sleep(1000);
 			CommonMethods.highLight(ProfileBtn);
-			//ProfileBtn().click();
 			CommonMethods.Click(ProfileBtn);
-			Thread.sleep(1000);
 			CommonMethods.highLight(logOutBtn);
 			CommonMethods.Click(logOutBtn);
 			log.info("Sucessfully logout..");
-			
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			log.error("Logout exception "+e.getMessage());
-		}
+		
 	}
 	
 }

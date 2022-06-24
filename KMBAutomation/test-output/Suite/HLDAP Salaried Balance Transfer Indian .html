@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>HLDAP Salaried Balance Transfer Indian </h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/1</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 20 17:34:15 IST 2022</td>
+<td>Started on:</td><td>Fri Jun 24 16:31:51 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>890 seconds (890403 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10972 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,39 +67,21 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='TestCases.HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd()'><b>HLDAPSalariedBalanceTransferInd</b><br>Test class: TestCases.HLDAPSalariedBalanceTransferIndian</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;hleligible&quot;. Current url: &quot;https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process?userId=1353&amp;x=ayg86akwr4k6u4tvztzarmblxp72clt32zle8zqtkm7cp2p79vvlucjjww5quem6d9f6mm2hb4g55z4wd9gnavcs6z#BT%20Eligibility&quot; (tried for 70 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;VRUNDAV&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56492/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ffbcba6d50ed2dc1b42b3b71ae6e702e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at CommonUtility.CommonMethods.waitForURL(CommonMethods.java:92)
-	at POM_HLSalesDAP.HLDAPModulesJourney.CrossSellScreen(HLDAPModulesJourney.java:801)
-	at TestCases.HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(HLDAPSalariedBalanceTransferIndian.java:54)
+<td title='TestCases.TC07HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd()'><b>HLDAPSalariedBalanceTransferInd</b><br>Test class: TestCases.TC07HLDAPSalariedBalanceTransferIndian</td>
+<td><div><pre>org.testng.SkipException: Skipping the test HLDAPSalariedBalanceTransferIndian as the Run mode is NO
+	at TestCases.TC07HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(TC07HLDAPSalariedBalanceTransferIndian.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1043691753", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1043691753'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain &quot;hleligible&quot;. Current url: &quot;https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process?userId=1353&amp;x=ayg86akwr4k6u4tvztzarmblxp72clt32zle8zqtkm7cp2p79vvlucjjww5quem6d9f6mm2hb4g55z4wd9gnavcs6z#BT%20Eligibility&quot; (tried for 70 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
-System info: host: &apos;VRUNDAV&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56492/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ffbcba6d50ed2dc1b42b3b71ae6e702e
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at CommonUtility.CommonMethods.waitForURL(CommonMethods.java:92)
-	at POM_HLSalesDAP.HLDAPModulesJourney.CrossSellScreen(HLDAPModulesJourney.java:801)
-	at TestCases.HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(HLDAPSalariedBalanceTransferIndian.java:54)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace117701189", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace117701189'><pre>org.testng.SkipException: Skipping the test HLDAPSalariedBalanceTransferIndian as the Run mode is NO
+	at TestCases.TC07HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(TC07HLDAPSalariedBalanceTransferIndian.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,8 +111,8 @@ Session ID: ffbcba6d50ed2dc1b42b3b71ae6e702e
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>890</td>
-<td>TestCases.HLDAPSalariedBalanceTransferIndian@2c0f7678</td></tr>
+<td>10</td>
+<td>TestCases.TC07HLDAPSalariedBalanceTransferIndian@44d70181</td></tr>
 </table><p>
 </body>
 </html>

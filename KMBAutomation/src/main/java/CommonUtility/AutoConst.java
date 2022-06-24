@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public interface AutoConst 
 {
 	String TEST_URL = "https://kmb.crmnext.com/sng7/app/login/login";
-	String ExcelPATH = "C:\\Users\\Vrunda Vibhute\\eclipse-workspace\\KMBAutomation\\TestData\\TestData_LeadDetails.xlsx";
-	
+	//String ExcelPATH = "C:\\Users\\Vrunda Vibhute\\git\\KMBAutomation\\KMBAutomation\\TestData\\TestData_LeadDetails.xlsx";
+	String ExcelPATH = System.getProperty("user.dir")+"\\TestData\\TestData_LeadDetails.xlsx";
 	String SheetName = "TestScenario";	
 	String folderDate = new SimpleDateFormat("dd-MM-yyyy HH").format(new Date());
 }

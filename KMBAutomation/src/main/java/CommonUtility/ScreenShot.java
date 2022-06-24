@@ -31,6 +31,9 @@ public class ScreenShot extends SetUp implements AutoConst
 		public static String PassScreenShot;
 		public static String FailedScreenShot;
 		
+		public static String ScreenShotPath;
+		public static String ScreenShotName;
+
 	
 	//Create a folder to save Pass screenshots	
 	public static File screenShotFolder(String status)
@@ -104,26 +107,24 @@ public class ScreenShot extends SetUp implements AutoConst
 	//To capture screen shots of Pass cases and web page display on screen 
 	public static String takeSnapShot(String name, String status) throws Exception
 	{
-		String ScreenShotPath =null;
+		ScreenShotPath =null;
 		try {
 			//Convert web driver object to TakeScreenshot
 			TakesScreenshot scrShot =((TakesScreenshot)driver);
 
 			//Call getScreenshotAs method to create image file
 			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-			//ScreenShotPath=ScreenShotFolder+"\\"+leadCreationTest1.TestCaseDesc+" "+name+".jpeg";
 
 			//Move image file to new destination
-			//File DestFile=new File(screenShotFolder(name));
 			File DestFile=new File(screenShotFolder(status)+"\\"+name+".jpeg");
-
+			ScreenShotName  =screenShotFolder(status)+"\\"+name+".jpeg";
+			
 			//Copy file at destination
 			FileUtils.copyFile(SrcFile, DestFile);
 			log.info("ScreenShot captured "+name+ " || Status :"+status);
 			
 		}catch(Exception e)
 		{
-			System.out.println(e.getMessage());
 			log.error("Unbale to capture screenshot due to "+e.getMessage());
 		}
 		return ScreenShotPath;
@@ -133,7 +134,7 @@ public class ScreenShot extends SetUp implements AutoConst
 	public static void Ashot(String fileName, String status) throws IOException
 	{
 		try {
-		Screenshot ss= new AShot().shootingStrategy(ShootingStrategies.viewportPasting(1000)).takeScreenshot(driver);
+		Screenshot ss= new AShot().shootingStrategy(ShootingStrategies.viewportPasting(700)).takeScreenshot(driver);
 		String ScreenShotPath=screenShotFolder(status)+"\\"+fileName+".jpeg";
 		
 		ImageIO.write(ss.getImage(), "jpeg", new File(ScreenShotPath));

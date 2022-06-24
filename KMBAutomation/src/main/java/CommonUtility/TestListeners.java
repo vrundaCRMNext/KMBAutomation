@@ -81,20 +81,14 @@ public class TestListeners extends SetUp implements ITestListener
 						+ " \n");
 
 		try {
-			//ScreenShot.takeSnapShot(methodName, "Fail");
+			ScreenShot.takeSnapShot(methodName, "Fail");
 			extentTest.get().fail("<b>" + "<font color=" + "red>" + "Screenshot of failure" + "</font>" + "</b>",
-					MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.takeSnapShot(methodName, "Fail")).build());
-			
-		
+					MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.ScreenShotName).build());
 		} catch (Exception e) 
 		{
-			System.out.println("exception occured while adding SS to extent report :"+e.getMessage());
+			System.out.println("Exception occured while adding SS to extent report :"+e.getMessage());
 		}
-		try {
-			extentTest.get().addScreenCaptureFromPath(ScreenShot.takeSnapShot(methodName, "Fail"), result.getMethod().getMethodName());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 
 
 		String failureLogg = "TEST CASE FAILED";

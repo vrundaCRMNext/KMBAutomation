@@ -76,7 +76,7 @@ public class CommonMethods extends SetUp
 	{
 		ExWait(element);
 		String elementValue = element.getAttribute("value");
-		log.info("Value of WebElement :" +elementValue);
+		//log.info("Value of WebElement :" +elementValue);
 		return elementValue;
 
 	}

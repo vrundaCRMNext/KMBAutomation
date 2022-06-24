@@ -3,6 +3,7 @@ package POM_HLSalesDAP;
 import static org.testng.Assert.assertEquals;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
@@ -40,10 +41,9 @@ public class HLDAPIntialJourney extends SetUp
 	}
 	
 	/**********************************Common Function that call all other modules****************************************************/		
-	public void runIntialJourney(String sheetName)
+	public void runIntialJourney(String sheetName)throws Exception
 	{
-		try 
-		{
+		
 			System.out.println("====================Running Intial journey=============================");
 
 			intiateDAPJourney(sheetName);
@@ -89,12 +89,7 @@ public class HLDAPIntialJourney extends SetUp
 				NRIRefScreen1(sheetName);
 				NRIRefScreen2(sheetName);
 			}
-			
-			
-		} catch (Exception e) 
-		{
-			log.error("Exception occured while running Intial Journey : "+e.getMessage());
-		}
+		
 	}
 /**********************************Common Function that call all other modules****************************************************/		
 	
@@ -177,7 +172,7 @@ public class HLDAPIntialJourney extends SetUp
 		@FindBy(xpath="//input[@id='year']")				//BYear txt field
 		private WebElement bYear;
 		
-		@FindBy(xpath="//div[@name='Mob_Popup_Proceed']/preceding::div[13] //input")     	//Applicant Name
+		@FindBy(xpath="//input[@placeholder='Applicant Name']")     	//Applicant Name
 		private WebElement applicantName;
 		//div[@name='Mob_Popup_Proceed']/preceding::div[13] //input
 		
@@ -641,11 +636,15 @@ public class HLDAPIntialJourney extends SetUp
 			@FindBy(xpath="//div[contains(text(),'Lead Id')]")			//Sort leads in Descending orde
 			private WebElement sortLeads;
 			
-			@FindBy(xpath="//a[@data-autoid=\"LeadID_0\"]")				//1st lead id from sorted list
-			private WebElement FirststLeadId;
+			@FindBy(xpath="//a[@data-autoid='LeadID_0']")				//1st lead id from sorted list
+			private WebElement FirstLeadId;
 			
 			@FindBy(xpath="//div[@class=\"crm-grid-row relative\"]/div/div[1] //a")
-			private WebElement LeadIDList;
+			private List<WebElement> LeadIDList;
+			
+			@FindBy(xpath="//span[contains(text(),'Search')]")
+			private WebElement srchByFilterBtn;
+			
 			
 			public void LeadSearch(String sheetName)throws Exception
 			{
@@ -662,25 +661,60 @@ public class HLDAPIntialJourney extends SetUp
 				
 					try {
 				//Click on recently created lead from the list of leads with same mobile no
-						CommonMethods.highLight(sortLeads);
 						CommonMethods.mouseClick(sortLeads);
-						Thread.sleep(2000);
-						CommonMethods.mouseClick(sortLeads);
-					
 						Thread.sleep(1000);
-						CommonMethods.highLight(FirststLeadId);
-						CommonMethods.Click(FirststLeadId);
+						CommonMethods.mouseClick(sortLeads);
+						Thread.sleep(500);
+						CommonMethods.mouseClick(sortLeads);
+						Thread.sleep(500);
+						
+						CommonMethods.highLight(FirstLeadId);
+						CommonMethods.Click(FirstLeadId);
 					}catch(Exception e) {}
 					
-					
+			//Open details View of Recently Created Lead		
+//					try 
+//					{
+//						ArrayList<Integer> arrayList = new ArrayList<>();
+//					//To iterate Lead ID list to find largest Lead ID	
+//						for(WebElement ele: LeadIDList)
+//						{
+//							String LeadId= CommonMethods.getElementText(ele);
+//							int leadId = Integer.parseInt(LeadId);
+//							arrayList.add(leadId);
+//						}
+//						
+//						//document.querySelector('.react-grid-Canvas').scrollBy(0,150)
+//
+//						log.info("List of Lead IDs = " +arrayList);
+//						
+//						
+//						Collections.sort(arrayList);
+//						Integer recentLeadId = Collections.max(arrayList);
+//						log.info("Recent Lead ID  = "+recentLeadId );
+//						
+//						
+//					//again iterate Lead ID list to click on Recently created Lead	
+//						String LeadId = recentLeadId.toString();
+//						for(WebElement ele : LeadIDList)
+//						{
+//							if(ele.getText().equalsIgnoreCase(LeadId))
+//							{
+//								CommonMethods.Click(ele);
+//								log.info("Click on recently created Lead ID ="+ele.getText());;
+//								break;
+//							}
+//						}
+//						
+//					} catch (Exception e) {log.error("Exception while seaching recent Lead ="+e.getMessage() );}
+//					
+					Thread.sleep(1000);
 					ScreenShot.takeSnapShot("LeadCardView", "Pass");
-				
 			}
 			
 	public void retriveLinkFromSMS(WebElement SMS, WebElement LeadTab, String sheetName) throws Exception
 	{
 		
-			Thread.sleep(2000);	
 			LeadSearch(sheetName);
 			
 			//write data to excel
@@ -688,22 +722,19 @@ public class HLDAPIntialJourney extends SetUp
 					String mobileNo=ExcelOperation.getCellData(sheetName,"Mobile No",1);
 					log.info("Writing lead details excel "+sheetName);
 					CommonMethods.ExWait(leadStatusCodeLbl);
-					Thread.sleep(1000);
 					ExcelOperation.setCellData(sheetName, "Lead Mobile No.", 1, mobileNo);
 				  	ExcelOperation.setCellData(sheetName, "Lead ID", 1, CommonMethods.getElementText(LeadId));
 				  	ExcelOperation.setCellData(sheetName, "Lead Status", 1, CommonMethods.getElementText(leadStatusCodeVal));
 				  	ExcelOperation.setCellData(sheetName, "Last Modified On", 1, CommonMethods.getElementText(leadLastModifyVal));
-				  	Thread.sleep(1000);
 				} catch (Exception e) {
 					log.error("Excel writing exception due to "+e.getMessage());
 				}
 
 			//To get OTP verification URL from lead details page 
-				Thread.sleep(2000);
 				try {
 					CommonMethods.Click(detailView);
 				}catch(Exception e) {}
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				ScreenShot.takeSnapShot("LeadDetailView", "Pass");
 				CommonMethods.Click(LeadTab);
 				CommonMethods.scrollByVisibilityofElement(othersSection);
@@ -711,11 +742,9 @@ public class HLDAPIntialJourney extends SetUp
 				log.info("SMS = "+SMSbody);
 				String link=SMSbody.split("link")[1].trim().split(" ")[0];
 				log.info("OTP/Consent Verification link : "+link);
-				Thread.sleep(1000);
 
 			//open OTP verification link on new tab
 				//driver.switchTo().newWindow(WindowType.TAB);
-				Thread.sleep(1000);
 				//driver.get(link);
 				driver.navigate().to(link);
 		
@@ -733,7 +762,7 @@ public class HLDAPIntialJourney extends SetUp
 			
 			retriveLinkFromSMS(otpSMSBody, HLSalesAppFields, sheetName);
 			
-			Thread.sleep(2000);
+			Thread.sleep(1000);
 			log.info("OTP Notification :"+CommonMethods.getElementText(otpNotificationMSG));
 				CommonMethods.Click(closeNotification);
 				Thread.sleep(1000);
@@ -741,7 +770,7 @@ public class HLDAPIntialJourney extends SetUp
 				CommonMethods.Click(OTPTxtbox);
 				OTPTxtbox.sendKeys("123456");
 				CommonMethods.Click(otpSubmit);
-				Thread.sleep(2000);
+				Thread.sleep(1000);
 				//driver.close();
 				driver.navigate().back();
 				Thread.sleep(1000);
@@ -824,7 +853,6 @@ public class HLDAPIntialJourney extends SetUp
 					try {
 					//Select City
 						CommonMethods.input(cityFld, sheetName, "City", 1);
-						Thread.sleep(2000);
 						CommonMethods.ExWaitsForWebelements(cityList);
 						for(WebElement ele : cityList)
 						{
@@ -832,14 +860,12 @@ public class HLDAPIntialJourney extends SetUp
 							if(cityNm.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "City", 1)))
 							{
 								CommonMethods.Click(ele);
-								Thread.sleep(1000);
 								log.info(CommonMethods.getElementText(cityLabel)+" = "+CommonMethods.getElementValue(cityFld));
 								break;
 							}
 						}
 					}catch(Exception e) {}	
 				//Enter Pincode
-					Thread.sleep(1000);
 					CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
 					log.info(CommonMethods.getElementText(pincodeLbl)+" = "+CommonMethods.getElementValue(pincodeFld));
 					
@@ -854,10 +880,8 @@ public class HLDAPIntialJourney extends SetUp
 					
 				//NRI Country	
 					try {
-						Thread.sleep(1000);
 						CommonMethods.input(NRICountryFld, sheetName, "NRI Country", 1);
 						//log.info(CommonMethods.getElementText(NRICountryLbl)+" = "+CommonMethods.getElementValue(NRICountryFld));
-						Thread.sleep(2000);
 						CommonMethods.ExWaitsForWebelements(cityList);
 						for(WebElement ele : cityList)
 						{

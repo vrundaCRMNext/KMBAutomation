@@ -232,7 +232,7 @@ public class HLDAPModulesJourney extends SetUp
 			//Pincode
 				log.info(CommonMethods.getElementText(PinodeLbl)+" = "+CommonMethods.getElementValue(PinodeFld));
 				
-				ScreenShot.takeSnapShot("PAN/CIBIL Validation", "Pass");
+				ScreenShot.takeSnapShot("PANCIBIL Screen", "Pass");
 				Thread.sleep(1000);
 				CommonMethods.scrollByVisibilityofElement(PANProceedBtn);
 				CommonMethods.highLight(PANProceedBtn);
@@ -798,8 +798,6 @@ public void CrossSellScreen(String sheetName)throws Exception
 		CommonMethods.highLight(CrossSellSkipBtn);
 		CommonMethods.Click(CrossSellSkipBtn);
 		
-		CommonMethods.waitForURL("hleligible");
-		ScreenShot.Ashot("EligibilityScreen", "Pass");
 }
 
 /*********************************Cross Sell Screen****************************************************/

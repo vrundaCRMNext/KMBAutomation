@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="0" failed="1" skipped="6">
+<testng-results ignored="0" total="10" passed="1" failed="0" skipped="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-20T17:34:10 IST" name="Suite" finished-at="2022-06-20T17:49:05 IST" duration-ms="895031">
+  <suite started-at="2022-06-24T16:30:51 IST" name="Suite" finished-at="2022-06-24T16:49:52 IST" duration-ms="1141193">
     <groups>
     </groups>
-    <test started-at="2022-06-20T17:34:10 IST" name="CRM HL Lead Generation Test" finished-at="2022-06-20T17:34:11 IST" duration-ms="1269">
-      <class name="TestCases.CRMHLLeadGeneration">
-        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.CRMHLLeadGeneration@3b718392]" started-at="2022-06-20T17:34:10 IST" name="CRMHLLeadgeneration" finished-at="2022-06-20T17:34:11 IST" duration-ms="1219" status="SKIP">
+    <test started-at="2022-06-24T16:30:51 IST" name="CRM HL Lead Generation Test" finished-at="2022-06-24T16:30:57 IST" duration-ms="5876">
+      <class name="TestCases.TC01CRMHLLeadGeneration">
+        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@6d2260db]" started-at="2022-06-24T16:30:51 IST" name="CRMHLLeadgeneration" finished-at="2022-06-24T16:30:57 IST" duration-ms="5835" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test CRMHLLeadgeneration as the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test CRMHLLeadgeneration as the Run mode is NO
-at TestCases.CRMHLLeadGeneration.CRMHLLeadgeneration(CRMHLLeadGeneration.java:29)
+at TestCases.TC01CRMHLLeadGeneration.CRMHLLeadgeneration(TC01CRMHLLeadGeneration.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,18 +49,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CRMHLLeadgeneration -->
-      </class> <!-- TestCases.CRMHLLeadGeneration -->
+      </class> <!-- TestCases.TC01CRMHLLeadGeneration -->
     </test> <!-- CRM HL Lead Generation Test -->
-    <test started-at="2022-06-20T17:34:12 IST" name="Secured CC DAP Test" finished-at="2022-06-20T17:34:13 IST" duration-ms="951">
-      <class name="TestCases.SecuredCCDAP">
-        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.SecuredCCDAP@28f8e165]" started-at="2022-06-20T17:34:12 IST" name="SecuredCCDap" finished-at="2022-06-20T17:34:13 IST" duration-ms="945" status="SKIP">
+    <test started-at="2022-06-24T16:30:57 IST" name="Secured CC DAP Test" finished-at="2022-06-24T16:31:19 IST" duration-ms="22288">
+      <class name="TestCases.TC02SecuredCCDAP">
+        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.TC02SecuredCCDAP@545f80bf]" started-at="2022-06-24T16:30:57 IST" name="SecuredCCDap" finished-at="2022-06-24T16:31:19 IST" duration-ms="22282" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test SecuredCCDap as the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test SecuredCCDap as the Run mode is NO
-at TestCases.SecuredCCDAP.SecuredCCDap(SecuredCCDAP.java:22)
+at TestCases.TC02SecuredCCDAP.SecuredCCDap(TC02SecuredCCDAP.java:22)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -95,18 +95,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecuredCCDap -->
-      </class> <!-- TestCases.SecuredCCDAP -->
+      </class> <!-- TestCases.TC02SecuredCCDAP -->
     </test> <!-- Secured CC DAP Test -->
-    <test started-at="2022-06-20T17:34:13 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-06-20T17:34:13 IST" duration-ms="467">
-      <class name="TestCases.HLDAPSalariedHomeLoanIndian">
-        <test-method signature="HLDAPSalariedHomeloanIndian()[pri:0, instance:TestCases.HLDAPSalariedHomeLoanIndian@405325cf]" started-at="2022-06-20T17:34:13 IST" name="HLDAPSalariedHomeloanIndian" finished-at="2022-06-20T17:34:13 IST" duration-ms="449" status="SKIP">
+    <test started-at="2022-06-24T16:31:19 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-06-24T16:31:25 IST" duration-ms="5883">
+      <class name="TestCases.TC03HLDAPSalariedHomeLoanIndian">
+        <test-method signature="HLDAPSalariedHomeloanIndian()[pri:0, instance:TestCases.TC03HLDAPSalariedHomeLoanIndian@3e1162e7]" started-at="2022-06-24T16:31:19 IST" name="HLDAPSalariedHomeloanIndian" finished-at="2022-06-24T16:31:25 IST" duration-ms="5881" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPSalariedHomeLoanIndian as the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test HLDAPSalariedHomeLoanIndian as the Run mode is NO
-at TestCases.HLDAPSalariedHomeLoanIndian.HLDAPSalariedHomeloanIndian(HLDAPSalariedHomeLoanIndian.java:30)
+at TestCases.TC03HLDAPSalariedHomeLoanIndian.HLDAPSalariedHomeloanIndian(TC03HLDAPSalariedHomeLoanIndian.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -141,18 +141,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPSalariedHomeloanIndian -->
-      </class> <!-- TestCases.HLDAPSalariedHomeLoanIndian -->
+      </class> <!-- TestCases.TC03HLDAPSalariedHomeLoanIndian -->
     </test> <!-- HLDAP Salaried Home loan Indian -->
-    <test started-at="2022-06-20T17:34:13 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-06-20T17:34:14 IST" duration-ms="468">
-      <class name="TestCases.HLDAPSalariedHomeLoanNRI">
-        <test-method signature="HLDAPSalariedHomeloanNRI()[pri:0, instance:TestCases.HLDAPSalariedHomeLoanNRI@721eb7df]" started-at="2022-06-20T17:34:13 IST" name="HLDAPSalariedHomeloanNRI" finished-at="2022-06-20T17:34:14 IST" duration-ms="468" status="SKIP">
+    <test started-at="2022-06-24T16:31:25 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-06-24T16:31:32 IST" duration-ms="7315">
+      <class name="TestCases.TC04HLDAPSalariedHomeLoanNRI">
+        <test-method signature="HLDAPSalariedHomeloanNRI()[pri:0, instance:TestCases.TC04HLDAPSalariedHomeLoanNRI@1ea9f009]" started-at="2022-06-24T16:31:25 IST" name="HLDAPSalariedHomeloanNRI" finished-at="2022-06-24T16:31:32 IST" duration-ms="7312" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPSalariedHomeloanNRI sas the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test HLDAPSalariedHomeloanNRI sas the Run mode is NO
-at TestCases.HLDAPSalariedHomeLoanNRI.HLDAPSalariedHomeloanNRI(HLDAPSalariedHomeLoanNRI.java:31)
+at TestCases.TC04HLDAPSalariedHomeLoanNRI.HLDAPSalariedHomeloanNRI(TC04HLDAPSalariedHomeLoanNRI.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,18 +187,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPSalariedHomeloanNRI -->
-      </class> <!-- TestCases.HLDAPSalariedHomeLoanNRI -->
+      </class> <!-- TestCases.TC04HLDAPSalariedHomeLoanNRI -->
     </test> <!-- HLDAP Salaried Home loan NRI -->
-    <test started-at="2022-06-20T17:34:14 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-06-20T17:34:14 IST" duration-ms="497">
-      <class name="TestCases.HLDAPSelfEmpIndividualHomeLoan">
-        <test-method signature="HLDAPSelfEmpIndividualHomeloan()[pri:0, instance:TestCases.HLDAPSelfEmpIndividualHomeLoan@5ab9b447]" started-at="2022-06-20T17:34:14 IST" name="HLDAPSelfEmpIndividualHomeloan" finished-at="2022-06-20T17:34:14 IST" duration-ms="482" status="SKIP">
+    <test started-at="2022-06-24T16:31:32 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-06-24T16:31:41 IST" duration-ms="8546">
+      <class name="TestCases.TC05HLDAPSelfEmpIndividualHomeLoan">
+        <test-method signature="HLDAPSelfEmpIndividualHomeloan()[pri:0, instance:TestCases.TC05HLDAPSelfEmpIndividualHomeLoan@76f10035]" started-at="2022-06-24T16:31:32 IST" name="HLDAPSelfEmpIndividualHomeloan" finished-at="2022-06-24T16:31:41 IST" duration-ms="8544" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPSelfEmpIndividualHomeloan as the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test HLDAPSelfEmpIndividualHomeloan as the Run mode is NO
-at TestCases.HLDAPSelfEmpIndividualHomeLoan.HLDAPSelfEmpIndividualHomeloan(HLDAPSelfEmpIndividualHomeLoan.java:28)
+at TestCases.TC05HLDAPSelfEmpIndividualHomeLoan.HLDAPSelfEmpIndividualHomeloan(TC05HLDAPSelfEmpIndividualHomeLoan.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -233,18 +233,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPSelfEmpIndividualHomeloan -->
-      </class> <!-- TestCases.HLDAPSelfEmpIndividualHomeLoan -->
+      </class> <!-- TestCases.TC05HLDAPSelfEmpIndividualHomeLoan -->
     </test> <!-- HLDAP SelfEmployed Individual Home loan  -->
-    <test started-at="2022-06-20T17:34:14 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-06-20T17:34:15 IST" duration-ms="462">
-      <class name="TestCases.HLDAPSelfEmpNonIndividualHomeLoan">
-        <test-method signature="HLDAPSelfEmpNonIndividualHomeloan()[pri:0, instance:TestCases.HLDAPSelfEmpNonIndividualHomeLoan@6b530eb9]" started-at="2022-06-20T17:34:14 IST" name="HLDAPSelfEmpNonIndividualHomeloan" finished-at="2022-06-20T17:34:15 IST" duration-ms="457" status="SKIP">
+    <test started-at="2022-06-24T16:31:41 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-06-24T16:31:51 IST" duration-ms="9699">
+      <class name="TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan">
+        <test-method signature="HLDAPSelfEmpNonIndividualHomeloan()[pri:0, instance:TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan@328572f0]" started-at="2022-06-24T16:31:41 IST" name="HLDAPSelfEmpNonIndividualHomeloan" finished-at="2022-06-24T16:31:51 IST" duration-ms="9697" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPSelfEmpNonIndividualHomeLoan as the Run mode is NO]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: Skipping the test HLDAPSelfEmpNonIndividualHomeLoan as the Run mode is NO
-at TestCases.HLDAPSelfEmpNonIndividualHomeLoan.HLDAPSelfEmpNonIndividualHomeloan(HLDAPSelfEmpNonIndividualHomeLoan.java:28)
+at TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan.HLDAPSelfEmpNonIndividualHomeloan(TC06HLDAPSelfEmpNonIndividualHomeLoan.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -279,32 +279,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPSelfEmpNonIndividualHomeloan -->
-      </class> <!-- TestCases.HLDAPSelfEmpNonIndividualHomeLoan -->
+      </class> <!-- TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan -->
     </test> <!-- HLDAP SelfEmployed NonIndividual Home loan  -->
-    <test started-at="2022-06-20T17:34:15 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-06-20T17:49:05 IST" duration-ms="890403">
-      <class name="TestCases.HLDAPSalariedBalanceTransferIndian">
-        <test-method signature="HLDAPSalariedBalanceTransferInd()[pri:0, instance:TestCases.HLDAPSalariedBalanceTransferIndian@2c0f7678]" started-at="2022-06-20T17:34:15 IST" name="HLDAPSalariedBalanceTransferInd" finished-at="2022-06-20T17:49:05 IST" duration-ms="890007" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+    <test started-at="2022-06-24T16:31:51 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-06-24T16:32:02 IST" duration-ms="10972">
+      <class name="TestCases.TC07HLDAPSalariedBalanceTransferIndian">
+        <test-method signature="HLDAPSalariedBalanceTransferInd()[pri:0, instance:TestCases.TC07HLDAPSalariedBalanceTransferIndian@44d70181]" started-at="2022-06-24T16:31:51 IST" name="HLDAPSalariedBalanceTransferInd" finished-at="2022-06-24T16:32:02 IST" duration-ms="10968" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Expected condition failed: waiting for url to contain "hleligible". Current url: "https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process?userId=1353&x=ayg86akwr4k6u4tvztzarmblxp72clt32zle8zqtkm7cp2p79vvlucjjww5quem6d9f6mm2hb4g55z4wd9gnavcs6z#BT%20Eligibility" (tried for 70 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56492/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ffbcba6d50ed2dc1b42b3b71ae6e702e]]>
+              <![CDATA[Skipping the test HLDAPSalariedBalanceTransferIndian as the Run mode is NO]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "hleligible". Current url: "https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process?userId=1353&x=ayg86akwr4k6u4tvztzarmblxp72clt32zle8zqtkm7cp2p79vvlucjjww5quem6d9f6mm2hb4g55z4wd9gnavcs6z#BT%20Eligibility" (tried for 70 second(s) with 500 milliseconds interval)
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56492}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56492/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: ffbcba6d50ed2dc1b42b3b71ae6e702e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at CommonUtility.CommonMethods.waitForURL(CommonMethods.java:92)
-at POM_HLSalesDAP.HLDAPModulesJourney.CrossSellScreen(HLDAPModulesJourney.java:801)
-at TestCases.HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(HLDAPSalariedBalanceTransferIndian.java:54)
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPSalariedBalanceTransferIndian as the Run mode is NO
+at TestCases.TC07HLDAPSalariedBalanceTransferIndian.HLDAPSalariedBalanceTransferInd(TC07HLDAPSalariedBalanceTransferIndian.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -335,11 +321,111 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPSalariedBalanceTransferInd -->
-      </class> <!-- TestCases.HLDAPSalariedBalanceTransferIndian -->
+      </class> <!-- TestCases.TC07HLDAPSalariedBalanceTransferIndian -->
     </test> <!-- HLDAP Salaried Balance Transfer Indian  -->
+    <test started-at="2022-06-24T16:32:02 IST" name="HLDAP Salaried Balance Transfer NRI " finished-at="2022-06-24T16:49:16 IST" duration-ms="1034286">
+      <class name="TestCases.TC08HLDAPSalariedBalanceTransferNRI">
+        <test-method signature="HLDAPSalariedBalancetransferNRI()[pri:0, instance:TestCases.TC08HLDAPSalariedBalanceTransferNRI@5f574cc2]" started-at="2022-06-24T16:32:02 IST" name="HLDAPSalariedBalancetransferNRI" finished-at="2022-06-24T16:49:16 IST" duration-ms="1034135" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPSalariedBalancetransferNRI -->
+      </class> <!-- TestCases.TC08HLDAPSalariedBalanceTransferNRI -->
+    </test> <!-- HLDAP Salaried Balance Transfer NRI  -->
+    <test started-at="2022-06-24T16:49:16 IST" name="HLDAP Salaried Only Top Up Indian " finished-at="2022-06-24T16:49:34 IST" duration-ms="17404">
+      <class name="TestCases.TC11HLDAPSalariedOnlyTopUpIndian">
+        <test-method signature="HLDAPSalariedOnlyTopupIndian()[pri:0, instance:TestCases.TC11HLDAPSalariedOnlyTopUpIndian@53bf7094]" started-at="2022-06-24T16:49:16 IST" name="HLDAPSalariedOnlyTopupIndian" finished-at="2022-06-24T16:49:34 IST" duration-ms="17400" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test HLDAPSalariedOnlyTopUpIndian as the Run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPSalariedOnlyTopUpIndian as the Run mode is NO
+at TestCases.TC11HLDAPSalariedOnlyTopUpIndian.HLDAPSalariedOnlyTopupIndian(TC11HLDAPSalariedOnlyTopUpIndian.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPSalariedOnlyTopupIndian -->
+      </class> <!-- TestCases.TC11HLDAPSalariedOnlyTopUpIndian -->
+    </test> <!-- HLDAP Salaried Only Top Up Indian  -->
+    <test started-at="2022-06-24T16:49:34 IST" name="HLDAP Salaried Only Top Up NRI " finished-at="2022-06-24T16:49:52 IST" duration-ms="18303">
+      <class name="TestCases.TC12HLDAPSalariedOnlyTopUpNRI">
+        <test-method signature="HLDAPSalariedOnlyTopupNRI()[pri:0, instance:TestCases.TC12HLDAPSalariedOnlyTopUpNRI@1b1637e1]" started-at="2022-06-24T16:49:34 IST" name="HLDAPSalariedOnlyTopupNRI" finished-at="2022-06-24T16:49:52 IST" duration-ms="18300" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test HLDAPSalariedOnlyTopUpNRI as the Run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPSalariedOnlyTopUpNRI as the Run mode is NO
+at TestCases.TC12HLDAPSalariedOnlyTopUpNRI.HLDAPSalariedOnlyTopupNRI(TC12HLDAPSalariedOnlyTopUpNRI.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPSalariedOnlyTopupNRI -->
+      </class> <!-- TestCases.TC12HLDAPSalariedOnlyTopUpNRI -->
+    </test> <!-- HLDAP Salaried Only Top Up NRI  -->
   </suite> <!-- Suite -->
 </testng-results>
