@@ -19,58 +19,75 @@
 	
 	<test name ="HLDAP Salaried Home loan Indian">
 		<classes>
-			<class  name ="TestCases.TC03HLDAPSalariedHomeLoanIndian" />
+			<class  name ="TestCases.TC03HLDAPHomeLoanSalariedIndian" />
 		</classes>
 	</test>
 
 	<test name="HLDAP Salaried Home loan NRI">
 		<classes>
-			<class name ="TestCases.TC04HLDAPSalariedHomeLoanNRI" />
+			<class name ="TestCases.TC04HLDAPHomeLoanSalariedNRI" />
 		</classes>
 	</test>
 
 	<test name="HLDAP SelfEmployed Individual Home loan ">
 		<classes>
-			<class name ="TestCases.TC05HLDAPSelfEmpIndividualHomeLoan" />
+			<class name ="TestCases.TC05HLDAPHomeLoanIndividual" />
 		</classes>
 	</test>
 
 	<test name="HLDAP SelfEmployed NonIndividual Home loan ">
 		<classes>
-			<class name ="TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan" />
+			<class name ="TestCases.TC06HLDAPHomeLoanNonIndividual" />
 		</classes>
 	</test>
   
  	 <test name="HLDAP Salaried Balance Transfer Indian ">
 		<classes>
-			<class name ="TestCases.TC07HLDAPSalariedBalanceTransferIndian" />
+			<class name ="TestCases.TC07HLDAPBalanceTransferSalariedIndian" />
 		</classes>
 	</test>
 	
 	<test name="HLDAP Salaried Balance Transfer NRI ">
 		<classes>
-			<class name ="TestCases.TC08HLDAPSalariedBalanceTransferNRI" />
+			<class name ="TestCases.TC08HLDAPBalanceTransferSalariedNRI" />
 		</classes>
 	</test>
 	
+	<test name="HLDAP Salaried Balance Transfer Individual ">
+		<classes>
+			<class name ="TestCases.TC09HLDAPBalanceTransferIndividual" />
+		</classes>
+	</test>
 	
-	
-	
-	
+	<test name="HLDAP Salaried Balance Transfer Non Individual ">
+		<classes>
+			<class name ="TestCases.TC10HLDAPBalanceTransferNonIndividual" />
+		</classes>
+	</test>
 	
 	<test name="HLDAP Salaried Only Top Up Indian ">
 		<classes>
-			<class name ="TestCases.TC11HLDAPSalariedOnlyTopUpIndian" />
+			<class name ="TestCases.TC11HLDAPOnlyTopUpSalariedIndian" />
 		</classes>
 	</test>
 	
 	 <test name="HLDAP Salaried Only Top Up NRI ">
 			<classes>
-				<class name ="TestCases.TC12HLDAPSalariedOnlyTopUpNRI" />
+				<class name ="TestCases.TC12HLDAPOnlyTopUpSalariedNRI" />
 			</classes>
 	</test>
 	
+	<test name="HLDAP Salaried Only Top Up Individual ">
+			<classes>
+				<class name ="TestCases.TC13HLDAPOnlyTopUpIndividual" />
+			</classes>
+	</test>
 	
+	<test name="HLDAP Salaried Only Top Up Non Individual ">
+			<classes>
+				<class name ="TestCases.TC14HLDAPOnlyTopUpNonIndividual" />
+			</classes>
+	</test>
 	
 	
 </suite> <!-- Suite -->

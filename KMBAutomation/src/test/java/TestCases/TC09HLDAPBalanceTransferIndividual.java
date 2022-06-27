@@ -11,25 +11,27 @@ import POM_HLSalesDAP.HLDAPEndJourney;
 import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 
-public class TC10HLDAPSelfEmpNonIndividualBalTransfer extends SetUp{
-  
+public class TC09HLDAPBalanceTransferIndividual extends SetUp
+{
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
 	public HLDAPModulesJourney HLSalesModule ;
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPBalanceTransfer HLSalesBT;
-@Test
-  public void HLDAPSelfEmpNonIndividualBalTransfer() throws Exception
-  {
-	  String sheetName = "HLDAPNonIndividualBalTransfer";
-	  if (!(CommonMethods.isTestRunnable("HLDAPSelfEmpNonIndividualBalTransfer"))) {
+
+	
+	@Test
+	public void HLDAPBalanceTransferIndividual() throws Exception
+	{
+		String sheetName ="HLDAPBalanceTransferIndividual";
+		
+		if (!(CommonMethods.isTestRunnable("HLDAPBalanceTransferIndividual"))) {
 
 			throw new SkipException(
-					"Skipping the test HLDAPSelfEmpNonIndividualBalTransfer as the Run mode is NO");
+					"Skipping the test HLDAPBalanceTransferIndividual as the Run mode is NO");
 		}
 	   
-	   		//setUpTest();
-		setUpTest1(sheetName);
+			setUpTest1(sheetName);
 	   	//Login	
 			login = new LoginPage(driver);
 			login.CRMLogin(sheetName);
@@ -40,7 +42,7 @@ public class TC10HLDAPSelfEmpNonIndividualBalTransfer extends SetUp{
 			HLSalesModule = new HLDAPModulesJourney(driver);
 			HLSalesModule.Digital_InprincipleSanction(sheetName);
 			HLSalesModule.PANCibilDeatils(sheetName);
-			HLSalesModule.selfEmpIncomeDetails(sheetName);
+			HLSalesModule.incomeDetails(sheetName);
 			
 			HLSalesBT = new HLDAPBalanceTransfer(driver);
 			HLSalesBT.BalanceTransferScreen(sheetName);
@@ -50,14 +52,8 @@ public class TC10HLDAPSelfEmpNonIndividualBalTransfer extends SetUp{
 			HLSalesModule.CrossSellScreen(sheetName);
 			
 			HLSalesEnd  = new HLDAPEndJourney(driver);
-			HLSalesEnd.EligibilityScreen(sheetName);
-			HLSalesEnd.ProcessingFeeScreen(sheetName);
-			
-		//Digi App Form for NonIndividual	
-			HLSalesEnd.ReferenceDetailsScreen(sheetName);
-			HLSalesEnd.AppPropertyDetailsScreen(sheetName);
-			HLSalesEnd.FinIndividualAppQue(sheetName);
-			
-	  
-  }
+			HLSalesEnd.runEndJourney(sheetName);
+				
+		
+	}
 }

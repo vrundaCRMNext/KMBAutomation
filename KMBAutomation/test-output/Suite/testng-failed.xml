@@ -9,6 +9,7 @@
       <class name="TestCases.TC01CRMHLLeadGeneration">
         <methods>
           <include name="CRMHLLeadgeneration"/>
+          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC01CRMHLLeadGeneration -->
     </classes>
@@ -18,71 +19,129 @@
       <class name="TestCases.TC02SecuredCCDAP">
         <methods>
           <include name="SecuredCCDap"/>
+          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC02SecuredCCDAP -->
     </classes>
   </test> <!-- Secured CC DAP Test(failed) -->
   <test thread-count="5" name="HLDAP Salaried Home loan Indian(failed)">
     <classes>
-      <class name="TestCases.TC03HLDAPSalariedHomeLoanIndian">
+      <class name="TestCases.TC03HLDAPHomeLoanSalariedIndian">
         <methods>
-          <include name="HLDAPSalariedHomeloanIndian"/>
+          <include name="HLDAPHomeLoanSalariedIndian"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- TestCases.TC03HLDAPSalariedHomeLoanIndian -->
+      </class> <!-- TestCases.TC03HLDAPHomeLoanSalariedIndian -->
     </classes>
   </test> <!-- HLDAP Salaried Home loan Indian(failed) -->
   <test thread-count="5" name="HLDAP Salaried Home loan NRI(failed)">
     <classes>
-      <class name="TestCases.TC04HLDAPSalariedHomeLoanNRI">
+      <class name="TestCases.TC04HLDAPHomeLoanSalariedNRI">
         <methods>
-          <include name="HLDAPSalariedHomeloanNRI"/>
+          <include name="HLDAPHomeLoanSalariedNRI"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- TestCases.TC04HLDAPSalariedHomeLoanNRI -->
+      </class> <!-- TestCases.TC04HLDAPHomeLoanSalariedNRI -->
     </classes>
   </test> <!-- HLDAP Salaried Home loan NRI(failed) -->
   <test thread-count="5" name="HLDAP SelfEmployed Individual Home loan (failed)">
     <classes>
-      <class name="TestCases.TC05HLDAPSelfEmpIndividualHomeLoan">
+      <class name="TestCases.TC05HLDAPHomeLoanIndividual">
         <methods>
-          <include name="HLDAPSelfEmpIndividualHomeloan"/>
+          <include name="tearDownTest"/>
+          <include name="HLDAPHomeLoanIndividual"/>
         </methods>
-      </class> <!-- TestCases.TC05HLDAPSelfEmpIndividualHomeLoan -->
+      </class> <!-- TestCases.TC05HLDAPHomeLoanIndividual -->
     </classes>
   </test> <!-- HLDAP SelfEmployed Individual Home loan (failed) -->
   <test thread-count="5" name="HLDAP SelfEmployed NonIndividual Home loan (failed)">
     <classes>
-      <class name="TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan">
+      <class name="TestCases.TC06HLDAPHomeLoanNonIndividual">
         <methods>
-          <include name="HLDAPSelfEmpNonIndividualHomeloan"/>
+          <include name="HLDAPHomeLoanNonIndividual"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- TestCases.TC06HLDAPSelfEmpNonIndividualHomeLoan -->
+      </class> <!-- TestCases.TC06HLDAPHomeLoanNonIndividual -->
     </classes>
   </test> <!-- HLDAP SelfEmployed NonIndividual Home loan (failed) -->
   <test thread-count="5" name="HLDAP Salaried Balance Transfer Indian (failed)">
     <classes>
-      <class name="TestCases.TC07HLDAPSalariedBalanceTransferIndian">
+      <class name="TestCases.TC07HLDAPBalanceTransferSalariedIndian">
         <methods>
-          <include name="HLDAPSalariedBalanceTransferInd"/>
+          <include name="HLDAPBalanceTransferSalariedIndian"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- TestCases.TC07HLDAPSalariedBalanceTransferIndian -->
+      </class> <!-- TestCases.TC07HLDAPBalanceTransferSalariedIndian -->
     </classes>
   </test> <!-- HLDAP Salaried Balance Transfer Indian (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Balance Transfer NRI (failed)">
+    <classes>
+      <class name="TestCases.TC08HLDAPBalanceTransferSalariedNRI">
+        <methods>
+          <include name="HLDAPBalanceTransferSalariedNRI"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- TestCases.TC08HLDAPBalanceTransferSalariedNRI -->
+    </classes>
+  </test> <!-- HLDAP Salaried Balance Transfer NRI (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Balance Transfer Individual (failed)">
+    <classes>
+      <class name="TestCases.TC09HLDAPBalanceTransferIndividual">
+        <methods>
+          <include name="HLDAPBalanceTransferIndividual"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- TestCases.TC09HLDAPBalanceTransferIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Balance Transfer Individual (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Balance Transfer Non Individual (failed)">
+    <classes>
+      <class name="TestCases.TC10HLDAPBalanceTransferNonIndividual">
+        <methods>
+          <include name="HLDAPBalanceTransferNonIndividual"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- TestCases.TC10HLDAPBalanceTransferNonIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Balance Transfer Non Individual (failed) -->
   <test thread-count="5" name="HLDAP Salaried Only Top Up Indian (failed)">
     <classes>
-      <class name="TestCases.TC11HLDAPSalariedOnlyTopUpIndian">
+      <class name="TestCases.TC11HLDAPOnlyTopUpSalariedIndian">
         <methods>
-          <include name="HLDAPSalariedOnlyTopupIndian"/>
+          <include name="tearDownTest"/>
+          <include name="HLDAPOnlyTopUpSalariedIndian"/>
         </methods>
-      </class> <!-- TestCases.TC11HLDAPSalariedOnlyTopUpIndian -->
+      </class> <!-- TestCases.TC11HLDAPOnlyTopUpSalariedIndian -->
     </classes>
   </test> <!-- HLDAP Salaried Only Top Up Indian (failed) -->
   <test thread-count="5" name="HLDAP Salaried Only Top Up NRI (failed)">
     <classes>
-      <class name="TestCases.TC12HLDAPSalariedOnlyTopUpNRI">
+      <class name="TestCases.TC12HLDAPOnlyTopUpSalariedNRI">
         <methods>
-          <include name="HLDAPSalariedOnlyTopupNRI"/>
+          <include name="HLDAPOnlyTopUpSalariedNRI"/>
+          <include name="tearDownTest"/>
         </methods>
-      </class> <!-- TestCases.TC12HLDAPSalariedOnlyTopUpNRI -->
+      </class> <!-- TestCases.TC12HLDAPOnlyTopUpSalariedNRI -->
     </classes>
   </test> <!-- HLDAP Salaried Only Top Up NRI (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Only Top Up Individual (failed)">
+    <classes>
+      <class name="TestCases.TC13HLDAPOnlyTopUpIndividual">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="HLDAPOnlyTopUpIndividual"/>
+        </methods>
+      </class> <!-- TestCases.TC13HLDAPOnlyTopUpIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Only Top Up Individual (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Only Top Up Non Individual (failed)">
+    <classes>
+      <class name="TestCases.TC14HLDAPOnlyTopUpNonIndividual">
+        <methods>
+          <include name="HLDAPOnlyTopUpNonIndividual"/>
+          <include name="tearDownTest"/>
+        </methods>
+      </class> <!-- TestCases.TC14HLDAPOnlyTopUpNonIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Only Top Up Non Individual (failed) -->
 </suite> <!-- Failed suite [Suite] -->

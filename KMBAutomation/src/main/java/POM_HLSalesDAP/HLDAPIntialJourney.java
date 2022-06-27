@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import javax.script.AbstractScriptEngine;
+
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,8 +46,6 @@ public class HLDAPIntialJourney extends SetUp
 	public void runIntialJourney(String sheetName)throws Exception
 	{
 		
-			System.out.println("====================Running Intial journey=============================");
-
 			intiateDAPJourney(sheetName);
 			productSelection(sheetName);
 			subSourceSelection(sheetName);
@@ -76,9 +76,11 @@ public class HLDAPIntialJourney extends SetUp
 
 			OTPVerification(sheetName);
 			
-			if(applicantTypeExcel.equalsIgnoreCase("Self employed") && selfEMPTypeExcel.equalsIgnoreCase("Individual") )
+			log.info("Applicant Type ="+applicantTypeExcel +" and " +selfEMPTypeExcel);
+			if(applicantTypeExcel.equalsIgnoreCase("Self employed") )
 			{
-				selectBusinessVintage(sheetName);
+				if(selfEMPTypeExcel.equalsIgnoreCase("Individual"))
+					selectBusinessVintage(sheetName);
 			}
 			
 			ResidentStatusSelection(sheetName);
@@ -316,15 +318,15 @@ public class HLDAPIntialJourney extends SetUp
 		
 	}
 	
-	@FindBy(xpath="//div[@name=\"Container\"] //span")			//Screen hdr
+	@FindBy(xpath="//span[contains(text(),'Business Vintage')]")			//Screen hdr
 	private WebElement businessHdr;
-	
+
 	@FindBy(xpath="//div[@name=\"Container\"] //button")		//list of buttons
 	private List<WebElement> businessVintageBtnList;
 	
 	public void selectBusinessVintage(String sheetName) throws Exception
 	{
-		
+		try {
 			log.info(CommonMethods.getElementText(businessHdr));
 			
 			for(WebElement ele:businessVintageBtnList)
@@ -333,11 +335,13 @@ public class HLDAPIntialJourney extends SetUp
 				if(btnName.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "BusinessVintage", 1)))
 				{
 					CommonMethods.highLight(ele);
+					ScreenShot.takeSnapShot("BusinessVintageScreen", "Pass");
 					CommonMethods.Click(ele);
 					log.info(CommonMethods.getElementText(businessHdr)+" : "+ btnName+" get selected and naviagte to next screen");
+					break;
 				}
 			}
-			
+		}catch(Exception e) {log.error("Business vintage screen exc due to :"+e.getMessage());}	
 	}
 	
 	
@@ -355,7 +359,6 @@ public class HLDAPIntialJourney extends SetUp
 					Thread.sleep(2000);
 					CommonMethods.Click(monthLOVs);
 					CommonMethods.selectByText(monthLOVs,sheetName,"DOBMonth", 1); 
-					//CommonMethods.selectByValue(monthLOVs, sheetName,"DOBMonth", 1);
 					}catch(Exception e) 
 					{
 						log.error("Month selection Exception occured due to "+e.getMessage()); 
@@ -366,7 +369,6 @@ public class HLDAPIntialJourney extends SetUp
 						Thread.sleep(1000);
 						CommonMethods.Click(yearLOVs);
 						CommonMethods.selectByText(yearLOVs,sheetName,"DOBYear", 1);
-						//log.info("Year :"+DOBYear+" get selected"); 
 					}catch(Exception e) 
 					{
 						log.error("Year selection Exception occured due to "+e.getMessage()); 
@@ -375,9 +377,7 @@ public class HLDAPIntialJourney extends SetUp
 
 				try { 
 				//Date 
-					//CommonMethods.Click(calanderBtn); 
 					Thread.sleep(1000); 
-					//List<WebElement>dateList = dates; 
 					for(WebElement ele:dates) 
 					{ 
 						String dateName =CommonMethods.getElementText(ele); 
@@ -421,15 +421,14 @@ public class HLDAPIntialJourney extends SetUp
 			assertEquals(CommonMethods.getElementText(mob_dob_Header), "Check if applicant is an Existing customer and has a PA offer?");
 			log.info("Header of screen : "+CommonMethods.getElementText(mob_dob_Header));
 			
-			//CommonMethods.Click(mobileTxt);
 			CommonMethods.input(mobileTxt,sheetName,"Mobile No",1);
 			Thread.sleep(1000);
 			
 			try {
-				CommonMethods.input(mobileTxt,sheetName,"Mobile No",1);
-			} catch (Exception e) {
-				// TODO: handle exception
-			}
+				String MobNo = CommonMethods.getElementValue(mobileTxt);
+				if(MobNo.isEmpty())
+						CommonMethods.input(mobileTxt,sheetName,"Mobile No",1);
+			} catch (Exception e) {}
 
 			String ETB_NTBType= ExcelOperation.getCellData(sheetName, "ETB/NTB", 1);
 			if(ETB_NTBType.equalsIgnoreCase("NTB"))
@@ -657,16 +656,16 @@ public class HLDAPIntialJourney extends SetUp
 					CommonMethods.Click(srchLeadIcon);
 					CommonMethods.input(MobileNoSrch, sheetName,"Mobile No",1);
 					CommonMethods.Click(srchBtn);
-					Thread.sleep(1000);
+					Thread.sleep(1500);
 				
 					try {
 				//Click on recently created lead from the list of leads with same mobile no
 						CommonMethods.mouseClick(sortLeads);
-						Thread.sleep(1000);
+						Thread.sleep(2000);
 						CommonMethods.mouseClick(sortLeads);
-						Thread.sleep(500);
-						CommonMethods.mouseClick(sortLeads);
-						Thread.sleep(500);
+						//Thread.sleep(1500);
+						//CommonMethods.mouseClick(sortLeads);
+						Thread.sleep(2000);
 						
 						CommonMethods.highLight(FirstLeadId);
 						CommonMethods.Click(FirstLeadId);
@@ -749,7 +748,9 @@ public class HLDAPIntialJourney extends SetUp
 				driver.navigate().to(link);
 		
 	}
-			
+	@FindBy(xpath="//div[@name=\"Container\"] //span")			//Screen hdr
+	private WebElement Hdr;	
+	
 	public void OTPVerification(String sheetName)throws Exception
 	{
 		
@@ -776,6 +777,7 @@ public class HLDAPIntialJourney extends SetUp
 				Thread.sleep(1000);
 				CommonMethods.switchToWindowByTitle("Customer Digital Journey");
 				Thread.sleep(1000);
+				log.info(CommonMethods.getElementText(Hdr));
 		
 	}//OTP Verification 
 /******************************END OTP Verification***************************************************/		

@@ -156,12 +156,13 @@ public class SetUp implements AutoConst
 		driver.manage().window().maximize();
 		
 	}
-	//@AfterTest
+	
+	@AfterTest
 	public void tearDownTest() 
 	{
 		//Close Browser		
 		  driver.close();
-		// driver.quit(); 
+		  driver.quit(); 
 		  log.info("Browser Closed..");
 	}
 

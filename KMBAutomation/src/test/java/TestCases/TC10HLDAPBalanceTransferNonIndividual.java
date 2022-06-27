@@ -11,26 +11,25 @@ import POM_HLSalesDAP.HLDAPEndJourney;
 import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 
-public class TC07HLDAPSalariedBalanceTransferIndian extends SetUp {
+public class TC10HLDAPBalanceTransferNonIndividual extends SetUp{
+  
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
 	public HLDAPModulesJourney HLSalesModule ;
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPBalanceTransfer HLSalesBT;
-	
 @Test
-  public void HLDAPSalariedBalanceTransferInd() throws Exception 
+  public void HLDAPBalanceTransferNonIndividual() throws Exception
   {
- String sheetName = "HLDAPSalariedBalanceTransferInd";
-	  
-	  if (!(CommonMethods.isTestRunnable("HLDAPSalariedBalanceTransferIndian"))) {
+	  String sheetName = "HLDAPBalTransferNonIndividual";
+	  if (!(CommonMethods.isTestRunnable("HLDAPBalanceTransferNonIndividual"))) {
 
 			throw new SkipException(
-					"Skipping the test HLDAPSalariedBalanceTransferIndian as the Run mode is NO");
+					"Skipping the test HLDAPBalanceTransferNonIndividual as the Run mode is NO");
 		}
 	   
 	   		//setUpTest();
-	  	setUpTest1(sheetName);
+		setUpTest1(sheetName);
 	   	//Login	
 			login = new LoginPage(driver);
 			login.CRMLogin(sheetName);
@@ -41,21 +40,24 @@ public class TC07HLDAPSalariedBalanceTransferIndian extends SetUp {
 			HLSalesModule = new HLDAPModulesJourney(driver);
 			HLSalesModule.Digital_InprincipleSanction(sheetName);
 			HLSalesModule.PANCibilDeatils(sheetName);
-			HLSalesModule.incomeDetails(sheetName);
-			HLSalesModule.applicantWorkDetails(sheetName);
-			HLSalesModule.karzaWaitingScreen(sheetName);
-			HLSalesModule.KarzaFailureScreen(sheetName);
+			HLSalesModule.selfEmpIncomeDetails(sheetName);
 			
 			HLSalesBT = new HLDAPBalanceTransfer(driver);
 			HLSalesBT.BalanceTransferScreen(sheetName);
 			HLSalesBT.BalanceTransferPlan(sheetName);
 			
-			HLSalesModule.bankStmtUpload(sheetName);
-			HLSalesModule.perfiosFailure(sheetName);
-			HLSalesModule.CrossSellScreen(sheetName);	
+			HLSalesModule.ITRScreen();
+			HLSalesModule.CrossSellScreen(sheetName);
 			
-			HLSalesEnd = new HLDAPEndJourney(driver);
-			HLSalesEnd.runEndJourney(sheetName);
+			HLSalesEnd  = new HLDAPEndJourney(driver);
+			HLSalesEnd.EligibilityScreen(sheetName);
+			HLSalesEnd.ProcessingFeeScreen(sheetName);
+			
+		//Digi App Form for NonIndividual	
+			HLSalesEnd.ReferenceDetailsScreen(sheetName);
+			HLSalesEnd.AppPropertyDetailsScreen(sheetName);
+			HLSalesEnd.FinIndividualAppQue(sheetName);
+			
 	  
   }
 }

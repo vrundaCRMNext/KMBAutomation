@@ -11,7 +11,7 @@ import POM_HLSalesDAP.HLDAPEndJourney;
 import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 
-public class TC08HLDAPSalariedBalanceTransferNRI extends SetUp
+public class TC08HLDAPBalanceTransferSalariedNRI extends SetUp
 {
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
@@ -19,14 +19,14 @@ public class TC08HLDAPSalariedBalanceTransferNRI extends SetUp
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPBalanceTransfer HLSalesBT;
 	@Test
-	public void HLDAPSalariedBalancetransferNRI() throws Exception
+	public void HLDAPBalanceTransferSalariedNRI() throws Exception
 	{
-		String sheetName = "HLDAPSalariedBalanceTransferNRI";
+		String sheetName = "HLDAPBalanceTransferSalariedNRI";
 		  
-		  if (!(CommonMethods.isTestRunnable("HLDAPSalariedBalanceTransferNRI"))) {
+		  if (!(CommonMethods.isTestRunnable("HLDAPBalanceTransferSalariedNRI"))) {
 
 				throw new SkipException(
-						"Skipping the test HLDAPSalariedBalanceTransferNRI as the Run mode is NO");
+						"Skipping the test HLDAPBalanceTransferSalariedNRI as the Run mode is NO");
 			}
 		   
 		   		//setUpTest();

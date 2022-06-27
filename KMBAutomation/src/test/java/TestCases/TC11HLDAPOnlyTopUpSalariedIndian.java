@@ -11,7 +11,7 @@ import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 import POM_HLSalesDAP.HLDAPOnlyTopUp;
 
-public class TC11HLDAPSalariedOnlyTopUpIndian extends SetUp
+public class TC11HLDAPOnlyTopUpSalariedIndian extends SetUp
 {
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
@@ -19,14 +19,14 @@ public class TC11HLDAPSalariedOnlyTopUpIndian extends SetUp
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPOnlyTopUp HLSalesTopUp;
 	@Test
-	public void HLDAPSalariedOnlyTopupIndian() throws Exception
+	public void HLDAPOnlyTopUpSalariedIndian() throws Exception
 	{
-		String sheetName = "HLDAPSalariedOnlyTopUpIndian";
+		String sheetName = "HLDAPOnlyTopUpSalariedIndian";
 		  
-		  if (!(CommonMethods.isTestRunnable("HLDAPSalariedOnlyTopUpIndian"))) {
+		  if (!(CommonMethods.isTestRunnable("HLDAPOnlyTopUpSalariedIndian"))) {
 
 				throw new SkipException(
-						"Skipping the test HLDAPSalariedOnlyTopUpIndian as the Run mode is NO");
+						"Skipping the test HLDAPOnlyTopUpSalariedIndian as the Run mode is NO");
 			}
 		   
 		   		//setUpTest();

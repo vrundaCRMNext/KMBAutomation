@@ -10,20 +10,20 @@ import POM_HLSalesDAP.HLDAPEndJourney;
 import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 
-public class TC06HLDAPSelfEmpNonIndividualHomeLoan extends SetUp{
+public class TC06HLDAPHomeLoanNonIndividual extends SetUp{
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
 	public HLDAPModulesJourney HLSalesModule ;
 	public HLDAPEndJourney HLSalesEnd ;
 	
 @Test
-  public void HLDAPSelfEmpNonIndividualHomeloan() throws Exception {
+  public void HLDAPHomeLoanNonIndividual() throws Exception {
 	
-	String sheetName = "HLDAPSelfEmpNonIndividualHomeLo";
-	if (!(CommonMethods.isTestRunnable("HLDAPSelfEmpNonIndividualHomeLoan"))) {
+	String sheetName = "HLDAPHomeLoanNonIndividual";
+	if (!(CommonMethods.isTestRunnable("HLDAPHomeLoanNonIndividual"))) {
 
 		throw new SkipException(
-				"Skipping the test HLDAPSelfEmpNonIndividualHomeLoan as the Run mode is NO");
+				"Skipping the test HLDAPHomeLoanNonIndividual as the Run mode is NO");
 	}
    
    		//setUpTest();

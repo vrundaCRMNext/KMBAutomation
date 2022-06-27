@@ -11,7 +11,7 @@ import POM_HLSalesDAP.HLDAPIntialJourney;
 import POM_HLSalesDAP.HLDAPModulesJourney;
 
 
-public class TC03HLDAPSalariedHomeLoanIndian extends SetUp
+public class TC03HLDAPHomeLoanSalariedIndian extends SetUp
 {
 	public LoginPage login;
 	public HLDAPIntialJourney HLSalesIntial;
@@ -19,14 +19,14 @@ public class TC03HLDAPSalariedHomeLoanIndian extends SetUp
 	public HLDAPEndJourney HLSalesEnd ;
 	
   @Test
-  public void HLDAPSalariedHomeloanIndian() throws Exception 
+  public void HLDAPHomeLoanSalariedIndian() throws Exception 
   {
-	  String sheetName = "HLDAPSalariedHomeLoanIndian";
+	  String sheetName = "HLDAPHomeLoanSalariedIndian";
 	  
-	  if (!(CommonMethods.isTestRunnable("HLDAPSalariedHomeloanIndian"))) {
+	  if (!(CommonMethods.isTestRunnable("HLDAPHomeLoanSalariedIndian"))) {
 
 			throw new SkipException(
-					"Skipping the test HLDAPSalariedHomeLoanIndian as the Run mode is NO");
+					"Skipping the test HLDAPHomeLoanSalariedIndian as the Run mode is NO");
 		}
 	   
 	   		//setUpTest();
