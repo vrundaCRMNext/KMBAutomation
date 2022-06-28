@@ -38,7 +38,9 @@ public class HLDAPEndJourney extends SetUp
 		ReferenceDetailsScreen(sheetName);
 		
 		String applicantType = ExcelOperation.getCellData(sheetName,"Applicant Type", 1);
-		if(applicantType.equalsIgnoreCase("Salaried"))
+		String SelfEmpType = ExcelOperation.getCellData(sheetName, "Individual/Non-Individual", 1);
+
+		if(applicantType.equalsIgnoreCase("Salaried")|| SelfEmpType.equalsIgnoreCase("Individual") )
 		{
 			workExpDetailScreen(sheetName);	
 		}

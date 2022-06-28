@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="0" failed="1" skipped="13">
+<testng-results ignored="0" total="14" passed="1" failed="0" skipped="13">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T16:02:40 IST" name="Suite" finished-at="2022-06-27T16:07:39 IST" duration-ms="298788">
+  <suite started-at="2022-06-28T12:27:01 IST" name="Suite" finished-at="2022-06-28T12:41:28 IST" duration-ms="866435">
     <groups>
     </groups>
-    <test started-at="2022-06-27T16:02:40 IST" name="CRM HL Lead Generation Test" finished-at="2022-06-27T16:02:45 IST" duration-ms="4835">
+    <test started-at="2022-06-28T12:27:01 IST" name="CRM HL Lead Generation Test" finished-at="2022-06-28T12:27:03 IST" duration-ms="1832">
       <class name="TestCases.TC01CRMHLLeadGeneration">
-        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@61019f59]" started-at="2022-06-27T16:02:40 IST" name="CRMHLLeadgeneration" finished-at="2022-06-27T16:02:45 IST" duration-ms="4803" status="SKIP">
+        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@1162410a]" started-at="2022-06-28T12:27:01 IST" name="CRMHLLeadgeneration" finished-at="2022-06-28T12:27:03 IST" duration-ms="1780" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test CRMHLLeadgeneration as the Run mode is NO]]>
@@ -49,11 +49,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CRMHLLeadgeneration -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@61019f59]" started-at="2022-06-27T16:02:45 IST" name="tearDownTest" finished-at="2022-06-27T16:02:45 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@1162410a]" started-at="2022-06-28T12:27:03 IST" name="tearDownTest" finished-at="2022-06-28T12:27:03 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -86,9 +86,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC01CRMHLLeadGeneration -->
     </test> <!-- CRM HL Lead Generation Test -->
-    <test started-at="2022-06-27T16:02:45 IST" name="Secured CC DAP Test" finished-at="2022-06-27T16:03:06 IST" duration-ms="20520">
+    <test started-at="2022-06-28T12:27:04 IST" name="Secured CC DAP Test" finished-at="2022-06-28T12:27:06 IST" duration-ms="2419">
       <class name="TestCases.TC02SecuredCCDAP">
-        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.TC02SecuredCCDAP@7d2a6eac]" started-at="2022-06-27T16:02:45 IST" name="SecuredCCDap" finished-at="2022-06-27T16:03:06 IST" duration-ms="20516" status="SKIP">
+        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.TC02SecuredCCDAP@678040b3]" started-at="2022-06-28T12:27:04 IST" name="SecuredCCDap" finished-at="2022-06-28T12:27:06 IST" duration-ms="2411" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test SecuredCCDap as the Run mode is NO]]>
@@ -130,11 +130,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecuredCCDap -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC02SecuredCCDAP@7d2a6eac]" started-at="2022-06-27T16:03:06 IST" name="tearDownTest" finished-at="2022-06-27T16:03:06 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC02SecuredCCDAP@678040b3]" started-at="2022-06-28T12:27:06 IST" name="tearDownTest" finished-at="2022-06-28T12:27:06 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -167,9 +167,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC02SecuredCCDAP -->
     </test> <!-- Secured CC DAP Test -->
-    <test started-at="2022-06-27T16:03:06 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-06-27T16:03:11 IST" duration-ms="5403">
+    <test started-at="2022-06-28T12:27:06 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-06-28T12:27:07 IST" duration-ms="496">
       <class name="TestCases.TC03HLDAPHomeLoanSalariedIndian">
-        <test-method signature="HLDAPHomeLoanSalariedIndian()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@88a8218]" started-at="2022-06-27T16:03:06 IST" name="HLDAPHomeLoanSalariedIndian" finished-at="2022-06-27T16:03:11 IST" duration-ms="5400" status="SKIP">
+        <test-method signature="HLDAPHomeLoanSalariedIndian()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@6aa648b9]" started-at="2022-06-28T12:27:06 IST" name="HLDAPHomeLoanSalariedIndian" finished-at="2022-06-28T12:27:07 IST" duration-ms="490" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanSalariedIndian as the Run mode is NO]]>
@@ -211,11 +211,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPHomeLoanSalariedIndian -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@88a8218]" started-at="2022-06-27T16:03:11 IST" name="tearDownTest" finished-at="2022-06-27T16:03:11 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@6aa648b9]" started-at="2022-06-28T12:27:07 IST" name="tearDownTest" finished-at="2022-06-28T12:27:07 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -248,9 +248,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC03HLDAPHomeLoanSalariedIndian -->
     </test> <!-- HLDAP Salaried Home loan Indian -->
-    <test started-at="2022-06-27T16:03:11 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-06-27T16:03:18 IST" duration-ms="6581">
+    <test started-at="2022-06-28T12:27:07 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-06-28T12:27:07 IST" duration-ms="545">
       <class name="TestCases.TC04HLDAPHomeLoanSalariedNRI">
-        <test-method signature="HLDAPHomeLoanSalariedNRI()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@5f574cc2]" started-at="2022-06-27T16:03:11 IST" name="HLDAPHomeLoanSalariedNRI" finished-at="2022-06-27T16:03:18 IST" duration-ms="6577" status="SKIP">
+        <test-method signature="HLDAPHomeLoanSalariedNRI()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@3e681bc]" started-at="2022-06-28T12:27:07 IST" name="HLDAPHomeLoanSalariedNRI" finished-at="2022-06-28T12:27:07 IST" duration-ms="540" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanSalariedNRI sas the Run mode is NO]]>
@@ -292,11 +292,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPHomeLoanSalariedNRI -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@5f574cc2]" started-at="2022-06-27T16:03:18 IST" name="tearDownTest" finished-at="2022-06-27T16:03:18 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@3e681bc]" started-at="2022-06-28T12:27:07 IST" name="tearDownTest" finished-at="2022-06-28T12:27:07 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -329,9 +329,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC04HLDAPHomeLoanSalariedNRI -->
     </test> <!-- HLDAP Salaried Home loan NRI -->
-    <test started-at="2022-06-27T16:03:18 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-06-27T16:03:26 IST" duration-ms="7760">
+    <test started-at="2022-06-28T12:27:07 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-06-28T12:27:08 IST" duration-ms="617">
       <class name="TestCases.TC05HLDAPHomeLoanIndividual">
-        <test-method signature="HLDAPHomeLoanIndividual()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@53bf7094]" started-at="2022-06-27T16:03:18 IST" name="HLDAPHomeLoanIndividual" finished-at="2022-06-27T16:03:26 IST" duration-ms="7756" status="SKIP">
+        <test-method signature="HLDAPHomeLoanIndividual()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@48d7ad8b]" started-at="2022-06-28T12:27:07 IST" name="HLDAPHomeLoanIndividual" finished-at="2022-06-28T12:27:08 IST" duration-ms="612" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanIndividual as the Run mode is NO]]>
@@ -373,11 +373,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPHomeLoanIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@53bf7094]" started-at="2022-06-27T16:03:26 IST" name="tearDownTest" finished-at="2022-06-27T16:03:26 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@48d7ad8b]" started-at="2022-06-28T12:27:08 IST" name="tearDownTest" finished-at="2022-06-28T12:27:08 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -410,9 +410,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC05HLDAPHomeLoanIndividual -->
     </test> <!-- HLDAP SelfEmployed Individual Home loan  -->
-    <test started-at="2022-06-27T16:03:26 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-06-27T16:03:35 IST" duration-ms="9045">
+    <test started-at="2022-06-28T12:27:08 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-06-28T12:27:09 IST" duration-ms="739">
       <class name="TestCases.TC06HLDAPHomeLoanNonIndividual">
-        <test-method signature="HLDAPHomeLoanNonIndividual()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@1b1637e1]" started-at="2022-06-27T16:03:26 IST" name="HLDAPHomeLoanNonIndividual" finished-at="2022-06-27T16:03:35 IST" duration-ms="9041" status="SKIP">
+        <test-method signature="HLDAPHomeLoanNonIndividual()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@28b576a9]" started-at="2022-06-28T12:27:08 IST" name="HLDAPHomeLoanNonIndividual" finished-at="2022-06-28T12:27:09 IST" duration-ms="735" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanNonIndividual as the Run mode is NO]]>
@@ -454,11 +454,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPHomeLoanNonIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@1b1637e1]" started-at="2022-06-27T16:03:35 IST" name="tearDownTest" finished-at="2022-06-27T16:03:35 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@28b576a9]" started-at="2022-06-28T12:27:09 IST" name="tearDownTest" finished-at="2022-06-28T12:27:09 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -491,9 +491,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC06HLDAPHomeLoanNonIndividual -->
     </test> <!-- HLDAP SelfEmployed NonIndividual Home loan  -->
-    <test started-at="2022-06-27T16:03:35 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-06-27T16:03:45 IST" duration-ms="10315">
+    <test started-at="2022-06-28T12:27:09 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-06-28T12:27:09 IST" duration-ms="694">
       <class name="TestCases.TC07HLDAPBalanceTransferSalariedIndian">
-        <test-method signature="HLDAPBalanceTransferSalariedIndian()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@1bf0f6f6]" started-at="2022-06-27T16:03:35 IST" name="HLDAPBalanceTransferSalariedIndian" finished-at="2022-06-27T16:03:45 IST" duration-ms="10312" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferSalariedIndian()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@3c1e23ff]" started-at="2022-06-28T12:27:09 IST" name="HLDAPBalanceTransferSalariedIndian" finished-at="2022-06-28T12:27:09 IST" duration-ms="689" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferSalariedIndian as the Run mode is NO]]>
@@ -535,11 +535,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPBalanceTransferSalariedIndian -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@1bf0f6f6]" started-at="2022-06-27T16:03:45 IST" name="tearDownTest" finished-at="2022-06-27T16:03:45 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@3c1e23ff]" started-at="2022-06-28T12:27:09 IST" name="tearDownTest" finished-at="2022-06-28T12:27:09 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -572,9 +572,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC07HLDAPBalanceTransferSalariedIndian -->
     </test> <!-- HLDAP Salaried Balance Transfer Indian  -->
-    <test started-at="2022-06-27T16:03:45 IST" name="HLDAP Salaried Balance Transfer NRI " finished-at="2022-06-27T16:03:57 IST" duration-ms="11694">
+    <test started-at="2022-06-28T12:27:09 IST" name="HLDAP Salaried Balance Transfer NRI " finished-at="2022-06-28T12:27:10 IST" duration-ms="880">
       <class name="TestCases.TC08HLDAPBalanceTransferSalariedNRI">
-        <test-method signature="HLDAPBalanceTransferSalariedNRI()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@3359c978]" started-at="2022-06-27T16:03:45 IST" name="HLDAPBalanceTransferSalariedNRI" finished-at="2022-06-27T16:03:57 IST" duration-ms="11692" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferSalariedNRI()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@3ecedf21]" started-at="2022-06-28T12:27:09 IST" name="HLDAPBalanceTransferSalariedNRI" finished-at="2022-06-28T12:27:10 IST" duration-ms="873" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferSalariedNRI as the Run mode is NO]]>
@@ -616,11 +616,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPBalanceTransferSalariedNRI -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@3359c978]" started-at="2022-06-27T16:03:57 IST" name="tearDownTest" finished-at="2022-06-27T16:03:57 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@3ecedf21]" started-at="2022-06-28T12:27:10 IST" name="tearDownTest" finished-at="2022-06-28T12:27:10 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -653,9 +653,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC08HLDAPBalanceTransferSalariedNRI -->
     </test> <!-- HLDAP Salaried Balance Transfer NRI  -->
-    <test started-at="2022-06-27T16:03:57 IST" name="HLDAP Salaried Balance Transfer Individual " finished-at="2022-06-27T16:04:10 IST" duration-ms="12877">
+    <test started-at="2022-06-28T12:27:10 IST" name="HLDAP Salaried Balance Transfer Individual " finished-at="2022-06-28T12:27:11 IST" duration-ms="825">
       <class name="TestCases.TC09HLDAPBalanceTransferIndividual">
-        <test-method signature="HLDAPBalanceTransferIndividual()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@1f9d6c7b]" started-at="2022-06-27T16:03:57 IST" name="HLDAPBalanceTransferIndividual" finished-at="2022-06-27T16:04:10 IST" duration-ms="12874" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferIndividual()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@125c082e]" started-at="2022-06-28T12:27:10 IST" name="HLDAPBalanceTransferIndividual" finished-at="2022-06-28T12:27:11 IST" duration-ms="820" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferIndividual as the Run mode is NO]]>
@@ -697,11 +697,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPBalanceTransferIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@1f9d6c7b]" started-at="2022-06-27T16:04:10 IST" name="tearDownTest" finished-at="2022-06-27T16:04:10 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@125c082e]" started-at="2022-06-28T12:27:11 IST" name="tearDownTest" finished-at="2022-06-28T12:27:11 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -734,9 +734,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC09HLDAPBalanceTransferIndividual -->
     </test> <!-- HLDAP Salaried Balance Transfer Individual  -->
-    <test started-at="2022-06-27T16:04:10 IST" name="HLDAP Salaried Balance Transfer Non Individual " finished-at="2022-06-27T16:04:24 IST" duration-ms="14406">
+    <test started-at="2022-06-28T12:27:11 IST" name="HLDAP Salaried Balance Transfer Non Individual " finished-at="2022-06-28T12:27:12 IST" duration-ms="840">
       <class name="TestCases.TC10HLDAPBalanceTransferNonIndividual">
-        <test-method signature="HLDAPBalanceTransferNonIndividual()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@181d7f28]" started-at="2022-06-27T16:04:10 IST" name="HLDAPBalanceTransferNonIndividual" finished-at="2022-06-27T16:04:24 IST" duration-ms="14403" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferNonIndividual()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@341a8659]" started-at="2022-06-28T12:27:11 IST" name="HLDAPBalanceTransferNonIndividual" finished-at="2022-06-28T12:27:12 IST" duration-ms="837" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferNonIndividual as the Run mode is NO]]>
@@ -778,11 +778,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPBalanceTransferNonIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@181d7f28]" started-at="2022-06-27T16:04:24 IST" name="tearDownTest" finished-at="2022-06-27T16:04:24 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@341a8659]" started-at="2022-06-28T12:27:12 IST" name="tearDownTest" finished-at="2022-06-28T12:27:12 IST" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -815,9 +815,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC10HLDAPBalanceTransferNonIndividual -->
     </test> <!-- HLDAP Salaried Balance Transfer Non Individual  -->
-    <test started-at="2022-06-27T16:04:24 IST" name="HLDAP Salaried Only Top Up Indian " finished-at="2022-06-27T16:04:41 IST" duration-ms="16334">
+    <test started-at="2022-06-28T12:27:12 IST" name="HLDAP Salaried Only Top Up Indian " finished-at="2022-06-28T12:27:13 IST" duration-ms="900">
       <class name="TestCases.TC11HLDAPOnlyTopUpSalariedIndian">
-        <test-method signature="HLDAPOnlyTopUpSalariedIndian()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@6a078481]" started-at="2022-06-27T16:04:24 IST" name="HLDAPOnlyTopUpSalariedIndian" finished-at="2022-06-27T16:04:41 IST" duration-ms="16331" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpSalariedIndian()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@7f4d9395]" started-at="2022-06-28T12:27:12 IST" name="HLDAPOnlyTopUpSalariedIndian" finished-at="2022-06-28T12:27:13 IST" duration-ms="895" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpSalariedIndian as the Run mode is NO]]>
@@ -859,11 +859,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPOnlyTopUpSalariedIndian -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@6a078481]" started-at="2022-06-27T16:04:41 IST" name="tearDownTest" finished-at="2022-06-27T16:04:41 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@7f4d9395]" started-at="2022-06-28T12:27:13 IST" name="tearDownTest" finished-at="2022-06-28T12:27:13 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -896,9 +896,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC11HLDAPOnlyTopUpSalariedIndian -->
     </test> <!-- HLDAP Salaried Only Top Up Indian  -->
-    <test started-at="2022-06-27T16:04:41 IST" name="HLDAP Salaried Only Top Up NRI " finished-at="2022-06-27T16:04:58 IST" duration-ms="17048">
+    <test started-at="2022-06-28T12:27:13 IST" name="HLDAP Salaried Only Top Up NRI " finished-at="2022-06-28T12:27:14 IST" duration-ms="1083">
       <class name="TestCases.TC12HLDAPOnlyTopUpSalariedNRI">
-        <test-method signature="HLDAPOnlyTopUpSalariedNRI()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@676f0a60]" started-at="2022-06-27T16:04:41 IST" name="HLDAPOnlyTopUpSalariedNRI" finished-at="2022-06-27T16:04:58 IST" duration-ms="17044" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpSalariedNRI()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@27f3b6d6]" started-at="2022-06-28T12:27:13 IST" name="HLDAPOnlyTopUpSalariedNRI" finished-at="2022-06-28T12:27:14 IST" duration-ms="1080" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpSalariedNRI as the Run mode is NO]]>
@@ -940,11 +940,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPOnlyTopUpSalariedNRI -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@676f0a60]" started-at="2022-06-27T16:04:58 IST" name="tearDownTest" finished-at="2022-06-27T16:04:58 IST" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@27f3b6d6]" started-at="2022-06-28T12:27:14 IST" name="tearDownTest" finished-at="2022-06-28T12:27:14 IST" duration-ms="0" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -977,51 +977,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC12HLDAPOnlyTopUpSalariedNRI -->
     </test> <!-- HLDAP Salaried Only Top Up NRI  -->
-    <test started-at="2022-06-27T16:04:58 IST" name="HLDAP Salaried Only Top Up Individual " finished-at="2022-06-27T16:07:20 IST" duration-ms="142124">
+    <test started-at="2022-06-28T12:27:14 IST" name="HLDAP Salaried Only Top Up Individual " finished-at="2022-06-28T12:41:08 IST" duration-ms="834067">
       <class name="TestCases.TC13HLDAPOnlyTopUpIndividual">
-        <test-method signature="HLDAPOnlyTopUpIndividual()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@6759f091]" started-at="2022-06-27T16:04:58 IST" name="HLDAPOnlyTopUpIndividual" finished-at="2022-06-27T16:07:19 IST" duration-ms="141290" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="HLDAPOnlyTopUpIndividual()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@14a54ef6]" started-at="2022-06-28T12:27:14 IST" name="HLDAPOnlyTopUpIndividual" finished-at="2022-06-28T12:41:07 IST" duration-ms="833210" status="PASS">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Applicant Name']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36c12287fb6b5b86aab100f7c4e099a7, findElement {using=xpath, value=//input[@placeholder='Applicant Name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36c12287fb6b5b86aab100f7c4e099a7]]>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Regulatory Fields']' (tried for 70 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Applicant Name']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36c12287fb6b5b86aab100f7c4e099a7, findElement {using=xpath, value=//input[@placeholder='Applicant Name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36c12287fb6b5b86aab100f7c4e099a7
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy31.getAttribute(Unknown Source)
-at POM_HLSalesDAP.HLDAPIntialJourney.Sal_ETB_NTBCheck(HLDAPIntialJourney.java:460)
-at TestCases.TC13HLDAPOnlyTopUpIndividual.HLDAPOnlyTopUpIndividual(TC13HLDAPOnlyTopUpIndividual.java:45)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[text()='Regulatory Fields']' (tried for 70 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at CommonUtility.CommonMethods.ExWait(CommonMethods.java:86)
+at CommonUtility.CommonMethods.getElementText(CommonMethods.java:69)
+at POM_HLSalesDAP.HLDAPEndJourney.regulatoryDetailsScreen(HLDAPEndJourney.java:347)
+at POM_HLSalesDAP.HLDAPEndJourney.runEndJourney(HLDAPEndJourney.java:52)
+at TestCases.TC13HLDAPOnlyTopUpIndividual.HLDAPOnlyTopUpIndividual(TC13HLDAPOnlyTopUpIndividual.java:64)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1050,21 +1021,53 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Regulatory Fields']"}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5b6dbefca876de476889bb09fef6ceae, findElement {using=xpath, value=//span[text()='Regulatory Fields']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52579/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b6dbefca876de476889bb09fef6ceae
+at jdk.internal.reflect.GeneratedConstructorAccessor68.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy31.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPOnlyTopUpIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@6759f091]" started-at="2022-06-27T16:07:19 IST" name="tearDownTest" finished-at="2022-06-27T16:07:20 IST" duration-ms="727" status="PASS">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@14a54ef6]" started-at="2022-06-28T12:41:07 IST" name="tearDownTest" finished-at="2022-06-28T12:41:08 IST" duration-ms="744" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- TestCases.TC13HLDAPOnlyTopUpIndividual -->
     </test> <!-- HLDAP Salaried Only Top Up Individual  -->
-    <test started-at="2022-06-27T16:07:20 IST" name="HLDAP Salaried Only Top Up Non Individual " finished-at="2022-06-27T16:07:39 IST" duration-ms="19239">
+    <test started-at="2022-06-28T12:41:08 IST" name="HLDAP Salaried Only Top Up Non Individual " finished-at="2022-06-28T12:41:28 IST" duration-ms="19737">
       <class name="TestCases.TC14HLDAPOnlyTopUpNonIndividual">
-        <test-method signature="HLDAPOnlyTopUpNonIndividual()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@55b5e331]" started-at="2022-06-27T16:07:20 IST" name="HLDAPOnlyTopUpNonIndividual" finished-at="2022-06-27T16:07:39 IST" duration-ms="19235" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpNonIndividual()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@15fc442]" started-at="2022-06-28T12:41:08 IST" name="HLDAPOnlyTopUpNonIndividual" finished-at="2022-06-28T12:41:28 IST" duration-ms="19730" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpNonIndividual as the Run mode is NO]]>
@@ -1106,7 +1109,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPOnlyTopUpNonIndividual -->
-        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@55b5e331]" started-at="2022-06-27T16:07:39 IST" name="tearDownTest" finished-at="2022-06-27T16:07:39 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="tearDownTest()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@15fc442]" started-at="2022-06-28T12:41:28 IST" name="tearDownTest" finished-at="2022-06-28T12:41:28 IST" duration-ms="1" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[Session ID is null. Using WebDriver after calling quit()?
@@ -1114,7 +1117,7 @@ Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52579/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
@@ -1122,7 +1125,7 @@ Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52579}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52579/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
@@ -1130,7 +1133,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:614)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
 at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:444)
-at CommonUtility.SetUp.tearDownTest(SetUp.java:164)
+at CommonUtility.SetUp.tearDownTest(SetUp.java:142)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

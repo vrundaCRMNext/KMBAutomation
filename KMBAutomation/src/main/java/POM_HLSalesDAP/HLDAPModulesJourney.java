@@ -143,12 +143,11 @@ public class HLDAPModulesJourney extends SetUp
 	@FindBy(xpath="//div[@name='NRI_PAN_Container'] //input")				//NRI PAN FLd
 	private WebElement NRIPANFld;
 	
-	@FindBy(xpath="//div[@name=\"Enitity_PAN_Container\"] //input")      //Entity PAN fld
+	@FindBy(xpath="//div[@name=\"Entity_PAN_Container\"] //input")      //Entity PAN fld
 	private WebElement EntityPANFld;
 	
 	@FindBy(xpath="//div[contains(text(),'Entity PAN No')]")        //Entity PAN Lbl
 	private WebElement EntityPANLbl;
-	
 	
 	@FindBy(xpath="//div[contains(text(),'Address line 1')]")				//Address1 lbl
 	private WebElement Add1Lbl;
@@ -194,7 +193,9 @@ public class HLDAPModulesJourney extends SetUp
 					//js.executeScript("document.getElementById('txtmissing_207').value= 'AQPPR4745L' ; " );
 					//js.executeScript(" document.getElementById('txtmissing_207').value ='" + PAN + "' ; " );
 					String applicantType = ExcelOperation.getCellData(sheetName, "Applicant Type", 1);
-					if(applicantType.equalsIgnoreCase("Salaried"))
+					String SelfEmpType = ExcelOperation.getCellData(sheetName, "Individual/Non-Individual", 1);
+					
+					if(applicantType.equalsIgnoreCase("Salaried") || SelfEmpType.equalsIgnoreCase("Individual"))
 					{
 						CommonMethods.input(PANFld, sheetName, "PAN", 1);
 						String PANval = CommonMethods.getElementValue(PANFld);
@@ -203,7 +204,8 @@ public class HLDAPModulesJourney extends SetUp
 							CommonMethods.input(PANFld, sheetName, "PAN", 1);
 						}
 					}
-					else if(applicantType.equalsIgnoreCase("Self employed"))
+					//else if(applicantType.equalsIgnoreCase("Self employed"))
+					else if(SelfEmpType.equalsIgnoreCase("Non-Individual"))
 					{
 						CommonMethods.input(EntityPANFld, sheetName, "PAN", 1);
 						
@@ -214,7 +216,6 @@ public class HLDAPModulesJourney extends SetUp
 			
 			
 			//Address Line1
-				Thread.sleep(1000);
 				//CommonMethods.Click(Add1Fld);
 				//String Add1 = ExcelOperation.getCellData(sheetName, "Address line 1", 1);
 				//js.executeScript("document.getElementById('txtmissing_225').value='A-302, Dahisar Sagar CHS, GharatanPada 2' ;" );
@@ -222,7 +223,6 @@ public class HLDAPModulesJourney extends SetUp
 				log.info(CommonMethods.getElementText(Add1Lbl)+" = "+CommonMethods.getElementValue(Add1Fld));
 
 			//Address 2
-					Thread.sleep(1000);
 					CommonMethods.input(Add2Fld, sheetName, "Address line 2", 1);
 					log.info(CommonMethods.getElementText(Add2Lbl)+" = "+CommonMethods.getElementValue(Add2Fld));
 					

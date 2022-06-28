@@ -28,9 +28,10 @@ public class HLDAPOnlyTopUp extends SetUp
 	@FindBy(xpath="//span[contains(text(),'EMI Paid Currently')]")			//EMI lbl
 	private WebElement EMILbl;
 	
-	@FindBy(xpath="//input[@data-tip=\"Please enter EMI\"]")			//EMI fld
+	@FindBy(xpath="//span[contains(text(),'EMI Paid ')]/following::div[1] //input")			//EMI fld
 	private WebElement EMIFld;
 	//span[contains(text(),'EMI Paid ')]/following::div[1] //input
+	//input[@data-tip=\"Please enter EMI\"]
 	
 	@FindBy(xpath="//span[contains(text(),'Purchase price of property')]")		//price of Property Lbl
 	private WebElement priceOfPropertyLbl;

@@ -124,16 +124,6 @@
       </class> <!-- TestCases.TC12HLDAPOnlyTopUpSalariedNRI -->
     </classes>
   </test> <!-- HLDAP Salaried Only Top Up NRI (failed) -->
-  <test thread-count="5" name="HLDAP Salaried Only Top Up Individual (failed)">
-    <classes>
-      <class name="TestCases.TC13HLDAPOnlyTopUpIndividual">
-        <methods>
-          <include name="tearDownTest"/>
-          <include name="HLDAPOnlyTopUpIndividual"/>
-        </methods>
-      </class> <!-- TestCases.TC13HLDAPOnlyTopUpIndividual -->
-    </classes>
-  </test> <!-- HLDAP Salaried Only Top Up Individual (failed) -->
   <test thread-count="5" name="HLDAP Salaried Only Top Up Non Individual (failed)">
     <classes>
       <class name="TestCases.TC14HLDAPOnlyTopUpNonIndividual">

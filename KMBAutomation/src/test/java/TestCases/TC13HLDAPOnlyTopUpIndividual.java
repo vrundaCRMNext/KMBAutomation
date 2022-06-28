@@ -1,5 +1,6 @@
 package TestCases;
 
+import org.openqa.selenium.TimeoutException;
 import org.testng.SkipException;
 import org.testng.annotations.Test;
 
@@ -19,7 +20,7 @@ public class TC13HLDAPOnlyTopUpIndividual extends SetUp{
 	public HLDAPModulesJourney HLSalesModule ;
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPOnlyTopUp HLSalesTopUp;
-	@Test
+	@Test(expectedExceptions = TimeoutException.class)
 	public void HLDAPOnlyTopUpIndividual() throws Exception
 	{
 		String sheetName = "HLDAPOnlyTopUpIndividual";

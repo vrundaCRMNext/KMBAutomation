@@ -36,28 +36,6 @@ public class SetUp implements AutoConst
 	//public static JavascriptExecutor js = (JavascriptExecutor) driver;
 	static Logger log = LoggerFactory.getLogger(SetUp.class);
 
-	
-	/*
-	 * public static void browserLaunch() throws IOException { Properties prop=new
-	 * Properties(); String currentDir =System.getProperty("user.dir");
-	 * FileInputStream fis =new FileInputStream(currentDir+
-	 * "\\src\\main\\java\\CommonUtility\\Config.properties");
-	 * 
-	 * prop.load(fis);
-	 * 
-	 * String browserName=prop.getProperty("Browser"); //using webdriver manager
-	 * if(browserName.equalsIgnoreCase("Chrome")) { ChromeOptions chromeOptions =
-	 * new ChromeOptions(); WebDriverManager.chromedriver().setup(); driver = new
-	 * ChromeDriver(chromeOptions); log.info("Chrome Browser Launched.."); } else
-	 * if(browserName.equalsIgnoreCase("Firefox")) {
-	 * 
-	 * FirefoxOptions firefoxOptions = new FirefoxOptions();
-	 * WebDriverManager.firefoxdriver().setup(); driver = new
-	 * FirefoxDriver(firefoxOptions); log.info("Firefox Browser Launched.."); }
-	 * 
-	 * }
-	 */
-	
 	public static void setUpTest() throws IOException 
 	{
 		

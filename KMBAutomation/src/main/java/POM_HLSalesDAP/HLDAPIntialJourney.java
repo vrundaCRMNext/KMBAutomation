@@ -656,7 +656,7 @@ public class HLDAPIntialJourney extends SetUp
 					CommonMethods.Click(srchLeadIcon);
 					CommonMethods.input(MobileNoSrch, sheetName,"Mobile No",1);
 					CommonMethods.Click(srchBtn);
-					Thread.sleep(1500);
+					Thread.sleep(2000);
 				
 					try {
 				//Click on recently created lead from the list of leads with same mobile no

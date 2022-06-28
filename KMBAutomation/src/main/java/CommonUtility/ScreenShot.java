@@ -122,7 +122,6 @@ public class ScreenShot extends SetUp implements AutoConst
 			//Copy file at destination
 			FileUtils.copyFile(SrcFile, DestFile);
 			log.info("ScreenShot captured "+name+ " || Status :"+status);
-			
 		}catch(Exception e)
 		{
 			log.error("Unbale to capture screenshot due to "+e.getMessage());

@@ -1,590 +1,243 @@
-2022-06-27 13:52:49 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 13:52:51 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:51 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 13:52:53 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:53 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 13:52:54 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:54 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 13:52:54 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:54 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 13:52:55 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:55 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 13:52:55 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:56 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 13:52:56 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:56 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 13:52:57 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:57 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 13:52:58 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:58 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 13:52:59 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:52:59 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 13:53:00 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:53:00 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 13:53:01 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 13:53:01 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 13:53:11 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 13:53:11 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 13:53:13 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 13:53:15 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 13:53:17 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 13:53:18 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 13:53:28 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 13:53:38 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
-2022-06-27 13:53:38 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
-2022-06-27 13:53:41 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 13:53:41 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 13:53:41 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 13:53:48 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (bd6c68033615ee15d41d20d5904c18aa)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 13:53:51 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 13:53:51 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 13:53:53 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 13:53:53 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 13:53:55 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 13:53:55 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 13:53:55 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 13:53:55 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 13:54:01 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (bd6c68033615ee15d41d20d5904c18aa)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 13:54:02 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 13:54:03 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 13:54:03 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 13:54:04 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 13:54:06 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 13:54:09 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 13:54:11 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 13:54:11 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 13:54:15 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 13:54:18 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 13:54:19 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 13:54:24 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
-2022-06-27 13:54:25 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
-2022-06-27 13:54:27 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
-2022-06-27 13:54:29 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
-2022-06-27 13:54:30 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
-2022-06-27 13:54:31 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
-2022-06-27 13:54:42 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
-2022-06-27 13:54:42 INFO  HLDAPIntialJourney - OTP Verification started
-2022-06-27 13:55:03 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 13:55:20 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 13:55:20 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 13:55:22 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 13:55:27 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104474
-2022-06-27 13:55:43 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 13:55:47 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 1:54 PM
-2022-06-27 13:55:54 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 13:55:54 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=61B7DC74A0121A72&CheckSum=98273465 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
-2022-06-27 13:55:54 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=61B7DC74A0121A72&CheckSum=98273465
-2022-06-27 13:55:59 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
-2022-06-27 13:56:00 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
-2022-06-27 13:56:15 INFO  HLDAPIntialJourney - OTP has been verified successfully
-2022-06-27 13:57:26 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
-Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='App_Container']/span' (tried for 70 second(s) with 500 milliseconds interval)
-2022-06-27 13:57:26 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
-2022-06-27 13:57:26 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
-2022-06-27 13:57:54 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 13:57:54 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 13:57:56 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 13:57:59 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 13:58:05 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 13:58:12 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 13:58:24 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 13:58:28 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
-2022-06-27 13:58:30 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
-2022-06-27 13:58:33 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 13:58:33 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 13:58:33 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 13:58:40 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (ede5191c99a7bf5e5a424a83c86612cb)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 13:58:43 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 13:58:43 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 13:58:46 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 13:58:46 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 13:58:48 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 13:58:50 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 13:58:50 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 13:58:50 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 13:58:55 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (ede5191c99a7bf5e5a424a83c86612cb)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 13:58:58 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 13:59:00 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 13:59:00 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 13:59:02 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 13:59:05 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 13:59:10 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 13:59:17 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 13:59:21 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 13:59:32 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 13:59:40 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 13:59:41 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 13:59:50 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
-2022-06-27 13:59:53 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
-2022-06-27 13:59:58 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
-2022-06-27 14:00:04 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
-2022-06-27 14:00:06 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
-2022-06-27 14:00:07 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
-2022-06-27 14:00:20 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
-2022-06-27 14:00:20 INFO  HLDAPIntialJourney - OTP Verification started
-2022-06-27 14:00:35 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 14:00:42 ERROR CommonMethods - Not able to click on 00104724 Due to stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+2022-06-28 12:12:34 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
+2022-06-28 12:12:36 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:37 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
+2022-06-28 12:12:39 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:39 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
+2022-06-28 12:12:40 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:40 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
+2022-06-28 12:12:40 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:40 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
+2022-06-28 12:12:41 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:41 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
+2022-06-28 12:12:42 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:42 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
+2022-06-28 12:12:43 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:43 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
+2022-06-28 12:12:44 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:44 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
+2022-06-28 12:12:45 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:45 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
+2022-06-28 12:12:46 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:46 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
+2022-06-28 12:12:47 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:47 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
+2022-06-28 12:12:47 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:12:48 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
+2022-06-28 12:12:53 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-28 12:12:53 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-28 12:12:55 INFO  SetUp - Chrome Browser Launched..
+2022-06-28 12:12:56 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-06-28 12:12:58 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
+2022-06-28 12:13:00 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-06-28 12:13:16 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
+2022-06-28 12:13:20 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
+2022-06-28 12:13:20 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
+2022-06-28 12:13:22 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
+2022-06-28 12:13:22 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
+2022-06-28 12:13:22 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
+2022-06-28 12:13:30 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (660c680cca6f89f15613be9a014e5e7f)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
+2022-06-28 12:13:33 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
+2022-06-28 12:13:33 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
+2022-06-28 12:13:34 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
+2022-06-28 12:13:34 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
+2022-06-28 12:13:38 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
+2022-06-28 12:13:38 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
+2022-06-28 12:13:38 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
+2022-06-28 12:13:38 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
+2022-06-28 12:13:43 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (660c680cca6f89f15613be9a014e5e7f)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
+2022-06-28 12:13:45 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
+2022-06-28 12:13:45 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
+2022-06-28 12:13:45 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
+2022-06-28 12:13:46 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
+2022-06-28 12:13:49 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
+2022-06-28 12:13:51 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
+2022-06-28 12:13:53 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
+2022-06-28 12:13:57 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
+2022-06-28 12:14:00 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
+2022-06-28 12:14:02 INFO  HLDAPIntialJourney - Date :14 get selected
+2022-06-28 12:14:06 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
+2022-06-28 12:14:08 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
+2022-06-28 12:14:10 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
+2022-06-28 12:14:13 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
+2022-06-28 12:14:13 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
+2022-06-28 12:14:14 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
+2022-06-28 12:17:21 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
+java.util.concurrent.TimeoutException
 Build info: version: '4.1.0', revision: '87802e897b'
 System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ede5191c99a7bf5e5a424a83c86612cb, clickElement {id=3088e421-ec2b-4e6e-a38c-74f7eeaaeb4b}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64511/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ede5191c99a7bf5e5a424a83c86612cb)] -> xpath: //a[@data-autoid='LeadID_0']]
-Session ID: ede5191c99a7bf5e5a424a83c86612cb
-2022-06-27 14:00:43 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 14:00:45 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 14:01:11 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 14:01:15 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104724
-2022-06-27 14:01:19 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 14:01:22 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 2:00 PM
-2022-06-27 14:01:27 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 14:01:28 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=96DD240DB61301DF&CheckSum=12313431 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
-2022-06-27 14:01:28 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=96DD240DB61301DF&CheckSum=12313431
-2022-06-27 14:01:31 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
-2022-06-27 14:01:32 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
-2022-06-27 14:01:42 INFO  HLDAPIntialJourney - OTP has been verified successfully
-2022-06-27 14:01:53 INFO  HLDAPIntialJourney - Select Applicants Resident Type
-2022-06-27 14:01:54 INFO  HLDAPIntialJourney - Resident Indian get selected
-2022-06-27 14:01:57 INFO  HLDAPIntialJourney - Resident Country = null
-2022-06-27 14:02:02 INFO  CommonMethods - Data Sucessfully entered on  = Mumbai
-2022-06-27 14:02:05 INFO  HLDAPIntialJourney - Resident City = Mumbai
-2022-06-27 14:02:10 INFO  CommonMethods - Data Sucessfully entered on  = 400002
-2022-06-27 14:02:12 INFO  HLDAPIntialJourney - Resident Pincode = 400002
-2022-06-27 14:02:12 INFO  ScreenShot - ScreenShot captured IndianResidentScreen || Status :Pass
-2022-06-27 14:02:16 INFO  ScreenShot - ScreenShot captured DigitalInprincipleSaction || Status :Pass
-2022-06-27 14:02:20 INFO  ScreenShot - ScreenShot captured UserConsentScreen || Status :Pass
-2022-06-27 14:02:24 INFO  ScreenShot - ScreenShot captured ConsentWaitingScreen || Status :Pass
-2022-06-27 14:02:26 INFO  HLDAPModulesJourney - Consent Approval started
-2022-06-27 14:02:35 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 14:02:42 ERROR CommonMethods - Not able to click on 00104724 Due to stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ede5191c99a7bf5e5a424a83c86612cb, clickElement {id=35f38864-ea8d-471b-b06d-6eaa4e8e29a0}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64511}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64511/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (ede5191c99a7bf5e5a424a83c86612cb)] -> xpath: //a[@data-autoid='LeadID_0']]
-Session ID: ede5191c99a7bf5e5a424a83c86612cb
-2022-06-27 14:02:43 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 14:02:44 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 14:03:11 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 14:03:15 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104724
-2022-06-27 14:03:18 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 14:03:22 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 2:02 PM
-2022-06-27 14:03:26 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 14:03:27 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/HL_Consent?LeadId=96DD240DB61301DF&CheckSum=1144687 to record various Consents to proceed with your online Kotak Home Loan application.
-2022-06-27 14:03:27 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/HL_Consent?LeadId=96DD240DB61301DF&CheckSum=1144687
-2022-06-27 14:03:31 INFO  ScreenShot - ScreenShot captured LeadConsentScreen || Status :Pass
-2022-06-27 14:03:31 INFO  HLDAPModulesJourney - Terms & Conditions
+Command: [660c680cca6f89f15613be9a014e5e7f, findElement {using=xpath, value=//div[@name='Container 1']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52033}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52033/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 660c680cca6f89f15613be9a014e5e7f
+2022-06-28 12:17:29 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
+2022-06-28 12:17:30 INFO  SetUp - Browser Closed..
+2022-06-28 12:17:30 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
+2022-06-28 12:17:31 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:01 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
+2022-06-28 12:27:03 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:04 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
+2022-06-28 12:27:06 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:06 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
+2022-06-28 12:27:07 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:07 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
+2022-06-28 12:27:07 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:07 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
+2022-06-28 12:27:08 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:08 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
+2022-06-28 12:27:09 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:09 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
+2022-06-28 12:27:09 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:09 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
+2022-06-28 12:27:10 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:10 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
+2022-06-28 12:27:11 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:11 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
+2022-06-28 12:27:12 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:12 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
+2022-06-28 12:27:13 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:13 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
+2022-06-28 12:27:14 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:27:14 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
+2022-06-28 12:27:15 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
+2022-06-28 12:27:15 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
+2022-06-28 12:27:18 INFO  SetUp - Chrome Browser Launched..
+2022-06-28 12:27:19 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
+2022-06-28 12:27:21 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
+2022-06-28 12:27:23 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
+2022-06-28 12:27:30 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
+2022-06-28 12:27:35 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
+2022-06-28 12:27:36 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
+2022-06-28 12:27:37 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
+2022-06-28 12:27:37 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
+2022-06-28 12:27:37 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
+2022-06-28 12:27:45 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (5b6dbefca876de476889bb09fef6ceae)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
+2022-06-28 12:27:48 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
+2022-06-28 12:27:48 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
+2022-06-28 12:27:49 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
+2022-06-28 12:27:50 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
+2022-06-28 12:27:53 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
+2022-06-28 12:27:53 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
+2022-06-28 12:27:53 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
+2022-06-28 12:27:53 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
+2022-06-28 12:27:58 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (5b6dbefca876de476889bb09fef6ceae)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
+2022-06-28 12:27:59 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
+2022-06-28 12:27:59 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
+2022-06-28 12:27:59 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
+2022-06-28 12:28:02 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
+2022-06-28 12:28:04 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
+2022-06-28 12:28:07 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
+2022-06-28 12:28:08 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
+2022-06-28 12:28:12 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
+2022-06-28 12:28:15 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
+2022-06-28 12:28:17 INFO  HLDAPIntialJourney - Date :14 get selected
+2022-06-28 12:28:22 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
+2022-06-28 12:28:23 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
+2022-06-28 12:28:26 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
+2022-06-28 12:28:28 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
+2022-06-28 12:28:29 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
+2022-06-28 12:28:30 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
+2022-06-28 12:28:44 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
+2022-06-28 12:28:44 INFO  HLDAPIntialJourney - OTP Verification started
+2022-06-28 12:28:53 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
+2022-06-28 12:29:05 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
+2022-06-28 12:29:05 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
+2022-06-28 12:29:07 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
+2022-06-28 12:29:15 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104844
+2022-06-28 12:29:19 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
+2022-06-28 12:29:22 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =28/06/2022 12:28 PM
+2022-06-28 12:29:27 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
+2022-06-28 12:29:28 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=FA2616E19FF2FDB4&CheckSum=37258683 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
+2022-06-28 12:29:28 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=FA2616E19FF2FDB4&CheckSum=37258683
+2022-06-28 12:29:32 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
+2022-06-28 12:29:33 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
+2022-06-28 12:29:55 INFO  HLDAPIntialJourney - Business Vintage
+2022-06-28 12:29:55 INFO  HLDAPIntialJourney - Business Vintage
+2022-06-28 12:29:59 INFO  ScreenShot - ScreenShot captured BusinessVintageScreen || Status :Pass
+2022-06-28 12:31:17 ERROR HLDAPIntialJourney - Business vintage screen exc due to :Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[contains(text(),'Business Vintage')]' (tried for 70 second(s) with 500 milliseconds interval)
+2022-06-28 12:31:18 INFO  HLDAPIntialJourney - Select Applicants Resident Type
+2022-06-28 12:31:20 INFO  HLDAPIntialJourney - Resident Indian get selected
+2022-06-28 12:31:22 INFO  HLDAPIntialJourney - Resident Country = null
+2022-06-28 12:31:27 INFO  CommonMethods - Data Sucessfully entered on  = Mumbai
+2022-06-28 12:31:31 INFO  HLDAPIntialJourney - Resident City = Mumbai
+2022-06-28 12:31:36 INFO  CommonMethods - Data Sucessfully entered on  = 400002
+2022-06-28 12:31:38 INFO  HLDAPIntialJourney - Resident Pincode = 400002
+2022-06-28 12:31:38 INFO  ScreenShot - ScreenShot captured IndianResidentScreen || Status :Pass
+2022-06-28 12:31:58 INFO  ScreenShot - ScreenShot captured DigitalInprincipleSaction || Status :Pass
+2022-06-28 12:32:03 INFO  ScreenShot - ScreenShot captured UserConsentScreen || Status :Pass
+2022-06-28 12:32:12 INFO  ScreenShot - ScreenShot captured ConsentWaitingScreen || Status :Pass
+2022-06-28 12:32:14 INFO  HLDAPModulesJourney - Consent Approval started
+2022-06-28 12:32:22 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
+2022-06-28 12:32:35 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
+2022-06-28 12:32:37 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
+2022-06-28 12:32:40 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
+2022-06-28 12:32:44 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104844
+2022-06-28 12:32:48 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
+2022-06-28 12:32:52 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =28/06/2022 12:32 PM
+2022-06-28 12:32:56 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
+2022-06-28 12:32:56 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/HL_Consent?LeadId=FA2616E19FF2FDB4&CheckSum=94936185 to record various Consents to proceed with your online Kotak Home Loan application.
+2022-06-28 12:32:56 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/HL_Consent?LeadId=FA2616E19FF2FDB4&CheckSum=94936185
+2022-06-28 12:32:59 INFO  ScreenShot - ScreenShot captured LeadConsentScreen || Status :Pass
+2022-06-28 12:32:59 INFO  HLDAPModulesJourney - Terms & Conditions
 1. I hereby authorize kotak Mahindra Bank to verify my Pan number from NSDL site.
 2. I authorize bank (including its representatives, affiliates and its business partners) to contact me via Email or phone call or SMS and offer me your services for the product I have opted for, imparting knowledge offer promotional offers running on the bank and offers by its business partners and assoicated third parties, for which purpose my information may be collected in the manner as detailed herein. I hereby agree that I authorize the bank to contact me for the above mentioned purposes even If I have registered myself under DND or DNC or NCPR services and that this consent shall prevail over such registrations.
 3. I authorize the bank ,its group companies and their agents to exchange or share all information relating to me and my repayments history with banks , financial institutions , credit bureaus, agencies ,statutory bodies etc. as may be required or they deem fit.
 4. I hereby give my consent to receive a link for Employment verification from Banks partner Karza on my provided Mobile No. to validate my employment details through EPFO.
 5. I hereby provide my consent and acceptance to submit my Bank statements for verification and credit due diligence to Banks partner agency Perfios to process my online loan application.
 6. I provide my consent to receive communication on my whatsapp No.
-2022-06-27 14:03:37 INFO  ScreenShot - ScreenShot captured ConsentApprovalScreen || Status :Pass
-2022-06-27 14:03:45 INFO  HLDAPModulesJourney - Just Few Basic Steps For Digital Sanction
-2022-06-27 14:37:39 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 14:37:41 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:41 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 14:37:43 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:43 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 14:37:43 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:43 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 14:37:44 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:44 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 14:37:44 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:44 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 14:37:45 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:45 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 14:37:45 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:45 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 14:37:46 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:46 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 14:37:47 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:47 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 14:37:48 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:48 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 14:37:48 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:48 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 14:37:49 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 14:37:49 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 14:37:50 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 14:37:50 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 14:37:52 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 14:37:55 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 14:37:56 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 14:37:58 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 14:38:07 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 14:38:15 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process
-2022-06-27 14:38:16 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process?userId=1353
-2022-06-27 14:39:26 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
-Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='MainContainer']/child::div[1]/child::div[1]/span' (tried for 70 second(s) with 500 milliseconds interval)
-2022-06-27 14:39:26 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
-2022-06-27 14:39:26 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
-2022-06-27 14:39:27 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:45 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 15:01:47 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:47 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 15:01:49 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:49 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 15:01:49 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:49 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 15:01:49 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:49 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 15:01:50 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:50 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 15:01:50 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:50 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 15:01:51 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:51 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 15:01:52 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:52 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 15:01:53 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:53 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 15:01:53 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:53 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 15:01:54 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:54 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 15:01:55 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:01:55 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 15:01:56 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 15:01:56 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 15:01:58 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 15:01:59 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 15:02:00 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 15:02:02 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 15:02:11 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 15:02:17 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
-2022-06-27 15:02:18 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
-2022-06-27 15:02:19 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 15:02:19 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 15:02:19 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 15:02:26 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (d167b5cee43449415069c79d46df3064)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 15:02:32 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 15:02:33 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 15:02:34 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 15:02:34 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 15:02:36 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 15:02:36 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 15:02:36 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 15:02:36 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 15:02:41 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (d167b5cee43449415069c79d46df3064)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 15:02:43 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 15:02:43 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 15:02:43 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 15:02:46 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 15:02:49 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 15:02:51 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:02:54 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:02:54 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 15:02:58 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 15:03:00 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 15:03:01 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 15:03:06 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
-2022-06-27 15:03:07 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
-2022-06-27 15:03:10 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
-2022-06-27 15:03:12 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
-2022-06-27 15:03:12 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
-2022-06-27 15:03:13 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
-2022-06-27 15:03:35 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
-2022-06-27 15:03:35 INFO  HLDAPIntialJourney - OTP Verification started
-2022-06-27 15:03:54 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 15:04:00 ERROR CommonMethods - Not able to click on 00104474 Due to stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d167b5cee43449415069c79d46df3064, clickElement {id=bc1ea22c-2166-42bc-938b-ad69458a352a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49713}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49713/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (d167b5cee43449415069c79d46df3064)] -> xpath: //a[@data-autoid='LeadID_0']]
-Session ID: d167b5cee43449415069c79d46df3064
-2022-06-27 15:04:02 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 15:04:02 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 15:04:12 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 15:04:16 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104727
-2022-06-27 15:04:20 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 15:04:23 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 3:03 PM
-2022-06-27 15:04:32 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 15:04:32 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=C391F7EEBA2B1792&CheckSum=56947367 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
-2022-06-27 15:04:32 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=C391F7EEBA2B1792&CheckSum=56947367
-2022-06-27 15:04:39 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
-2022-06-27 15:04:40 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
-2022-06-27 15:04:48 INFO  HLDAPIntialJourney - Applicant Type =Self employed and Individual
-2022-06-27 15:04:52 INFO  HLDAPIntialJourney - OTP has been verified successfully
-2022-06-27 15:06:02 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
-Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='App_Container']/span' (tried for 70 second(s) with 500 milliseconds interval)
-2022-06-27 15:06:02 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
-2022-06-27 15:06:03 INFO  SetUp - Browser Closed..
-2022-06-27 15:06:03 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
-2022-06-27 15:06:24 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:15:55 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 15:16:00 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:00 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 15:16:20 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:20 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 15:16:25 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:25 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 15:16:32 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:32 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 15:16:39 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:39 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 15:16:48 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:48 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 15:16:58 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:16:58 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 15:17:09 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:17:09 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 15:17:21 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:17:22 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 15:17:35 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:17:35 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 15:22:36 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 15:22:41 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:22:41 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 15:23:01 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:01 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 15:23:06 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:07 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 15:23:13 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:13 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 15:23:21 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:21 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 15:23:29 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:29 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 15:23:39 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:39 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 15:23:50 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:23:50 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 15:24:04 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:24:04 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 15:24:18 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:24:18 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 15:24:34 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:24:34 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 15:24:51 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:24:51 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 15:25:09 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 15:25:09 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 15:25:11 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 15:25:14 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 15:25:18 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 15:25:24 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 15:25:40 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 15:25:48 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#PS
-2022-06-27 15:25:49 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#PS?userId=1353
-2022-06-27 15:25:51 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 15:25:51 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 15:25:51 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 15:25:58 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (170077425705164b9c252f76c154ce8e)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 15:26:04 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 15:26:04 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 15:26:07 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 15:26:07 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 15:26:09 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 15:26:11 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 15:26:11 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 15:26:11 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 15:26:16 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (170077425705164b9c252f76c154ce8e)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 15:26:17 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 15:26:19 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 15:26:19 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 15:26:20 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 15:26:23 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 15:26:28 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:26:34 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:26:37 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 15:26:46 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 15:26:50 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 15:26:51 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 15:26:59 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
-2022-06-27 15:27:01 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
-2022-06-27 15:27:05 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
-2022-06-27 15:27:10 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
-2022-06-27 15:27:11 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
-2022-06-27 15:27:12 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
-2022-06-27 15:27:30 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
-2022-06-27 15:27:30 INFO  HLDAPIntialJourney - OTP Verification started
-2022-06-27 15:27:44 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 15:27:56 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 15:27:58 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 15:28:00 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 15:28:04 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104730
-2022-06-27 15:28:08 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 15:28:12 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 3:27 PM
-2022-06-27 15:28:20 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 15:28:20 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=9D90420820B10420&CheckSum=12217892 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
-2022-06-27 15:28:20 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=9D90420820B10420&CheckSum=12217892
-2022-06-27 15:28:24 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
-2022-06-27 15:28:25 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
-2022-06-27 15:28:34 INFO  HLDAPIntialJourney - OTP has been verified successfully
-2022-06-27 15:29:44 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
-Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='App_Container']/span' (tried for 70 second(s) with 500 milliseconds interval)
-2022-06-27 15:29:44 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
-2022-06-27 15:29:45 INFO  SetUp - Browser Closed..
-2022-06-27 15:29:45 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
-2022-06-27 15:30:04 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:49:39 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 15:49:44 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:49:44 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 15:50:04 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:04 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 15:50:10 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:10 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 15:50:16 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:16 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 15:50:24 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:24 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 15:50:33 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:33 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 15:50:43 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:43 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 15:50:54 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:50:54 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 15:51:08 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:51:08 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 15:51:22 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:51:22 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 15:51:39 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:51:39 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 15:51:56 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 15:51:56 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 15:52:15 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 15:52:15 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 15:52:17 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 15:52:21 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 15:52:25 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 15:52:31 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 15:52:46 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 15:53:02 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
-2022-06-27 15:53:03 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
-2022-06-27 15:53:05 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 15:53:05 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 15:53:05 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 15:53:13 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (60adef6ab178aef05a1876ab1897e930)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 15:53:15 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 15:53:15 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 15:53:18 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 15:53:18 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 15:53:20 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 15:53:22 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 15:53:22 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 15:53:22 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 15:53:28 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (60adef6ab178aef05a1876ab1897e930)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 15:53:30 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 15:53:31 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 15:53:31 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 15:53:33 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 15:53:35 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 15:53:40 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:53:47 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 15:53:50 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 15:53:59 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 15:54:03 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 15:54:04 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 15:54:11 INFO  CommonMethods - Data Sucessfully entered on Applicant Name = Vrunda Vibhute
-2022-06-27 15:54:14 INFO  HLDAPIntialJourney - NTB Applicant name is :Vrunda Vibhute
-2022-06-27 15:54:17 INFO  CommonMethods - Female : Data Sucessfully Selected from dropdown 
-2022-06-27 15:54:23 INFO  CommonMethods - Data Sucessfully entered on Enter Email ID = autoHLNewLead@gmail.com
-2022-06-27 15:54:24 INFO  HLDAPIntialJourney - NTB Applicant email id =autoHLNewLead@gmail.com
-2022-06-27 15:54:25 INFO  ScreenShot - ScreenShot captured MOB_DOB_Screen || Status :Pass
-2022-06-27 15:54:40 INFO  ScreenShot - ScreenShot captured OTPWaitingScreen || Status :Pass
-2022-06-27 15:54:40 INFO  HLDAPIntialJourney - OTP Verification started
-2022-06-27 15:55:11 INFO  CommonMethods - Data Sucessfully entered on  = 9879879702
-2022-06-27 15:55:26 INFO  ScreenShot - ScreenShot captured LeadCardView || Status :Pass
-2022-06-27 15:55:27 INFO  HLDAPIntialJourney - Writing lead details excel HLDAPOnlyTopUpIndividual
-2022-06-27 15:55:30 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =77 | Data =9879879702
-2022-06-27 15:55:34 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =78 | Data =00104751
-2022-06-27 15:55:37 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =79 | Data =Documents Pending
-2022-06-27 15:55:41 INFO  ExcelOperation - Write to excel with : Row=1 | Cell =80 | Data =27/06/2022 3:54 PM
-2022-06-27 15:55:46 INFO  ScreenShot - ScreenShot captured LeadDetailView || Status :Pass
-2022-06-27 15:55:47 INFO  HLDAPIntialJourney - SMS = Dear Customer, Please click on the link https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=1EF5B51B74B09735&CheckSum=95060368 to authenticate the mobile No. and to proceed with your online Kotak Home Loan application.
-2022-06-27 15:55:47 INFO  HLDAPIntialJourney - OTP/Consent Verification link : https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_otp?LeadId=1EF5B51B74B09735&CheckSum=95060368
-2022-06-27 15:55:50 INFO  HLDAPIntialJourney - OTP Notification :OTP has been sent to your registered mobile number
-2022-06-27 15:55:51 INFO  ScreenShot - ScreenShot captured OTPVerification || Status :Pass
-2022-06-27 15:56:13 ERROR HLDAPIntialJourney - Business vintage screen exc due to :stale element reference: element is not attached to the page document
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60adef6ab178aef05a1876ab1897e930, isElementDisplayed {id=ccc68ee5-5bd9-4de2-97b1-e303d3994711}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:50735}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50735/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (60adef6ab178aef05a1876ab1897e930)] -> xpath: //div[@name="Container"] //span]
-Session ID: 60adef6ab178aef05a1876ab1897e930
-2022-06-27 16:02:40 INFO  SetUp - Test Case_CRMHLLeadgeneration_Successfully Started
-2022-06-27 16:02:45 INFO  SetUp - Test Case_CRMHLLeadgeneration_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:02:45 INFO  SetUp - Test Case_SecuredCCDap_Successfully Started
-2022-06-27 16:03:06 INFO  SetUp - Test Case_SecuredCCDap_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:06 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_Successfully Started
-2022-06-27 16:03:11 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:11 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_Successfully Started
-2022-06-27 16:03:18 INFO  SetUp - Test Case_HLDAPHomeLoanSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:18 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_Successfully Started
-2022-06-27 16:03:26 INFO  SetUp - Test Case_HLDAPHomeLoanIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:26 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_Successfully Started
-2022-06-27 16:03:35 INFO  SetUp - Test Case_HLDAPHomeLoanNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:35 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_Successfully Started
-2022-06-27 16:03:45 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:45 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_Successfully Started
-2022-06-27 16:03:57 INFO  SetUp - Test Case_HLDAPBalanceTransferSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:03:57 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_Successfully Started
-2022-06-27 16:04:10 INFO  SetUp - Test Case_HLDAPBalanceTransferIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:04:10 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_Successfully Started
-2022-06-27 16:04:24 INFO  SetUp - Test Case_HLDAPBalanceTransferNonIndividual_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:04:24 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_Successfully Started
-2022-06-27 16:04:41 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedIndian_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:04:41 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_Successfully Started
-2022-06-27 16:04:58 INFO  SetUp - Test Case_HLDAPOnlyTopUpSalariedNRI_get Skipped as its Runmode is 'NO' 
-2022-06-27 16:04:58 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Started
-2022-06-27 16:05:17 INFO  WebDriverManager - Using chromedriver 102.0.5005.61 (resolved driver for Chrome 102)
-2022-06-27 16:05:17 INFO  WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\Vrunda Vibhute\.cache\selenium\chromedriver\win32\102.0.5005.61\chromedriver.exe
-2022-06-27 16:05:19 INFO  SetUp - Chrome Browser Launched..
-2022-06-27 16:05:22 INFO  SetUp - URL : https://kmb.crmnext.com/sng7/app/login/login
-2022-06-27 16:05:27 INFO  CommonMethods - Data Sucessfully entered on User Name = HLSARM
-2022-06-27 16:05:33 INFO  CommonMethods - Data Sucessfully entered on Password = acid_qa
-2022-06-27 16:05:44 INFO  ScreenShot - ScreenShot captured Intiate_HLSales_DAP || Status :Pass
-2022-06-27 16:06:03 INFO  CommonMethods - Swiched to Child window name : Customer Digital Journey || URL :https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage
-2022-06-27 16:06:04 INFO  HLDAPIntialJourney - URL for user = HLSARM ||https://kmb.crmnext.com/sng7/vividkotak/vividflow/run/hl_salaried_process#LoaderPage?userId=1353
-2022-06-27 16:06:10 INFO  HLDAPIntialJourney - Select Product type customer is interested in?
-2022-06-27 16:06:10 INFO  HLDAPIntialJourney - Product to select from excel sheet : Only Top up
-2022-06-27 16:06:10 INFO  ScreenShot - ScreenShot captured Product_Selection_Screen || Status :Pass
-2022-06-27 16:06:17 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (36c12287fb6b5b86aab100f7c4e099a7)] -> xpath: //div[@name='MainContainer'] //div] Product get selected and naviagte to next screen
-2022-06-27 16:06:24 INFO  HLDAPIntialJourney - Sub Source Selection screen open..
-2022-06-27 16:06:24 INFO  HLDAPIntialJourney - Header of screen : Select Sub-Source details of Lead
-2022-06-27 16:06:27 INFO  CommonMethods - RM : Data Sucessfully Selected from dropdown 
-2022-06-27 16:06:27 INFO  ScreenShot - ScreenShot captured SubSource_Selection_Screen || Status :Pass
-2022-06-27 16:06:33 INFO  HLDAPIntialJourney - Header of screen : Is the applicant Salaried or Self-employed?
-2022-06-27 16:06:35 INFO  HLDAPIntialJourney - Applicant Type Selection screen open..
-2022-06-27 16:06:35 INFO  HLDAPIntialJourney - Applicant Type to select from excel sheet : Self employed
-2022-06-27 16:06:35 INFO  ScreenShot - ScreenShot captured ApplicantType_Selection_Screen || Status :Pass
-2022-06-27 16:06:40 INFO  HLDAPIntialJourney - [[ChromeDriver: chrome on WINDOWS (36c12287fb6b5b86aab100f7c4e099a7)] -> xpath: //div[@name='Parent1Container']/child::div //button] Applicant Type get selected and naviagte to next screen
-2022-06-27 16:06:41 INFO  HLDAPIntialJourney - Is the applicant Individual or Non-individual?
-2022-06-27 16:06:43 INFO  HLDAPIntialJourney - Self Employed Type to select from excel sheet : Individual
-2022-06-27 16:06:43 INFO  ScreenShot - ScreenShot captured SelfEmpType_Selection_Screen || Status :Pass
-2022-06-27 16:06:44 INFO  HLDAPIntialJourney - Individual Self Employed Type get selected 
-2022-06-27 16:06:47 INFO  HLDAPIntialJourney - Header of screen : Check if applicant is an Existing customer and has a PA offer?
-2022-06-27 16:06:52 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 16:06:58 INFO  CommonMethods - Data Sucessfully entered on Enter Mobile No. = 9879879702
-2022-06-27 16:07:01 INFO  HLDAPIntialJourney - Applicant is NTB type, so select DOB and Proceed.
-2022-06-27 16:07:11 INFO  CommonMethods - July : Data Sucessfully Selected from dropdown 
-2022-06-27 16:07:15 INFO  CommonMethods - 1991 : Data Sucessfully Selected from dropdown 
-2022-06-27 16:07:16 INFO  HLDAPIntialJourney - Date :30 get selected
-2022-06-27 16:07:19 ERROR SetUp - HLDAPOnlyTopUpIndividual Get Failed due to 
-no such element: Unable to locate element: {"method":"xpath","selector":"//input[@placeholder='Applicant Name']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [36c12287fb6b5b86aab100f7c4e099a7, findElement {using=xpath, value=//input[@placeholder='Applicant Name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51157}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51157/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 36c12287fb6b5b86aab100f7c4e099a7
-2022-06-27 16:07:19 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Fail
-2022-06-27 16:07:20 INFO  SetUp - Browser Closed..
-2022-06-27 16:07:20 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
-2022-06-27 16:07:39 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
+2022-06-28 12:33:09 INFO  ScreenShot - ScreenShot captured ConsentApprovalScreen || Status :Pass
+2022-06-28 12:33:17 INFO  HLDAPModulesJourney - Just Few Basic Steps For Digital Sanction
+2022-06-28 12:33:26 INFO  CommonMethods - Data Sucessfully entered on Enter PAN number = AQPPR4745L
+2022-06-28 12:33:32 INFO  CommonMethods - Data Sucessfully entered on Enter Address 1 = A-302, Dahisar Sagar Chs, Near Western express highway
+2022-06-28 12:33:34 INFO  HLDAPModulesJourney - Address line 1 = A-302, Dahisar Sagar Chs, Near
+2022-06-28 12:33:38 INFO  CommonMethods - Data Sucessfully entered on Enter Address 2 = Dahisar East
+2022-06-28 12:33:40 INFO  HLDAPModulesJourney - Address line 2 = Dahisar East
+2022-06-28 12:33:40 INFO  HLDAPModulesJourney - City = Mumbai
+2022-06-28 12:33:40 INFO  HLDAPModulesJourney - Pincode = 400002
+2022-06-28 12:33:40 INFO  ScreenShot - ScreenShot captured PANCIBIL Screen || Status :Pass
+2022-06-28 12:34:52 INFO  HLDAPModulesJourney - Income Details
+2022-06-28 12:35:09 INFO  CommonMethods - Data Sucessfully entered on ?                                per month = 200000
+2022-06-28 12:35:10 INFO  HLDAPModulesJourney - Profit after tax = 200000
+2022-06-28 12:35:12 INFO  HLDAPModulesJourney - Add another source of income
+Adding income from multiple source
+will increase your eligibility
+2022-06-28 12:35:17 INFO  CommonMethods - Data Sucessfully entered on ?                                per month = 20000
+2022-06-28 12:35:19 INFO  HLDAPModulesJourney - Additional Income = 20000
+2022-06-28 12:35:19 INFO  HLDAPModulesJourney - Add current EMI payment if any
+2022-06-28 12:35:24 INFO  CommonMethods - Data Sucessfully entered on ?                                per month = 100000
+2022-06-28 12:35:26 INFO  HLDAPModulesJourney - Current EMI = 100000
+2022-06-28 12:35:26 INFO  ScreenShot - ScreenShot captured IncomeDetailsScreen || Status :Pass
+2022-06-28 12:35:51 INFO  HLDAPOnlyTopUp - Provide applicant current home loan details
+2022-06-28 12:35:55 INFO  CommonMethods - Data Sucessfully entered on ?                                             per month = 100000
+2022-06-28 12:35:57 INFO  HLDAPOnlyTopUp - EMI Paid Currently = 100000
+2022-06-28 12:36:01 INFO  CommonMethods - Data Sucessfully entered on ? = 3200000
+2022-06-28 12:36:03 INFO  HLDAPOnlyTopUp - Purchase price of property = 3200000
+2022-06-28 12:36:07 INFO  CommonMethods - Data Sucessfully entered on ? = 3000000
+2022-06-28 12:36:09 INFO  HLDAPOnlyTopUp - Required loan amount = 3000000
+2022-06-28 12:36:09 INFO  ScreenShot - ScreenShot captured TopUpDetailsScreen || Status :Pass
+2022-06-28 12:36:19 INFO  HLDAPModulesJourney - Provide applicant current home loan details
+2022-06-28 12:36:19 INFO  ScreenShot - ScreenShot captured ITReturnScreen || Status :Pass
+2022-06-28 12:36:48 INFO  HLDAPModulesJourney - Please wait to verify Perfios status
+2022-06-28 12:36:50 INFO  HLDAPModulesJourney - Please wait Perfios is in Progress
+2022-06-28 12:37:01 INFO  ScreenShot - ScreenShot captured CrossSellScreen || Status :Pass
+2022-06-28 12:37:24 INFO  ScreenShot - AShot captured EligibilityScreen || Status :Pass
+2022-06-28 12:37:25 INFO  HLDAPEndJourney - Eligibility Screen Option to Proceed :Continue to Sanction Letter
+2022-06-28 12:37:25 INFO  ScreenShot - ScreenShot captured ProcessingFee || Status :Pass
+2022-06-28 12:37:58 INFO  HLDAPEndJourney - Collect PF from Applicant
+2022-06-28 12:37:58 INFO  HLDAPEndJourney - PF amount: RS
+20650
+2022-06-28 12:39:24 INFO  HLDAPEndJourney - Fill few additional details to generate Application Form digitally *
+2022-06-28 12:39:24 INFO  HLDAPEndJourney - References
+2022-06-28 12:39:28 INFO  CommonMethods - Data Sucessfully entered on Enter name of 1st reference = Ram K
+2022-06-28 12:39:30 INFO  HLDAPEndJourney - First reference name = Ram K
+2022-06-28 12:39:33 INFO  CommonMethods - Data Sucessfully entered on Enter mobile no. of 1st reference = 9988899888
+2022-06-28 12:39:34 INFO  HLDAPEndJourney - First refrence Mobile No  = 9988899888
+2022-06-28 12:39:37 INFO  CommonMethods - Data Sucessfully entered on Enter name of 2nd reference = Sita K
+2022-06-28 12:39:38 INFO  HLDAPEndJourney - Second Reference Name = Sita K
+2022-06-28 12:39:42 INFO  CommonMethods - Data Sucessfully entered on Enter mobile no. of 2nd reference = 9988899777
+2022-06-28 12:39:43 INFO  HLDAPEndJourney - Second Mobile No = 9988899777
+2022-06-28 12:39:43 INFO  ScreenShot - ScreenShot captured ReferenceDetailsScreen || Status :Pass
+2022-06-28 12:41:07 INFO  SetUp - Test Case_HLDAPOnlyTopUpIndividual_Successfully Passed
+2022-06-28 12:41:07 INFO  ScreenShot - ScreenShot captured HLDAPOnlyTopUpIndividual || Status :Pass
+2022-06-28 12:41:08 INFO  SetUp - Browser Closed..
+2022-06-28 12:41:08 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_Successfully Started
+2022-06-28 12:41:28 INFO  SetUp - Test Case_HLDAPOnlyTopUpNonIndividual_get Skipped as its Runmode is 'NO' 
