@@ -20,7 +20,6 @@ public class TC04HLDAPHomeLoanSalariedNRI extends SetUp{
   public void HLDAPHomeLoanSalariedNRI() throws Exception 
   {
 	  String sheetName = "HLDAPHomeLoanSalariedNRI";
-	  //System.out.println("SheetName = "+sheetName+ " and  rows ="+ExcelOperation.getRowCount(sheetName) );
 	 
 	  if (!(CommonMethods.isTestRunnable(sheetName))) 
 	  {

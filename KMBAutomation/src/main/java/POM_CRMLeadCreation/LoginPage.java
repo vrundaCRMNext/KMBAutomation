@@ -29,7 +29,7 @@ public class LoginPage extends TestListeners
 	
 	//Login Page
 	
-	@FindBy(xpath="//input[@id='TxtName']")     //UserName field
+	@FindBy(xpath="//input[@id='TxtName']") 		//Username fld
 	private WebElement userName;
 	
 	@FindBy(xpath="//input[@id='TxtPassword']")   //Password field

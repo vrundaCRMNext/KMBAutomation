@@ -20,7 +20,7 @@ public class TC13HLDAPOnlyTopUpIndividual extends SetUp{
 	public HLDAPModulesJourney HLSalesModule ;
 	public HLDAPEndJourney HLSalesEnd ;
 	public HLDAPOnlyTopUp HLSalesTopUp;
-	@Test(expectedExceptions = TimeoutException.class)
+	@Test()
 	public void HLDAPOnlyTopUpIndividual() throws Exception
 	{
 		String sheetName = "HLDAPOnlyTopUpIndividual";
@@ -47,7 +47,6 @@ public class TC13HLDAPOnlyTopUpIndividual extends SetUp{
 			HLSalesIntial.OTPVerification(sheetName);
 			HLSalesIntial.selectBusinessVintage(sheetName);
 			HLSalesIntial.ResidentStatusSelection(sheetName);
-			
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
 			HLSalesModule.Digital_InprincipleSanction(sheetName);

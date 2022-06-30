@@ -2,13 +2,8 @@ package POM_HLSalesDAP;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
-import javax.script.AbstractScriptEngine;
-
-import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,13 +15,8 @@ import CommonUtility.CommonMethods;
 import CommonUtility.ExcelOperation;
 import CommonUtility.ScreenShot;
 import CommonUtility.SetUp;
-import CommonUtility.TestListeners;
-import TestSripts.runTest;
-
-import java.awt.AWTException;
 import java.awt.Robot;	
-import java.awt.event.KeyEvent;
-import java.io.IOException;	
+import java.awt.event.KeyEvent;	
 
 
 public class HLDAPIntialJourney extends SetUp
@@ -663,9 +653,9 @@ public class HLDAPIntialJourney extends SetUp
 						CommonMethods.mouseClick(sortLeads);
 						Thread.sleep(2000);
 						CommonMethods.mouseClick(sortLeads);
-						//Thread.sleep(1500);
-						//CommonMethods.mouseClick(sortLeads);
 						Thread.sleep(2000);
+						//CommonMethods.mouseClick(sortLeads);
+						//Thread.sleep(2000);
 						
 						CommonMethods.highLight(FirstLeadId);
 						CommonMethods.Click(FirstLeadId);
@@ -777,8 +767,9 @@ public class HLDAPIntialJourney extends SetUp
 				Thread.sleep(1000);
 				CommonMethods.switchToWindowByTitle("Customer Digital Journey");
 				Thread.sleep(1000);
-				log.info(CommonMethods.getElementText(Hdr));
-		
+				try {
+					log.info(CommonMethods.getElementText(Hdr));
+				}catch(Exception e) {}
 	}//OTP Verification 
 /******************************END OTP Verification***************************************************/		
 

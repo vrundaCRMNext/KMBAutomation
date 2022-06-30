@@ -89,5 +89,22 @@
 			</classes>
 	</test>
 	
+	<test name="HLDAP Salaried Kotak Smart Home Indian ">
+			<classes>
+				<class name ="TestCases.TC15HLDAPKotakSmartHomeSalariedIndian" />
+			</classes>
+	</test>
+	
+	<test name="HLDAP Salaried Kotak Smart Home NRI ">
+			<classes>
+				<class name ="TestCases.TC16HLDAPKotakSmartHomeSalariedNRI" />
+			</classes>
+	</test>
+	
+	<test name="HLDAP Individual Kotak Smart Home ">
+			<classes>
+				<class name ="TestCases.TC17HLDAPKotakSmartHomeIndividual" />
+			</classes>
+	</test>
 	
 </suite> <!-- Suite -->

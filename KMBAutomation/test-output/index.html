@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -56,7 +56,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">14 tests</span>
+                    <span class="test-stats">17 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,  13 skipped,  1 passed</span>
+                    <span class="method-stats">17 methods, 1 failed,  16 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC15HLDAPKotakSmartHomeSalariedIndian" class="method navigator-link" hash-for-method="HLDAPKotakSmartHomeSalariedIndian">HLDAPKotakSmartHomeSalariedIndian</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -149,6 +163,21 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC17HLDAPKotakSmartHomeIndividual" class="method navigator-link" hash-for-method="HLDAPKotakSmartHomeIndividual">HLDAPKotakSmartHomeIndividual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC16HLDAPKotakSmartHomeSalariedNRI" class="method navigator-link" hash-for-method="HLDAPKotakSmartHomeSalariedNRI">HLDAPKotakSmartHomeSalariedNRI</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="TestCases.TC13HLDAPOnlyTopUpIndividual" class="method navigator-link" hash-for-method="HLDAPOnlyTopUpIndividual">HLDAPOnlyTopUpIndividual</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="TestCases.TC14HLDAPOnlyTopUpNonIndividual" class="method navigator-link" hash-for-method="HLDAPOnlyTopUpNonIndividual">HLDAPOnlyTopUpNonIndividual</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -169,20 +198,6 @@
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestCases.TC13HLDAPOnlyTopUpIndividual" class="method navigator-link" hash-for-method="HLDAPOnlyTopUpIndividual">HLDAPOnlyTopUpIndividual</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
-                  </li>
                 </ul>
               </div> <!-- suite-section-content -->
             </div> <!-- result-section -->
@@ -193,66 +208,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC11HLDAPOnlyTopUpSalariedIndian</span>
+              <img src="failed.png"/>
+              <span class="class-name">TestCases.TC15HLDAPKotakSmartHomeSalariedIndian</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HLDAPOnlyTopUpSalariedIndian">
-                  </a> <!-- HLDAPOnlyTopUpSalariedIndian -->
-                  <span class="method-name">HLDAPOnlyTopUpSalariedIndian</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPOnlyTopUpSalariedIndian as the Run mode is NO
-	at TestCases.TC11HLDAPOnlyTopUpSalariedIndian.HLDAPOnlyTopUpSalariedIndian(TC11HLDAPOnlyTopUpSalariedIndian.java:28)
+                  <a name="HLDAPKotakSmartHomeSalariedIndian">
+                  </a> <!-- HLDAPKotakSmartHomeSalariedIndian -->
+                  <span class="method-name">HLDAPKotakSmartHomeSalariedIndian</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@name=&apos;PFContainer2&apos;]&apos; (tried for 70 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at CommonUtility.CommonMethods.ExWait(CommonMethods.java:87)
+	at CommonUtility.CommonMethods.getElementText(CommonMethods.java:70)
+	at POM_HLSalesDAP.HLDAPEndJourney.ProcessingFeeScreen(HLDAPEndJourney.java:136)
+	at POM_HLSalesDAP.HLDAPEndJourney.runEndJourney(HLDAPEndJourney.java:37)
+	at TestCases.TC15HLDAPKotakSmartHomeSalariedIndian.HLDAPKotakSmartHomeSalariedIndian(TC15HLDAPKotakSmartHomeSalariedIndian.java:41)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 27 stack frames
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@name=&apos;PFContainer2&apos;]&quot;}
+  (Session info: chrome=102.0.5005.115)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.0&apos;, revision: &apos;87802e897b&apos;
+System info: host: &apos;VRUNDAV&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [03b4eeb73e08bb7e2a133afe288ec967, findElement {using=xpath, value=//div[@name=&apos;PFContainer2&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64445/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 03b4eeb73e08bb7e2a133afe288ec967
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 33 more
+... Removed 30 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC10HLDAPBalanceTransferNonIndividual</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="HLDAPBalanceTransferNonIndividual">
-                  </a> <!-- HLDAPBalanceTransferNonIndividual -->
-                  <span class="method-name">HLDAPBalanceTransferNonIndividual</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferNonIndividual as the Run mode is NO
-	at TestCases.TC10HLDAPBalanceTransferNonIndividual.HLDAPBalanceTransferNonIndividual(TC10HLDAPBalanceTransferNonIndividual.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC07HLDAPBalanceTransferSalariedIndian</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="HLDAPBalanceTransferSalariedIndian">
-                  </a> <!-- HLDAPBalanceTransferSalariedIndian -->
-                  <span class="method-name">HLDAPBalanceTransferSalariedIndian</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferSalariedIndian as the Run mode is NO
-	at TestCases.TC07HLDAPBalanceTransferSalariedIndian.HLDAPBalanceTransferSalariedIndian(TC07HLDAPBalanceTransferSalariedIndian.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -266,6 +276,46 @@
                   <span class="method-name">HLDAPOnlyTopUpNonIndividual</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPOnlyTopUpNonIndividual as the Run mode is NO
 	at TestCases.TC14HLDAPOnlyTopUpNonIndividual.HLDAPOnlyTopUpNonIndividual(TC14HLDAPOnlyTopUpNonIndividual.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC04HLDAPHomeLoanSalariedNRI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HLDAPHomeLoanSalariedNRI">
+                  </a> <!-- HLDAPHomeLoanSalariedNRI -->
+                  <span class="method-name">HLDAPHomeLoanSalariedNRI</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPHomeLoanSalariedNRI sas the Run mode is NO
+	at TestCases.TC04HLDAPHomeLoanSalariedNRI.HLDAPHomeLoanSalariedNRI(TC04HLDAPHomeLoanSalariedNRI.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC13HLDAPOnlyTopUpIndividual</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HLDAPOnlyTopUpIndividual">
+                  </a> <!-- HLDAPOnlyTopUpIndividual -->
+                  <span class="method-name">HLDAPOnlyTopUpIndividual</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPOnlyTopUpIndividual as the Run mode is NO
+	at TestCases.TC13HLDAPOnlyTopUpIndividual.HLDAPOnlyTopUpIndividual(TC13HLDAPOnlyTopUpIndividual.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -296,36 +346,16 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC09HLDAPBalanceTransferIndividual</span>
+              <span class="class-name">TestCases.TC01CRMHLLeadGeneration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HLDAPBalanceTransferIndividual">
-                  </a> <!-- HLDAPBalanceTransferIndividual -->
-                  <span class="method-name">HLDAPBalanceTransferIndividual</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferIndividual as the Run mode is NO
-	at TestCases.TC09HLDAPBalanceTransferIndividual.HLDAPBalanceTransferIndividual(TC09HLDAPBalanceTransferIndividual.java:30)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC02SecuredCCDAP</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="SecuredCCDap">
-                  </a> <!-- SecuredCCDap -->
-                  <span class="method-name">SecuredCCDap</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test SecuredCCDap as the Run mode is NO
-	at TestCases.TC02SecuredCCDAP.SecuredCCDap(TC02SecuredCCDAP.java:22)
+                  <a name="CRMHLLeadgeneration">
+                  </a> <!-- CRMHLLeadgeneration -->
+                  <span class="method-name">CRMHLLeadgeneration</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test CRMHLLeadgeneration as the Run mode is NO
+	at TestCases.TC01CRMHLLeadGeneration.CRMHLLeadgeneration(TC01CRMHLLeadGeneration.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -356,16 +386,16 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC04HLDAPHomeLoanSalariedNRI</span>
+              <span class="class-name">TestCases.TC16HLDAPKotakSmartHomeSalariedNRI</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HLDAPHomeLoanSalariedNRI">
-                  </a> <!-- HLDAPHomeLoanSalariedNRI -->
-                  <span class="method-name">HLDAPHomeLoanSalariedNRI</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPHomeLoanSalariedNRI sas the Run mode is NO
-	at TestCases.TC04HLDAPHomeLoanSalariedNRI.HLDAPHomeLoanSalariedNRI(TC04HLDAPHomeLoanSalariedNRI.java:27)
+                  <a name="HLDAPKotakSmartHomeSalariedNRI">
+                  </a> <!-- HLDAPKotakSmartHomeSalariedNRI -->
+                  <span class="method-name">HLDAPKotakSmartHomeSalariedNRI</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPKotakSmartHomeSalariedNRI sas the Run mode is NO
+	at TestCases.TC16HLDAPKotakSmartHomeSalariedNRI.HLDAPKotakSmartHomeSalariedNRI(TC16HLDAPKotakSmartHomeSalariedNRI.java:26)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -396,6 +426,66 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC07HLDAPBalanceTransferSalariedIndian</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HLDAPBalanceTransferSalariedIndian">
+                  </a> <!-- HLDAPBalanceTransferSalariedIndian -->
+                  <span class="method-name">HLDAPBalanceTransferSalariedIndian</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferSalariedIndian as the Run mode is NO
+	at TestCases.TC07HLDAPBalanceTransferSalariedIndian.HLDAPBalanceTransferSalariedIndian(TC07HLDAPBalanceTransferSalariedIndian.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC09HLDAPBalanceTransferIndividual</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HLDAPBalanceTransferIndividual">
+                  </a> <!-- HLDAPBalanceTransferIndividual -->
+                  <span class="method-name">HLDAPBalanceTransferIndividual</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferIndividual as the Run mode is NO
+	at TestCases.TC09HLDAPBalanceTransferIndividual.HLDAPBalanceTransferIndividual(TC09HLDAPBalanceTransferIndividual.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC10HLDAPBalanceTransferNonIndividual</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="HLDAPBalanceTransferNonIndividual">
+                  </a> <!-- HLDAPBalanceTransferNonIndividual -->
+                  <span class="method-name">HLDAPBalanceTransferNonIndividual</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPBalanceTransferNonIndividual as the Run mode is NO
+	at TestCases.TC10HLDAPBalanceTransferNonIndividual.HLDAPBalanceTransferNonIndividual(TC10HLDAPBalanceTransferNonIndividual.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">TestCases.TC03HLDAPHomeLoanSalariedIndian</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -406,6 +496,26 @@
                   <span class="method-name">HLDAPHomeLoanSalariedIndian</span>
                   <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPHomeLoanSalariedIndian as the Run mode is NO
 	at TestCases.TC03HLDAPHomeLoanSalariedIndian.HLDAPHomeLoanSalariedIndian(TC03HLDAPHomeLoanSalariedIndian.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC02SecuredCCDAP</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SecuredCCDap">
+                  </a> <!-- SecuredCCDap -->
+                  <span class="method-name">SecuredCCDap</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test SecuredCCDap as the Run mode is NO
+	at TestCases.TC02SecuredCCDAP.SecuredCCDap(TC02SecuredCCDAP.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -436,16 +546,16 @@
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">TestCases.TC01CRMHLLeadGeneration</span>
+              <span class="class-name">TestCases.TC17HLDAPKotakSmartHomeIndividual</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="CRMHLLeadgeneration">
-                  </a> <!-- CRMHLLeadgeneration -->
-                  <span class="method-name">CRMHLLeadgeneration</span>
-                  <div class="stack-trace">org.testng.SkipException: Skipping the test CRMHLLeadgeneration as the Run mode is NO
-	at TestCases.TC01CRMHLLeadGeneration.CRMHLLeadgeneration(TC01CRMHLLeadGeneration.java:26)
+                  <a name="HLDAPKotakSmartHomeIndividual">
+                  </a> <!-- HLDAPKotakSmartHomeIndividual -->
+                  <span class="method-name">HLDAPKotakSmartHomeIndividual</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPKotakSmartHomeIndividual as the Run mode is NO
+	at TestCases.TC17HLDAPKotakSmartHomeIndividual.HLDAPKotakSmartHomeIndividual(TC17HLDAPKotakSmartHomeIndividual.java:25)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -453,21 +563,26 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestCases.TC13HLDAPOnlyTopUpIndividual</span>
+              <img src="skipped.png"/>
+              <span class="class-name">TestCases.TC11HLDAPOnlyTopUpSalariedIndian</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="HLDAPOnlyTopUpIndividual">
-                  </a> <!-- HLDAPOnlyTopUpIndividual -->
-                  <span class="method-name">HLDAPOnlyTopUpIndividual</span>
+                  <a name="HLDAPOnlyTopUpSalariedIndian">
+                  </a> <!-- HLDAPOnlyTopUpSalariedIndian -->
+                  <span class="method-name">HLDAPOnlyTopUpSalariedIndian</span>
+                  <div class="stack-trace">org.testng.SkipException: Skipping the test HLDAPOnlyTopUpSalariedIndian as the Run mode is NO
+	at TestCases.TC11HLDAPOnlyTopUpSalariedIndian.HLDAPOnlyTopUpSalariedIndian(TC11HLDAPOnlyTopUpSalariedIndian.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -551,6 +666,21 @@
       &lt;class name=&quot;TestCases.TC14HLDAPOnlyTopUpNonIndividual&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HLDAP Salaried Only Top Up Non Individual  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HLDAP Salaried Kotak Smart Home Indian &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TC15HLDAPKotakSmartHomeSalariedIndian&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HLDAP Salaried Kotak Smart Home Indian  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HLDAP Salaried Kotak Smart Home NRI &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TC16HLDAPKotakSmartHomeSalariedNRI&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HLDAP Salaried Kotak Smart Home NRI  --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;HLDAP Individual Kotak Smart Home &quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCases.TC17HLDAPKotakSmartHomeIndividual&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- HLDAP Individual Kotak Smart Home  --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -603,6 +733,15 @@
               <li>
                 <span class="test-name">HLDAP Salaried Only Top Up Non Individual  (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">HLDAP Salaried Kotak Smart Home Indian  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">HLDAP Salaried Kotak Smart Home NRI  (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">HLDAP Individual Kotak Smart Home  (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -627,68 +766,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(14);
+data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'HLDAPOnlyTopUpIndividual')
-data.setCell(0, 2, 'TestCases.TC13HLDAPOnlyTopUpIndividual')
-data.setCell(0, 3, 833210);
+data.setCell(0, 1, 'HLDAPKotakSmartHomeSalariedIndian')
+data.setCell(0, 2, 'TestCases.TC15HLDAPKotakSmartHomeSalariedIndian')
+data.setCell(0, 3, 713340);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'HLDAPOnlyTopUpNonIndividual')
-data.setCell(1, 2, 'TestCases.TC14HLDAPOnlyTopUpNonIndividual')
-data.setCell(1, 3, 19730);
+data.setCell(1, 1, 'HLDAPKotakSmartHomeSalariedNRI')
+data.setCell(1, 2, 'TestCases.TC16HLDAPKotakSmartHomeSalariedNRI')
+data.setCell(1, 3, 25922);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'SecuredCCDap')
-data.setCell(2, 2, 'TestCases.TC02SecuredCCDAP')
-data.setCell(2, 3, 2411);
+data.setCell(2, 1, 'HLDAPKotakSmartHomeIndividual')
+data.setCell(2, 2, 'TestCases.TC17HLDAPKotakSmartHomeIndividual')
+data.setCell(2, 3, 24601);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'CRMHLLeadgeneration')
-data.setCell(3, 2, 'TestCases.TC01CRMHLLeadGeneration')
-data.setCell(3, 3, 1780);
+data.setCell(3, 1, 'SecuredCCDap')
+data.setCell(3, 2, 'TestCases.TC02SecuredCCDAP')
+data.setCell(3, 3, 2278);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'HLDAPOnlyTopUpSalariedNRI')
-data.setCell(4, 2, 'TestCases.TC12HLDAPOnlyTopUpSalariedNRI')
-data.setCell(4, 3, 1080);
+data.setCell(4, 1, 'CRMHLLeadgeneration')
+data.setCell(4, 2, 'TestCases.TC01CRMHLLeadGeneration')
+data.setCell(4, 3, 1305);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'HLDAPOnlyTopUpSalariedIndian')
-data.setCell(5, 2, 'TestCases.TC11HLDAPOnlyTopUpSalariedIndian')
-data.setCell(5, 3, 895);
+data.setCell(5, 1, 'HLDAPOnlyTopUpNonIndividual')
+data.setCell(5, 2, 'TestCases.TC14HLDAPOnlyTopUpNonIndividual')
+data.setCell(5, 3, 1051);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'HLDAPBalanceTransferSalariedNRI')
-data.setCell(6, 2, 'TestCases.TC08HLDAPBalanceTransferSalariedNRI')
-data.setCell(6, 3, 873);
+data.setCell(6, 1, 'HLDAPOnlyTopUpIndividual')
+data.setCell(6, 2, 'TestCases.TC13HLDAPOnlyTopUpIndividual')
+data.setCell(6, 3, 956);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'HLDAPBalanceTransferNonIndividual')
-data.setCell(7, 2, 'TestCases.TC10HLDAPBalanceTransferNonIndividual')
-data.setCell(7, 3, 837);
+data.setCell(7, 1, 'HLDAPOnlyTopUpSalariedNRI')
+data.setCell(7, 2, 'TestCases.TC12HLDAPOnlyTopUpSalariedNRI')
+data.setCell(7, 3, 894);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'HLDAPBalanceTransferIndividual')
-data.setCell(8, 2, 'TestCases.TC09HLDAPBalanceTransferIndividual')
-data.setCell(8, 3, 820);
+data.setCell(8, 1, 'HLDAPOnlyTopUpSalariedIndian')
+data.setCell(8, 2, 'TestCases.TC11HLDAPOnlyTopUpSalariedIndian')
+data.setCell(8, 3, 797);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'HLDAPHomeLoanNonIndividual')
-data.setCell(9, 2, 'TestCases.TC06HLDAPHomeLoanNonIndividual')
-data.setCell(9, 3, 735);
+data.setCell(9, 1, 'HLDAPBalanceTransferNonIndividual')
+data.setCell(9, 2, 'TestCases.TC10HLDAPBalanceTransferNonIndividual')
+data.setCell(9, 3, 783);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'HLDAPBalanceTransferSalariedIndian')
-data.setCell(10, 2, 'TestCases.TC07HLDAPBalanceTransferSalariedIndian')
-data.setCell(10, 3, 689);
+data.setCell(10, 1, 'HLDAPBalanceTransferIndividual')
+data.setCell(10, 2, 'TestCases.TC09HLDAPBalanceTransferIndividual')
+data.setCell(10, 3, 729);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'HLDAPHomeLoanIndividual')
-data.setCell(11, 2, 'TestCases.TC05HLDAPHomeLoanIndividual')
-data.setCell(11, 3, 612);
+data.setCell(11, 1, 'HLDAPBalanceTransferSalariedNRI')
+data.setCell(11, 2, 'TestCases.TC08HLDAPBalanceTransferSalariedNRI')
+data.setCell(11, 3, 696);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'HLDAPHomeLoanSalariedNRI')
-data.setCell(12, 2, 'TestCases.TC04HLDAPHomeLoanSalariedNRI')
-data.setCell(12, 3, 540);
+data.setCell(12, 1, 'HLDAPBalanceTransferSalariedIndian')
+data.setCell(12, 2, 'TestCases.TC07HLDAPBalanceTransferSalariedIndian')
+data.setCell(12, 3, 658);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'HLDAPHomeLoanSalariedIndian')
-data.setCell(13, 2, 'TestCases.TC03HLDAPHomeLoanSalariedIndian')
-data.setCell(13, 3, 490);
+data.setCell(13, 1, 'HLDAPHomeLoanNonIndividual')
+data.setCell(13, 2, 'TestCases.TC06HLDAPHomeLoanNonIndividual')
+data.setCell(13, 3, 555);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'HLDAPHomeLoanIndividual')
+data.setCell(14, 2, 'TestCases.TC05HLDAPHomeLoanIndividual')
+data.setCell(14, 3, 541);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'HLDAPHomeLoanSalariedIndian')
+data.setCell(15, 2, 'TestCases.TC03HLDAPHomeLoanSalariedIndian')
+data.setCell(15, 3, 447);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'HLDAPHomeLoanSalariedNRI')
+data.setCell(16, 2, 'TestCases.TC04HLDAPHomeLoanSalariedNRI')
+data.setCell(16, 3, 416);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -719,179 +870,120 @@ return data;
                 <span class="method-name">CRMHLLeadgeneration</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">1798 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC02SecuredCCDAP</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SecuredCCDap</span>
-                <span class="method-start">2307 ms</span>
+                <span class="method-start">1654 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">4720 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC03HLDAPHomeLoanSalariedIndian</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPHomeLoanSalariedIndian</span>
-                <span class="method-start">4745 ms</span>
+                <span class="method-start">3951 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">5236 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC04HLDAPHomeLoanSalariedNRI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPHomeLoanSalariedNRI</span>
-                <span class="method-start">5258 ms</span>
+                <span class="method-start">4412 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">5799 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC05HLDAPHomeLoanIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPHomeLoanIndividual</span>
-                <span class="method-start">5824 ms</span>
+                <span class="method-start">4845 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">6437 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC06HLDAPHomeLoanNonIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPHomeLoanNonIndividual</span>
-                <span class="method-start">6457 ms</span>
+                <span class="method-start">5400 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">7193 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC07HLDAPBalanceTransferSalariedIndian</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPBalanceTransferSalariedIndian</span>
-                <span class="method-start">7222 ms</span>
+                <span class="method-start">5971 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">7913 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC08HLDAPBalanceTransferSalariedNRI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPBalanceTransferSalariedNRI</span>
-                <span class="method-start">7946 ms</span>
+                <span class="method-start">6655 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">8821 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC09HLDAPBalanceTransferIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPBalanceTransferIndividual</span>
-                <span class="method-start">8846 ms</span>
+                <span class="method-start">7368 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">9667 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC10HLDAPBalanceTransferNonIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPBalanceTransferNonIndividual</span>
-                <span class="method-start">9685 ms</span>
+                <span class="method-start">8109 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">10523 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC11HLDAPOnlyTopUpSalariedIndian</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPOnlyTopUpSalariedIndian</span>
-                <span class="method-start">10541 ms</span>
+                <span class="method-start">8905 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">11437 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC12HLDAPOnlyTopUpSalariedNRI</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPOnlyTopUpSalariedNRI</span>
-                <span class="method-start">11453 ms</span>
+                <span class="method-start">9714 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">12534 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC13HLDAPOnlyTopUpIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPOnlyTopUpIndividual</span>
-                <span class="method-start">12561 ms</span>
+                <span class="method-start">10621 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">845882 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">TestCases.TC14HLDAPOnlyTopUpNonIndividual</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">HLDAPOnlyTopUpNonIndividual</span>
-                <span class="method-start">846670 ms</span>
+                <span class="method-start">11588 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TC15HLDAPKotakSmartHomeSalariedIndian</div> <!-- chronological-class-name -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">tearDownTest</span>
-                <span class="method-start">866401 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-name">HLDAPKotakSmartHomeSalariedIndian</span>
+                <span class="method-start">12661 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TC16HLDAPKotakSmartHomeSalariedNRI</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">HLDAPKotakSmartHomeSalariedNRI</span>
+                <span class="method-start">751253 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCases.TC17HLDAPKotakSmartHomeIndividual</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">HLDAPKotakSmartHomeIndividual</span>
+                <span class="method-start">777199 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,11 +1,14 @@
 package CommonUtility;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 import java.util.Set;
 
+import org.apache.commons.lang.UnhandledException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -15,8 +18,6 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-
 
 public class CommonMethods extends SetUp 
 {
@@ -288,5 +289,39 @@ public static boolean isTestRunnable(String testName) throws IOException
 		}
 		return false;
 	}
-}
 
+
+	public static int getTestScenarioRowNum(String testScenario) throws Exception
+	{
+		String sheetName = CommonMethods.readPropertyFile("SheetName");
+		int rows =ExcelOperation.getRowCount(sheetName);
+		int rNum=1;
+		for( ;rNum<=rows; rNum++)
+		{
+			String testCase = ExcelOperation.getCellData(sheetName, "TC Name", rNum);
+			if(testCase.equalsIgnoreCase(testScenario))
+			{	
+				log.info("Row num for TestScenario = "+testScenario+ " is = "+rNum);
+				return rNum;
+			}
+		}
+		return rNum;
+	}
+
+	public static String readPropertyFile(String propertyName)throws UnhandledException, IOException
+	{
+		
+		Properties prop=new Properties();
+		String currentDir =System.getProperty("user.dir");
+		FileInputStream fis =new FileInputStream(currentDir+"\\src\\main\\resources\\Config.properties");
+
+		prop.load(fis);
+		String propertyValue=prop.getProperty(propertyName);
+		
+		return propertyValue;
+	}
+
+
+
+
+}

@@ -1,11 +1,9 @@
 package POM_CRMLeadCreation;
 
-import java.io.IOException;
 import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,7 +16,7 @@ import CommonUtility.ExcelOperation;
 import CommonUtility.CommonMethods;
 import CommonUtility.ScreenShot;
 import CommonUtility.SetUp;
-import TestSripts.runTest;
+
 
 
 public class LeadCreation extends SetUp
@@ -501,7 +499,6 @@ public class LeadCreation extends SetUp
 			  	//System.out.println("No of Rows :" +row);
 				Thread.sleep(2000);
 				
-				ExcelOperation.writeToExcel("Output", row+1, 0, runTest.TestCaseIDName);
 			  	ExcelOperation.writeToExcel("Output", row+1, 1, MobileNo);
 			  	ExcelOperation.writeToExcel("Output", row+1, 2, leadID().getText());
 			  	ExcelOperation.writeToExcel("Output", row+1, 3, leadStatusCodeVal().getText());

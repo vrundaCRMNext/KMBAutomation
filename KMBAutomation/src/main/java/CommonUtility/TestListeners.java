@@ -41,7 +41,9 @@ public class TestListeners extends SetUp implements ITestListener
 
 		log.info("Test Case_" + methodName + "_Successfully Passed");
 		try {
-			ScreenShot.takeSnapShot(methodName, "Pass");
+			String sheetName = CommonMethods.readPropertyFile("SheetName");
+			int rowNum = CommonMethods.getTestScenarioRowNum(methodName);
+			ExcelOperation.setCellData(sheetName, "Status", rowNum, "Pass");
 		} catch (Exception e) {}
 	}
 
@@ -94,6 +96,11 @@ public class TestListeners extends SetUp implements ITestListener
 		String failureLogg = "TEST CASE FAILED";
 		Markup m = MarkupHelper.createLabel(failureLogg, ExtentColor.RED);
 		extentTest.get().log(Status.FAIL, m);
+		try {
+			String sheetName = CommonMethods.readPropertyFile("SheetName");
+			int rowNum = CommonMethods.getTestScenarioRowNum(methodName);
+			ExcelOperation.setCellData(sheetName, "Status", rowNum, "Fail");
+		} catch (Exception e) {}
 
 	}
 

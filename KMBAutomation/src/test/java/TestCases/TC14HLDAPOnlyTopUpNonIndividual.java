@@ -49,7 +49,13 @@ public class TC14HLDAPOnlyTopUpNonIndividual extends SetUp{
 			HLSalesModule.CrossSellScreen(sheetName);
 			
 			HLSalesEnd  = new HLDAPEndJourney(driver);
-			HLSalesEnd.runEndJourney(sheetName);
+			HLSalesEnd.EligibilityScreen(sheetName);
+			HLSalesEnd.ProcessingFeeScreen(sheetName);
+			
+		//Digi App Form for NonIndividual	
+			HLSalesEnd.ReferenceDetailsScreen(sheetName);
+			HLSalesEnd.AppPropertyDetailsScreen(sheetName);
+			HLSalesEnd.FinIndividualAppQue(sheetName);
 		
 		
 		

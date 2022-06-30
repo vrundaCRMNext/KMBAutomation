@@ -763,6 +763,8 @@ private WebElement ITRSkip;
 
 public void ITRScreen() throws Exception
 {
+	Thread.sleep(2000);
+	CommonMethods.ExWait(ITRHdr);
 	log.info(CommonMethods.getElementText(ITRHdr));
 	ScreenShot.takeSnapShot("ITReturnScreen", "Pass");
 	CommonMethods.highLight(proceedBtn);

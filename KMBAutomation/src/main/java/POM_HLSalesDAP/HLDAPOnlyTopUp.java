@@ -62,6 +62,7 @@ public class HLDAPOnlyTopUp extends SetUp
 		log.info(CommonMethods.getElementText(reqLoanAmtLbl)+" = "+CommonMethods.getElementValue(reqLoanAmtFld));
 		
 		ScreenShot.takeSnapShot("TopUpDetailsScreen", "Pass");
+		CommonMethods.highLight(proceedBtn);
 		CommonMethods.Click(proceedBtn);
 		
 	}

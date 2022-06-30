@@ -9,7 +9,6 @@
       <class name="TestCases.TC01CRMHLLeadGeneration">
         <methods>
           <include name="CRMHLLeadgeneration"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC01CRMHLLeadGeneration -->
     </classes>
@@ -19,7 +18,6 @@
       <class name="TestCases.TC02SecuredCCDAP">
         <methods>
           <include name="SecuredCCDap"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC02SecuredCCDAP -->
     </classes>
@@ -29,7 +27,6 @@
       <class name="TestCases.TC03HLDAPHomeLoanSalariedIndian">
         <methods>
           <include name="HLDAPHomeLoanSalariedIndian"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC03HLDAPHomeLoanSalariedIndian -->
     </classes>
@@ -39,7 +36,6 @@
       <class name="TestCases.TC04HLDAPHomeLoanSalariedNRI">
         <methods>
           <include name="HLDAPHomeLoanSalariedNRI"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC04HLDAPHomeLoanSalariedNRI -->
     </classes>
@@ -48,7 +44,6 @@
     <classes>
       <class name="TestCases.TC05HLDAPHomeLoanIndividual">
         <methods>
-          <include name="tearDownTest"/>
           <include name="HLDAPHomeLoanIndividual"/>
         </methods>
       </class> <!-- TestCases.TC05HLDAPHomeLoanIndividual -->
@@ -59,7 +54,6 @@
       <class name="TestCases.TC06HLDAPHomeLoanNonIndividual">
         <methods>
           <include name="HLDAPHomeLoanNonIndividual"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC06HLDAPHomeLoanNonIndividual -->
     </classes>
@@ -69,7 +63,6 @@
       <class name="TestCases.TC07HLDAPBalanceTransferSalariedIndian">
         <methods>
           <include name="HLDAPBalanceTransferSalariedIndian"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC07HLDAPBalanceTransferSalariedIndian -->
     </classes>
@@ -79,7 +72,6 @@
       <class name="TestCases.TC08HLDAPBalanceTransferSalariedNRI">
         <methods>
           <include name="HLDAPBalanceTransferSalariedNRI"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC08HLDAPBalanceTransferSalariedNRI -->
     </classes>
@@ -89,7 +81,6 @@
       <class name="TestCases.TC09HLDAPBalanceTransferIndividual">
         <methods>
           <include name="HLDAPBalanceTransferIndividual"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC09HLDAPBalanceTransferIndividual -->
     </classes>
@@ -99,7 +90,6 @@
       <class name="TestCases.TC10HLDAPBalanceTransferNonIndividual">
         <methods>
           <include name="HLDAPBalanceTransferNonIndividual"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC10HLDAPBalanceTransferNonIndividual -->
     </classes>
@@ -108,7 +98,6 @@
     <classes>
       <class name="TestCases.TC11HLDAPOnlyTopUpSalariedIndian">
         <methods>
-          <include name="tearDownTest"/>
           <include name="HLDAPOnlyTopUpSalariedIndian"/>
         </methods>
       </class> <!-- TestCases.TC11HLDAPOnlyTopUpSalariedIndian -->
@@ -119,19 +108,53 @@
       <class name="TestCases.TC12HLDAPOnlyTopUpSalariedNRI">
         <methods>
           <include name="HLDAPOnlyTopUpSalariedNRI"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC12HLDAPOnlyTopUpSalariedNRI -->
     </classes>
   </test> <!-- HLDAP Salaried Only Top Up NRI (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Only Top Up Individual (failed)">
+    <classes>
+      <class name="TestCases.TC13HLDAPOnlyTopUpIndividual">
+        <methods>
+          <include name="HLDAPOnlyTopUpIndividual"/>
+        </methods>
+      </class> <!-- TestCases.TC13HLDAPOnlyTopUpIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Only Top Up Individual (failed) -->
   <test thread-count="5" name="HLDAP Salaried Only Top Up Non Individual (failed)">
     <classes>
       <class name="TestCases.TC14HLDAPOnlyTopUpNonIndividual">
         <methods>
           <include name="HLDAPOnlyTopUpNonIndividual"/>
-          <include name="tearDownTest"/>
         </methods>
       </class> <!-- TestCases.TC14HLDAPOnlyTopUpNonIndividual -->
     </classes>
   </test> <!-- HLDAP Salaried Only Top Up Non Individual (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Kotak Smart Home Indian (failed)">
+    <classes>
+      <class name="TestCases.TC15HLDAPKotakSmartHomeSalariedIndian">
+        <methods>
+          <include name="HLDAPKotakSmartHomeSalariedIndian"/>
+        </methods>
+      </class> <!-- TestCases.TC15HLDAPKotakSmartHomeSalariedIndian -->
+    </classes>
+  </test> <!-- HLDAP Salaried Kotak Smart Home Indian (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Kotak Smart Home NRI (failed)">
+    <classes>
+      <class name="TestCases.TC16HLDAPKotakSmartHomeSalariedNRI">
+        <methods>
+          <include name="HLDAPKotakSmartHomeSalariedNRI"/>
+        </methods>
+      </class> <!-- TestCases.TC16HLDAPKotakSmartHomeSalariedNRI -->
+    </classes>
+  </test> <!-- HLDAP Salaried Kotak Smart Home NRI (failed) -->
+  <test thread-count="5" name="HLDAP Individual Kotak Smart Home (failed)">
+    <classes>
+      <class name="TestCases.TC17HLDAPKotakSmartHomeIndividual">
+        <methods>
+          <include name="HLDAPKotakSmartHomeIndividual"/>
+        </methods>
+      </class> <!-- TestCases.TC17HLDAPKotakSmartHomeIndividual -->
+    </classes>
+  </test> <!-- HLDAP Individual Kotak Smart Home (failed) -->
 </suite> <!-- Failed suite [Suite] -->

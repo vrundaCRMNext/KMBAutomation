@@ -129,7 +129,8 @@ private WebElement checkStatusBtn;
 
 public void ProcessingFeeScreen(String sheetName)throws Exception
 {
-		//CommonMethods.waitForURL("processfee");
+		CommonMethods.waitForURL("processfee");
+		CommonMethods.ExWait(PFhdrMsg);
 		ScreenShot.takeSnapShot("ProcessingFee", "Pass");
 		log.info(CommonMethods.getElementText(PFhdrMsg));
 		log.info(CommonMethods.getElementText(PFAmt));
@@ -139,9 +140,6 @@ public void ProcessingFeeScreen(String sheetName)throws Exception
 		
 		try {
 			CommonMethods.Click(PFSkipContBtn);
-			//PFSkipContBtn.click();
-			//log.info("Clicked...");
-			Thread.sleep(1000);
 		}catch(Exception e) {log.info("Not able to click on " +e.getMessage());}
 		try {
 			CommonMethods.waitForURL("processfeefail");
@@ -182,7 +180,7 @@ private WebElement skipUploadPhysicalFormBtn;
 public void ReferenceDetailsScreen(String sheetName)throws Exception
 {
 	
-		//CommonMethods.waitForURL("refdetails");
+		CommonMethods.waitForURL("refdetails");
 		log.info(CommonMethods.getElementText(screenHdr1));
 		log.info(CommonMethods.getElementText(screenHdr2));
 

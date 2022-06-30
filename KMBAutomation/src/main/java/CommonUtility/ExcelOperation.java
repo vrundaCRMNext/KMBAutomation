@@ -33,7 +33,7 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-public class ExcelOperation implements AutoConst
+public class ExcelOperation
 {
 	public static XSSFWorkbook wb;
 	public static XSSFSheet sheet;
@@ -47,7 +47,7 @@ public class ExcelOperation implements AutoConst
 	public static Logger log = LoggerFactory.getLogger(ExcelOperation.class);
 
 	static HashMap<String, Integer> excelColumns = new HashMap<String, Integer>();
-
+	static String ExcelPATH = System.getProperty("user.dir")+"\\TestData\\TestData_LeadDetails.xlsx";
 	public static int getRowCount(String sheet) throws IOException
 	{
 		File f = new File(ExcelPATH);
@@ -201,7 +201,7 @@ public class ExcelOperation implements AutoConst
 		//creating workbook instance that refers to .xls file
 		 wb=new XSSFWorkbook(inputStream); 
 
-		 sheet = wb.getSheet(SheetName);
+		 sheet = wb.getSheet(sheetName);
 		//XSSFSheet sh = wb.getSheetAt(0);    //0 - index of 1st sheet
 
 		//adding all the column header names to the map 'columns'
