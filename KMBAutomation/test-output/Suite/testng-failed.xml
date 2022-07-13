@@ -157,4 +157,41 @@
       </class> <!-- TestCases.TC17HLDAPKotakSmartHomeIndividual -->
     </classes>
   </test> <!-- HLDAP Individual Kotak Smart Home (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home Loan Overdraft Indian (failed)">
+    <classes>
+      <class name="TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian">
+        <methods>
+          <include name="HLDAPHomeLoanOverdraftSalariedIndian"/>
+        </methods>
+      </class> <!-- TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home Loan Overdraft Indian (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home Loan Overdraft Individual (failed)">
+    <classes>
+      <class name="TestCases.TC19HLDAPHomeLoanOverdraftIndividual">
+        <methods>
+          <include name="HLDAPHomeLoanOverdraftIndividual"/>
+        </methods>
+      </class> <!-- TestCases.TC19HLDAPHomeLoanOverdraftIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home Loan Overdraft Individual (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home Loan Overdraft NonIndividual (failed)">
+    <parameter name="productName" value="Home Loan Overdraft"/>
+    <classes>
+      <class name="TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual">
+        <methods>
+          <include name="HLDAPHomeLoanOverdraftNonIndividual" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home Loan Overdraft NonIndividual (failed) -->
+  <test thread-count="5" name="HLDAP Salaried Home Loan Indian Add Financial CoApplicant (failed)">
+    <classes>
+      <class name="TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp">
+        <methods>
+          <include name="HLDAPHomeLoanSalIndianAddFinCoApp"/>
+        </methods>
+      </class> <!-- TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp -->
+    </classes>
+  </test> <!-- HLDAP Salaried Home Loan Indian Add Financial CoApplicant (failed) -->
 </suite> <!-- Failed suite [Suite] -->

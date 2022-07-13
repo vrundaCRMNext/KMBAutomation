@@ -45,8 +45,11 @@ public class ExtentReporterNG extends SetUp
 		
 		extent = new ExtentReports();
 		extent.attachReporter(reporter);
-		extent.setSystemInfo("Project Name","Kotak ");
-		extent.setSystemInfo("Browser","Chrome");
+		extent.setSystemInfo("Project Name","Kotak Mahindra Bank");
+		extent.setSystemInfo("Modules Comsist","CRM and DAP Journeys");
+		extent.setSystemInfo("Tester Name","Vrunda Vibhute");
+		
+
 		
 		
 		return extent;

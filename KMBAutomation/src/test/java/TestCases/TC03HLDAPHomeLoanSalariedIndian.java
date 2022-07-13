@@ -35,8 +35,13 @@ public class TC03HLDAPHomeLoanSalariedIndian extends SetUp
 			login = new LoginPage(driver);
 			login.CRMLogin(sheetName);
 		//Open HL Sales App link through quick link 
-			HLSalesIntial = new HLDAPIntialJourney(driver);
-			HLSalesIntial.runIntialJourney(sheetName);
+			try {
+				HLSalesIntial = new HLDAPIntialJourney(driver);
+				HLSalesIntial.runIntialJourney(sheetName);
+			} catch (Exception e) {
+				System.out.println("Exception ="+e.getMessage());
+			}
+			
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
 			HLSalesModule.runModuleJoureny(sheetName);

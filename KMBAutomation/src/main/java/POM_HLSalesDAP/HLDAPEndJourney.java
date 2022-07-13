@@ -22,7 +22,7 @@ import CommonUtility.SetUp;
 public class HLDAPEndJourney extends SetUp
 {
 	public Logger log = LoggerFactory.getLogger(HLDAPEndJourney.class);
-	HLDAPIntialJourney h1= new HLDAPIntialJourney(driver);
+	
 
 	public HLDAPEndJourney(WebDriver driver) 
 	{
@@ -33,7 +33,7 @@ public class HLDAPEndJourney extends SetUp
 	public void runEndJourney(String sheetName) throws Exception
 	{
 		
-		EligibilityScreen(sheetName);
+		EligibilityScreen(sheetName,"Continue to Sanction Letter");
 		ProcessingFeeScreen(sheetName);
 		ReferenceDetailsScreen(sheetName);
 		
@@ -69,20 +69,36 @@ private WebElement continueSanctionBtn;
 @FindBy(xpath="//div[@name='NextbuttonContainer']/button")			//Add Financial CO-appliant
 private WebElement addFinancialCo_appBtn;
 
+@FindBy(xpath="//div[@name=\"RemoveButtonContainer\"] //button")	//Remove Fin CoApp
+private WebElement removeFinCoAPPBtn;
+
 @FindBy(xpath="//div[@name='ROIDevButtonContainer']/button")		//ROI Deviation Button
 private WebElement ROIDevBtn;
 
 @FindBy(xpath="//div[@name='LoanDevContainer']/button")				//LOAN Deviation Button
 private WebElement LoanAmtDeviationBtn;
 
+@FindBy(xpath="//div[@name=\"ProcessingContainer\"]/div[2]/span")	//Processing fee
+private WebElement processingFee;
 	
-public void EligibilityScreen(String sheetName)throws Exception
+
+
+public void EligibilityScreen(String sheetName, String eligibilityOption)throws Exception
 {
 		CommonMethods.waitForURL("ligib");
-		ScreenShot.Ashot("EligibilityScreen", "Pass");
+		Thread.sleep(2000);
+		ScreenShot.Ashot("EligibilityScreen1", "Pass");
 		CommonMethods.scrollAtBottom();
+		Thread.sleep(1000);
+		try {
+			CommonMethods.ExWait(processingFee);
+		} catch (Exception e) {}
+		//ScreenShot.takeSnapShot("EligibilityScreen2","Pass");
+		Thread.sleep(2000);
 		
-		String eligibilityOption = ExcelOperation.getCellData(sheetName, "Eligibility Screen Option", 1);
+		
+			
+		//String eligibilityOption = ExcelOperation.getCellData(sheetName, "Eligibility Screen Option", 1);
 		log.info("Eligibility Screen Option to Proceed :" +eligibilityOption);
 		
 		if(eligibilityOption.equalsIgnoreCase("Continue to Sanction Letter"))
@@ -133,16 +149,18 @@ public void ProcessingFeeScreen(String sheetName)throws Exception
 		CommonMethods.ExWait(PFhdrMsg);
 		ScreenShot.takeSnapShot("ProcessingFee", "Pass");
 		log.info(CommonMethods.getElementText(PFhdrMsg));
-		log.info(CommonMethods.getElementText(PFAmt));
-		
+			try {
+			log.info(CommonMethods.getElementText(PFAmt));
+			}catch(Exception e) {}
 		CommonMethods.highLight(PFSkipContBtn);
 		Thread.sleep(1000);
 		
 		try {
 			CommonMethods.Click(PFSkipContBtn);
 		}catch(Exception e) {log.info("Not able to click on " +e.getMessage());}
+		
 		try {
-			CommonMethods.waitForURL("processfeefail");
+			//CommonMethods.waitForURL("processfeefail");
 			log.info(CommonMethods.getElementText(pfProgressMsg));
 			ScreenShot.takeSnapShot("ProcessingFeeWaiting", "Pass");
 			CommonMethods.Click(checkStatusBtn);
@@ -501,7 +519,7 @@ public void nonFinancialCoAppScreen1(String sheetName) throws Exception
 {
 	
 		//CommonMethods.waitForURL("nonfincoapp");
-		
+		HLDAPIntialJourney h1= new HLDAPIntialJourney(driver);
 		CommonMethods.input(CoAppNameFld, sheetName, "CoApp Name", 1);
 		log.info(CommonMethods.getElementText(CoAppNameLbl) +" = "+CommonMethods.getElementValue(CoAppNameFld));
 		
@@ -538,10 +556,14 @@ private WebElement CoAppSMSBody;
 @FindBy(xpath="//span[@data-autoid='cust_4330_ctrl']")						//OTP SMS
 private WebElement OtpSMS;
 
-public void retriveCoAppOTPSMS(String sheetName) throws Exception
+
+
+
+public void retriveCoAppOTPSMS(WebElement SMS,String sheetName) throws Exception
 {
 	
 		Thread.sleep(1000);
+		HLDAPIntialJourney h1= new HLDAPIntialJourney(driver);
 		h1.LeadSearch(sheetName);    //Lead Search through Mobile no from CRM 
 		
 		//To get OTP verification URL from lead details page 
@@ -558,9 +580,9 @@ public void retriveCoAppOTPSMS(String sheetName) throws Exception
 		Thread.sleep(2000);
 		}catch(Exception e) {}
 		ScreenShot.Ashot("CoApplicantDetailsPage", "Pass");
-		CommonMethods.scrollByVisibilityofElement(CoAppSMSBody);
+		CommonMethods.scrollByVisibilityofElement(SMS);
 		
-		String SMSbody=CommonMethods.getElementText(OtpSMS);
+		String SMSbody=CommonMethods.getElementText(SMS);
 		log.info("SMS = "+SMSbody);
 		String link=SMSbody.split("link")[1].trim().split(" ")[0];
 		log.info("OTP/Consent Verification link : "+link);
@@ -615,7 +637,7 @@ public void CoAppOTPVerification(String sheetName)
 		ScreenShot.takeSnapShot("OTPWaitingScreen", "Pass");
 		log.info("CoApplicant OTP Verification started");
 		
-		retriveCoAppOTPSMS(sheetName);
+		retriveCoAppOTPSMS(OtpSMS,sheetName);
 
 		Thread.sleep(2000);
 		log.info("OTP Notification :"+CommonMethods.getElementText(otpNotificationMSG));

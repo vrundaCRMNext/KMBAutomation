@@ -107,4 +107,30 @@
 			</classes>
 	</test>
 	
+	<test name="HLDAP Salaried Home Loan Overdraft Indian ">
+			<classes>
+				<class name ="TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian" />
+			</classes>
+	</test>
+	
+	<test name="HLDAP Salaried Home Loan Overdraft Individual ">
+			<classes>
+				<class name ="TestCases.TC19HLDAPHomeLoanOverdraftIndividual" />
+			</classes>
+	</test>
+	
+	<test name="HLDAP Salaried Home Loan Overdraft NonIndividual ">
+			<parameter  name= "productName"   value="Home Loan Overdraft"/>
+			<classes>
+				<class name ="TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual" />
+			</classes>
+	</test>
+	
+	<test name="HLDAP Salaried Home Loan Indian Add Financial CoApplicant ">
+			<classes>
+				<class name ="TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp" />
+			</classes>
+	</test>
+	
+	
 </suite> <!-- Suite -->

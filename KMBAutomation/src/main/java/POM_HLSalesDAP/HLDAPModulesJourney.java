@@ -23,8 +23,7 @@ public class HLDAPModulesJourney extends SetUp
 {
 
 	public Logger log = LoggerFactory.getLogger(HLDAPModulesJourney.class);
-	HLDAPIntialJourney h1= new HLDAPIntialJourney(driver);
-
+	
 	public HLDAPModulesJourney(WebDriver driver)
 	{
 		this.driver = driver;
@@ -36,7 +35,7 @@ public class HLDAPModulesJourney extends SetUp
 		//ScreenShot.takeSnapShot("ModulesScreen", "Pass");
 		Thread.sleep(1000);
 
-		Digital_InprincipleSanction(sheetName);
+		Digital_InprincipleSanction(sheetName,"MainApplicant");
 		PANCibilDeatils(sheetName);
 
 		incomeDetails(sheetName);
@@ -65,6 +64,9 @@ public class HLDAPModulesJourney extends SetUp
 	@FindBy(xpath="//span[@data-autoid='cust_4046_ctrl']")			//Consent SMS
 	private WebElement consentSMS;
 	
+	@FindBy(xpath="//span[@data-autoid='cust_4333_ctrl']")			//CoApplicant consent SMS
+	private WebElement coAppConsentSMS;
+	
 	@FindBy(xpath="//div[@name='T&CContainer'] //label")		//TnC checkbox
 	private WebElement TnC_checkbox;
 	
@@ -76,12 +78,13 @@ public class HLDAPModulesJourney extends SetUp
 	private WebElement consentSubmit;
 	
 	
-	public void Digital_InprincipleSanction(String sheetName) throws Exception
+	public void Digital_InprincipleSanction(String sheetName, String AppType) throws Exception
 	{
 		
 			try {
 			//Modules Screen	
 				CommonMethods.waitForURL("etb2");
+				Thread.sleep(2000);
 				CommonMethods.mouseHover(sanctionProceed);
 				ScreenShot.takeSnapShot("DigitalInprincipleSaction", "Pass");
 				CommonMethods.Click(sanctionProceed);
@@ -91,21 +94,34 @@ public class HLDAPModulesJourney extends SetUp
 				}
 			try {
 			//Consent Screen
-				CommonMethods.waitForURL("hlconsent");
-				ScreenShot.takeSnapShot("UserConsentScreen", "Pass");
+				CommonMethods.waitForURL("consent");
+				ScreenShot.Ashot("ApplicantConsentScreen", "Pass");
 				CommonMethods.scrollAtBottom();
 				CommonMethods.highLight(consentProceed);
 				CommonMethods.Click(consentProceed);
 				Thread.sleep(2000);
-				CommonMethods.waitForURL("Consent_waiting");
+				CommonMethods.waitForURL("waiting");
 				ScreenShot.takeSnapShot("ConsentWaitingScreen", "Pass");
 			}catch(Exception e) {log.error("Consent Screen exception due to :"+e.getMessage());}
 				Thread.sleep(2000);
-			//Consent Approval - get Link CRM lead page
-				log.info("Consent Approval started");
-				h1.retriveLinkFromSMS(consentSMS,HLSalesAppFields,sheetName);
+				
+			//Consent Approval for main applicant - get Link CRM lead page
+				if(AppType.equalsIgnoreCase("MainApplicant"))
+				{
+					log.info("Consent Approval for Main Applicant Started");
+					HLDAPIntialJourney h1= new HLDAPIntialJourney(driver);
+					h1.retriveLinkFromSMS(consentSMS,HLSalesAppFields,sheetName);
+				}
+				else if(AppType.equalsIgnoreCase("CoApplicant"))
+				{
+					log.info("Consent Approval for Co Applicant Started");
+					HLDAPEndJourney h3 = new HLDAPEndJourney(driver);
+					h3.retriveCoAppOTPSMS(coAppConsentSMS,sheetName);
+				}
+				
+				
 				Thread.sleep(1000);
-				ScreenShot.takeSnapShot("LeadConsentScreen", "Pass");
+				ScreenShot.takeSnapShot("ApplicantConsentScreen", "Pass");
 				
 			//CLick on TNC and Submit consent	
 				log.info(CommonMethods.getElementText(TnCContent));
@@ -143,7 +159,7 @@ public class HLDAPModulesJourney extends SetUp
 	@FindBy(xpath="//div[@name='NRI_PAN_Container'] //input")				//NRI PAN FLd
 	private WebElement NRIPANFld;
 	
-	@FindBy(xpath="//div[@name=\"Entity_PAN_Container\"] //input")      //Entity PAN fld
+	@FindBy(xpath="//div[contains(text(),'Entity PAN No')]/following::div[1] //input")      //Entity PAN fld
 	private WebElement EntityPANFld;
 	
 	@FindBy(xpath="//div[contains(text(),'Entity PAN No')]")        //Entity PAN Lbl
@@ -181,6 +197,14 @@ public class HLDAPModulesJourney extends SetUp
 	
 	@FindBy(xpath="//button[@id='c_159121652579']")				//PAN Error Ok button
 	private WebElement PANErrOkBtn;
+	
+	//name mismatch pop up
+	@FindBy(xpath="//div[@id='id_152499557667338']")
+	private WebElement message;
+	
+	@FindBy(xpath="//button[@id='c_170372892668']")
+	private WebElement skipProceedBtn;
+	
 	
 	
 	public void PANCibilDeatils(String sheetName) throws Exception
@@ -234,17 +258,24 @@ public class HLDAPModulesJourney extends SetUp
 				
 				ScreenShot.takeSnapShot("PANCIBIL Screen", "Pass");
 				Thread.sleep(1000);
-				CommonMethods.scrollByVisibilityofElement(PANProceedBtn);
+				CommonMethods.scrollDown(400);
 				CommonMethods.highLight(PANProceedBtn);
 				CommonMethods.Click(PANProceedBtn);
+				Thread.sleep(1000);
+
 				try {
+					CommonMethods.scrollByVisibilityofElement(PANErrMsg);
 					log.error(CommonMethods.getElementText(PANErrMsg));
 					CommonMethods.Click(PANErrOkBtn);
-					
-				} catch (Exception e) {
-					// TODO: handle exception
-				}
+				} catch (Exception e) {}
 			
+				try {
+					CommonMethods.scrollByVisibilityofElement(message);
+					log.info(CommonMethods.getElementText(message));
+					ScreenShot.takeSnapShot("PANPopUp", "Pass");
+					CommonMethods.highLight(skipProceedBtn);
+					CommonMethods.Click(skipProceedBtn);
+				} catch (Exception e) {}
 		
 	}
 	
@@ -422,8 +453,9 @@ public void selfEmpIncomeDetails(String sheetName)throws Exception
 
 /*********************************Applicant work Details Screen****************************************************/
 
-	@FindBy(xpath="//div[@name='applicantContainer']")				//work details header
+	@FindBy(xpath="//span[contains(text(),'Work Details')]")				//work details header
 	private WebElement workDetailsHeader;
+	 //div[@name='applicantContainer']
 	
 	@FindBy(xpath="//span[text()='Organisation Name']")				//organization name lbl
 	private WebElement orgNameLbl;
@@ -496,7 +528,7 @@ public void selfEmpIncomeDetails(String sheetName)throws Exception
 		
 	}
 	
-	@FindBy(xpath="//span[text()='Employer verification has failed']")			//failure msg
+	@FindBy(xpath="//span[contains(text(),'Employer verification')]")			//failure msg
 	private WebElement karzaFailMsg;
 	
 	@FindBy(xpath="//button[text()='Upload 3 month pay slips']")			//Upload 3 months payslip

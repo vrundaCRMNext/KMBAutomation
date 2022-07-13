@@ -52,11 +52,11 @@ public class LoginPage extends TestListeners
 	public void CRMLogin(String sheetName) throws Exception
 	{
 	
-				extentInfo("Login for "+ sheetName +" Intiated");
+				extentInfo("Login for ", sheetName +" Intiated");
 				CommonMethods.input(userName,sheetName,"Username", 1);
 				CommonMethods.input(password,sheetName ,"Password", 1);
 				CommonMethods.Click(loginBtn);
-				extentInfo("Login Sucessfully");
+				//extentInfo("Login Sucessfully");
 //				try 
 //				{
 //					String errMsg1= CommonMethods.getElementText(usernameErrorMsg);

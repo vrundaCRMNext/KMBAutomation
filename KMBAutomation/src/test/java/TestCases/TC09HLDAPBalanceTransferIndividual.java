@@ -40,7 +40,7 @@ public class TC09HLDAPBalanceTransferIndividual extends SetUp
 			HLSalesIntial.runIntialJourney(sheetName);
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
-			HLSalesModule.Digital_InprincipleSanction(sheetName);
+			HLSalesModule.Digital_InprincipleSanction(sheetName,"MainApplicant");
 			HLSalesModule.PANCibilDeatils(sheetName);
 			HLSalesModule.incomeDetails(sheetName);
 			

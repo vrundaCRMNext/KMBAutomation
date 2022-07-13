@@ -49,7 +49,9 @@ public class CommonMethods extends SetUp
 			Thread.sleep(1000);
 			element.sendKeys(ExcelOperation.getCellData(SheetName,ColName,rowNum));
 			log.info("Data Sucessfully entered on "+element.getAttribute("placeholder")+" = "+ExcelOperation.getCellData(SheetName,ColName,rowNum));
-			TestListeners.extentInfo("Data Sucessfully entered on "+element.getAttribute("placeholder")+" = "+ExcelOperation.getCellData(SheetName,ColName,rowNum));
+			//TestListeners.extentInfo("Data Sucessfully entered on "+element.getAttribute("placeholder")+" = "+ExcelOperation.getCellData(SheetName,ColName,rowNum),ColName);
+			TestListeners.extentInfo("Data sucessfully entered on "+ColName+" = "+ExcelOperation.getCellData(SheetName,ColName,rowNum),ColName);
+
 		}
 		catch(Exception e)
 		{
@@ -83,19 +85,20 @@ public class CommonMethods extends SetUp
 	}
 	public static void ExWait(WebElement element) throws InterruptedException
 	{
-		wait= new WebDriverWait(driver,Duration.ofSeconds(70));
+		wait= new WebDriverWait(driver,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 	public static void waitForURL(String urlContains)
 	{
-		wait= new WebDriverWait(driver,Duration.ofSeconds(70));
+		wait= new WebDriverWait(driver,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.urlContains(urlContains)	);
+
 	}
 	
 	public static void ExWaitsForWebelements(List<WebElement> ele )
 	{
-		wait= new WebDriverWait(driver,Duration.ofSeconds(70));
+		wait= new WebDriverWait(driver,Duration.ofSeconds(60));
 		wait.until(ExpectedConditions.visibilityOfAllElements(ele));
 	}
 	public static void ExWaitWithJS(String urlText)

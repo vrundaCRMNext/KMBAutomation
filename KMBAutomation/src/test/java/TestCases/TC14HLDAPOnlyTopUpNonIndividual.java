@@ -38,7 +38,7 @@ public class TC14HLDAPOnlyTopUpNonIndividual extends SetUp{
 			HLSalesIntial.runIntialJourney(sheetName);
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
-			HLSalesModule.Digital_InprincipleSanction(sheetName);
+			HLSalesModule.Digital_InprincipleSanction(sheetName,"MainApplicant");
 			HLSalesModule.PANCibilDeatils(sheetName);
 			HLSalesModule.incomeDetails(sheetName);
 			
@@ -49,7 +49,7 @@ public class TC14HLDAPOnlyTopUpNonIndividual extends SetUp{
 			HLSalesModule.CrossSellScreen(sheetName);
 			
 			HLSalesEnd  = new HLDAPEndJourney(driver);
-			HLSalesEnd.EligibilityScreen(sheetName);
+			HLSalesEnd.EligibilityScreen(sheetName,"Continue to Sanction Letter");
 			HLSalesEnd.ProcessingFeeScreen(sheetName);
 			
 		//Digi App Form for NonIndividual	

@@ -25,7 +25,8 @@ public class HLDAPIntialJourney extends SetUp
 	public String applicantTypeExcel;
 	public String selfEMPTypeExcel;
 	public String residentTypeExcel;
-
+	
+	
 	public HLDAPIntialJourney(WebDriver driver)
 	{
 		this.driver = driver;
@@ -36,11 +37,12 @@ public class HLDAPIntialJourney extends SetUp
 	public void runIntialJourney(String sheetName)throws Exception
 	{
 		
+			log.info("Intial Journey Started");
 			intiateDAPJourney(sheetName);
 			productSelection(sheetName);
 			subSourceSelection(sheetName);
-			applicantTypeSelection(sheetName);
 			applicantTypeExcel = ExcelOperation.getCellData(sheetName,"Applicant Type", 1);  				 //Salaried or Self Employed
+			applicantTypeSelection(sheetName,applicantTypeExcel);
 
 			if(applicantTypeExcel.equalsIgnoreCase("Salaried"))
 			{
@@ -64,7 +66,7 @@ public class HLDAPIntialJourney extends SetUp
 			Thread.sleep(1000);
 			//resumeWithLink(sheetName);
 
-			OTPVerification(sheetName);
+			OTPVerification(sheetName,"MainApplicant");
 			
 			log.info("Applicant Type ="+applicantTypeExcel +" and " +selfEMPTypeExcel);
 			if(applicantTypeExcel.equalsIgnoreCase("Self employed") )
@@ -118,7 +120,7 @@ public class HLDAPIntialJourney extends SetUp
 	
 	//MOB-DOB screen
 		
-		@FindBy(xpath="//span[text()='Check if applicant is an Existing customer and has a PA offer?']")					//MOB DOB Screen header
+		@FindBy(xpath="//span[contains(text(),'Check if')]")					//MOB DOB Screen header
 		private WebElement mob_dob_Header;
 		
 		@FindBy(xpath="//div[@name='mobileContainer'] //input")				//Mobile No txt field
@@ -184,6 +186,8 @@ public class HLDAPIntialJourney extends SetUp
 	{
 		try 
 		{
+			Thread.sleep(1000);
+
 			CommonMethods.mouseHover(QuickLinks);
 			Thread.sleep(1000);
 			CommonMethods.highLight(HlSalesAppLink);
@@ -248,15 +252,13 @@ public class HLDAPIntialJourney extends SetUp
 	}
 	
 	//Select Applicant type Screen
-	public void applicantTypeSelection(String sheetName) throws Exception
+	public void applicantTypeSelection(String sheetName, String applicantTypeExcel) throws Exception
 	{
 		
 			Thread.sleep(1000);
 			assertEquals(CommonMethods.getElementText(ApplicantTypeHeader), "Is the applicant Salaried or Self-employed?");
 			log.info("Header of screen : "+CommonMethods.getElementText(ApplicantTypeHeader));
 			applicantTypeExcel = ExcelOperation.getCellData(sheetName,"Applicant Type", 1);
-			
-			log.info("Applicant Type Selection screen open..");
 			log.info("Applicant Type to select from excel sheet : "+applicantTypeExcel);
 			ScreenShot.takeSnapShot("ApplicantType_Selection_Screen", "Pass");
 			
@@ -635,7 +637,7 @@ public class HLDAPIntialJourney extends SetUp
 			private WebElement srchByFilterBtn;
 			
 			
-			public void LeadSearch(String sheetName)throws Exception
+			public  void LeadSearch(String sheetName)throws Exception
 			{
 				
 					CommonMethods.switchToWindowByTitle("CRMnext - Smart.Easy.Complete");
@@ -646,7 +648,7 @@ public class HLDAPIntialJourney extends SetUp
 					CommonMethods.Click(srchLeadIcon);
 					CommonMethods.input(MobileNoSrch, sheetName,"Mobile No",1);
 					CommonMethods.Click(srchBtn);
-					Thread.sleep(2000);
+					Thread.sleep(3000);
 				
 					try {
 				//Click on recently created lead from the list of leads with same mobile no
@@ -741,7 +743,10 @@ public class HLDAPIntialJourney extends SetUp
 	@FindBy(xpath="//div[@name=\"Container\"] //span")			//Screen hdr
 	private WebElement Hdr;	
 	
-	public void OTPVerification(String sheetName)throws Exception
+	@FindBy(xpath="//span[@data-autoid='cust_4330_ctrl']")						//OTP SMS
+	private WebElement OtpSMS;
+	
+	public void OTPVerification(String sheetName, String appType)throws Exception
 	{
 		
 			Thread.sleep(2000);
@@ -750,10 +755,20 @@ public class HLDAPIntialJourney extends SetUp
 			
 			ScreenShot.takeSnapShot("OTPWaitingScreen", "Pass");
 			log.info("OTP Verification started");
-			
-			retriveLinkFromSMS(otpSMSBody, HLSalesAppFields, sheetName);
-			
 			Thread.sleep(1000);
+
+			if(appType.equalsIgnoreCase("MainApplicant"))
+			{
+				retriveLinkFromSMS(otpSMSBody, HLSalesAppFields, sheetName);
+			}
+			else if(appType.equalsIgnoreCase("CoApplicant"))
+			{
+				HLDAPEndJourney h3 = new HLDAPEndJourney(driver);
+				h3.retriveCoAppOTPSMS(OtpSMS,sheetName);
+			}
+			
+			Thread.sleep(2000);
+			CommonMethods.waitForURL("OTP");
 			log.info("OTP Notification :"+CommonMethods.getElementText(otpNotificationMSG));
 				CommonMethods.Click(closeNotification);
 				Thread.sleep(1000);
@@ -762,7 +777,6 @@ public class HLDAPIntialJourney extends SetUp
 				OTPTxtbox.sendKeys("123456");
 				CommonMethods.Click(otpSubmit);
 				Thread.sleep(1000);
-				//driver.close();
 				driver.navigate().back();
 				Thread.sleep(1000);
 				CommonMethods.switchToWindowByTitle("Customer Digital Journey");
@@ -776,8 +790,9 @@ public class HLDAPIntialJourney extends SetUp
 	
 /*******************************Resident Status Screen 16/05/2022****************************************/
 	
-	@FindBy(xpath="//div[@name='App_Container']/span")   //Resident Status screen header
+	@FindBy(xpath="//span[contains(text(),'Select')]")   //Resident Status screen header
 	private WebElement residentStatusHeader;
+	 //div[@name='App_Container']/span
 	
 	@FindBy(xpath="//div[@id='missing_668']/div")   //Select resident status from both options
 	private List<WebElement> ResidentTypeList;
@@ -843,27 +858,31 @@ public class HLDAPIntialJourney extends SetUp
 					//Get value of country
 					log.info(CommonMethods.getElementText(countryLbl)+" = "+CommonMethods.getElementValue(countryFld));
 					
+//					try {
+//					//Select City
+//						CommonMethods.input(cityFld, sheetName, "City", 1);
+//						CommonMethods.ExWaitsForWebelements(cityList);
+//						for(WebElement ele : cityList)
+//						{
+//							String cityNm = CommonMethods.getElementText(ele);
+//							if(cityNm.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "City", 1)))
+//							{
+//								CommonMethods.Click(ele);
+//								log.info(CommonMethods.getElementText(cityLabel)+" = "+CommonMethods.getElementValue(cityFld));
+//								break;
+//							}
+//						}
+//					}catch(Exception e) {}	
+				
 					try {
-					//Select City
-						CommonMethods.input(cityFld, sheetName, "City", 1);
-						CommonMethods.ExWaitsForWebelements(cityList);
-						for(WebElement ele : cityList)
-						{
-							String cityNm = CommonMethods.getElementText(ele);
-							if(cityNm.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "City", 1)))
-							{
-								CommonMethods.Click(ele);
-								log.info(CommonMethods.getElementText(cityLabel)+" = "+CommonMethods.getElementValue(cityFld));
-								break;
-							}
-						}
-					}catch(Exception e) {}	
-				//Enter Pincode
-					CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
-					log.info(CommonMethods.getElementText(pincodeLbl)+" = "+CommonMethods.getElementValue(pincodeFld));
+						//Enter Pincode
+						CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
+						log.info(CommonMethods.getElementText(pincodeLbl)+" = "+CommonMethods.getElementValue(pincodeFld));
+						
+					} catch (Exception e) {}
 					
 					ScreenShot.takeSnapShot("IndianResidentScreen", "Pass");
-					
+					CommonMethods.highLight(IndianProceedBtn);
 					CommonMethods.Click(IndianProceedBtn);
 				}
 				else if(residentTypeFromExel.equalsIgnoreCase("NRI"))
@@ -898,6 +917,62 @@ public class HLDAPIntialJourney extends SetUp
 				}
 		
 	}
+	
+	public void residentStatusForHLOD(String sheetName) throws Exception
+	{
+		log.info(CommonMethods.getElementText(residentStatusHeader));
+		//Get value of country
+		log.info(CommonMethods.getElementText(countryLbl)+" = "+CommonMethods.getElementValue(countryFld));
+	
+		try {
+			//Select City
+				CommonMethods.input(cityFld, sheetName, "City", 1);
+				CommonMethods.ExWaitsForWebelements(cityList);
+				for(WebElement ele : cityList)
+				{
+					String cityNm = CommonMethods.getElementText(ele);
+					if(cityNm.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "City", 1)))
+					{
+						CommonMethods.Click(ele);
+						log.info(CommonMethods.getElementText(cityLabel)+" = "+CommonMethods.getElementValue(cityFld));
+						break;
+					}
+				}
+			}catch(Exception e) {}	
+			
+		try {
+				//Enter Pincode
+				
+				CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
+				Thread.sleep(1000);
+				String pincodeval = CommonMethods.getElementValue(pincodeFld);
+				if(pincodeval.isEmpty())
+				{
+					CommonMethods.input(pincodeFld, sheetName, "Pincode", 1);
+				}
+				
+//				CommonMethods.ExWaitsForWebelements(cityList);
+//				for(WebElement ele : cityList)
+//				{
+//					String pincode = CommonMethods.getElementText(ele);
+//					if(pincode.equalsIgnoreCase(ExcelOperation.getCellData(sheetName, "City", 1)))
+//					{
+//						CommonMethods.Click(ele);
+//						log.info(CommonMethods.getElementText(pincodeLbl)+" = "+CommonMethods.getElementValue(pincodeFld));
+//						break;
+//					}
+//				}
+				
+				
+			} catch (Exception e) {}
+		
+			ScreenShot.takeSnapShot("ResidentScreenForOD", "Pass");
+			CommonMethods.highLight(IndianProceedBtn);
+			CommonMethods.Click(IndianProceedBtn);
+	}
+	
+	
+	
 /*******************Resident Status Screen*************************/
 	
 /*******************NRI Power of Attorney Screen1*************************/

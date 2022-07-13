@@ -1,6 +1,5 @@
 package CommonUtility;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import org.testng.ITestContext;
@@ -26,7 +25,9 @@ public class TestListeners extends SetUp implements ITestListener
 	public void onTestStart(ITestResult result) 
 	{
 		String methodName = result.getMethod().getMethodName();
-		test = extent.createTest(result.getTestClass().getName() + "  @TestCase : " + result.getMethod().getMethodName());
+		//test = extent.createTest(result.getTestClass().getName() + "  @TestCase : " + result.getMethod().getMethodName());
+		test = extent.createTest(result.getTestClass().getName() );
+
 		extentTest.set(test);
 
 		log.info("Test Case_" + methodName+ "_Successfully Started");
@@ -47,10 +48,13 @@ public class TestListeners extends SetUp implements ITestListener
 		} catch (Exception e) {}
 	}
 
-	public static void extentInfo(String message)
+	public static void extentInfo(String message,String name) throws Exception
 	{
 		Markup m = MarkupHelper.createLabel(message, ExtentColor.BLUE);
-    	extentTest.get().log(Status.INFO, m);
+    	//extentTest.get().log(Status.INFO, m);
+    	ScreenShot.takeSnapShot(name, "Pass");
+    	extentTest.get().log(Status.INFO, message,MediaEntityBuilder.createScreenCaptureFromPath(ScreenShot.ScreenShotName).build() );
+    	
 	}
 	
 	public static void extentError(String message)

@@ -36,7 +36,7 @@ public class TC06HLDAPHomeLoanNonIndividual extends SetUp{
 		HLSalesIntial.runIntialJourney(sheetName);
 		
 		HLSalesModule = new HLDAPModulesJourney(driver);
-		HLSalesModule.Digital_InprincipleSanction(sheetName);
+		HLSalesModule.Digital_InprincipleSanction(sheetName,"MainApplicant");
 		HLSalesModule.PANCibilDeatils(sheetName);
 		HLSalesModule.selfEmpIncomeDetails(sheetName);
 		HLSalesModule.propertyDetailsScreen(sheetName);
@@ -44,7 +44,7 @@ public class TC06HLDAPHomeLoanNonIndividual extends SetUp{
 		HLSalesModule.CrossSellScreen(sheetName);
 		
 		HLSalesEnd  = new HLDAPEndJourney(driver);
-		HLSalesEnd.EligibilityScreen(sheetName);
+		HLSalesEnd.EligibilityScreen(sheetName,"Continue to Sanction Letter");
 		HLSalesEnd.ProcessingFeeScreen(sheetName);
 		
 		HLSalesEnd.ReferenceDetailsScreen(sheetName);

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="0" failed="1" skipped="16">
+<testng-results ignored="0" total="21" passed="0" failed="1" skipped="20">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-30T17:07:16 IST" name="Suite" finished-at="2022-06-30T17:20:38 IST" duration-ms="801820">
+  <suite started-at="2022-07-12T14:21:15 IST" name="Suite" finished-at="2022-07-12T14:39:08 IST" duration-ms="1073904">
     <groups>
     </groups>
-    <test started-at="2022-06-30T17:07:16 IST" name="CRM HL Lead Generation Test" finished-at="2022-06-30T17:07:17 IST" duration-ms="1337">
+    <test started-at="2022-07-12T14:21:15 IST" name="CRM HL Lead Generation Test" finished-at="2022-07-12T14:21:16 IST" duration-ms="1409">
       <class name="TestCases.TC01CRMHLLeadGeneration">
-        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@1f2d2181]" started-at="2022-06-30T17:07:16 IST" name="CRMHLLeadgeneration" finished-at="2022-06-30T17:07:17 IST" duration-ms="1305" status="SKIP">
+        <test-method signature="CRMHLLeadgeneration()[pri:0, instance:TestCases.TC01CRMHLLeadGeneration@1f2d2181]" started-at="2022-07-12T14:21:15 IST" name="CRMHLLeadgeneration" finished-at="2022-07-12T14:21:16 IST" duration-ms="1377" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test CRMHLLeadgeneration as the Run mode is NO]]>
@@ -51,9 +51,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- CRMHLLeadgeneration -->
       </class> <!-- TestCases.TC01CRMHLLeadGeneration -->
     </test> <!-- CRM HL Lead Generation Test -->
-    <test started-at="2022-06-30T17:07:17 IST" name="Secured CC DAP Test" finished-at="2022-06-30T17:07:20 IST" duration-ms="2282">
+    <test started-at="2022-07-12T14:21:16 IST" name="Secured CC DAP Test" finished-at="2022-07-12T14:21:19 IST" duration-ms="2796">
       <class name="TestCases.TC02SecuredCCDAP">
-        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.TC02SecuredCCDAP@66f66866]" started-at="2022-06-30T17:07:17 IST" name="SecuredCCDap" finished-at="2022-06-30T17:07:20 IST" duration-ms="2278" status="SKIP">
+        <test-method signature="SecuredCCDap()[pri:0, instance:TestCases.TC02SecuredCCDAP@66f66866]" started-at="2022-07-12T14:21:16 IST" name="SecuredCCDap" finished-at="2022-07-12T14:21:19 IST" duration-ms="2793" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test SecuredCCDap as the Run mode is NO]]>
@@ -97,9 +97,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- SecuredCCDap -->
       </class> <!-- TestCases.TC02SecuredCCDAP -->
     </test> <!-- Secured CC DAP Test -->
-    <test started-at="2022-06-30T17:07:20 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-06-30T17:07:20 IST" duration-ms="454">
+    <test started-at="2022-07-12T14:21:19 IST" name="HLDAP Salaried Home loan Indian" finished-at="2022-07-12T14:21:19 IST" duration-ms="441">
       <class name="TestCases.TC03HLDAPHomeLoanSalariedIndian">
-        <test-method signature="HLDAPHomeLoanSalariedIndian()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@79c3f01f]" started-at="2022-06-30T17:07:20 IST" name="HLDAPHomeLoanSalariedIndian" finished-at="2022-06-30T17:07:20 IST" duration-ms="447" status="SKIP">
+        <test-method signature="HLDAPHomeLoanSalariedIndian()[pri:0, instance:TestCases.TC03HLDAPHomeLoanSalariedIndian@79c3f01f]" started-at="2022-07-12T14:21:19 IST" name="HLDAPHomeLoanSalariedIndian" finished-at="2022-07-12T14:21:19 IST" duration-ms="438" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanSalariedIndian as the Run mode is NO]]>
@@ -143,9 +143,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPHomeLoanSalariedIndian -->
       </class> <!-- TestCases.TC03HLDAPHomeLoanSalariedIndian -->
     </test> <!-- HLDAP Salaried Home loan Indian -->
-    <test started-at="2022-06-30T17:07:20 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-06-30T17:07:21 IST" duration-ms="417">
+    <test started-at="2022-07-12T14:21:19 IST" name="HLDAP Salaried Home loan NRI" finished-at="2022-07-12T14:21:20 IST" duration-ms="512">
       <class name="TestCases.TC04HLDAPHomeLoanSalariedNRI">
-        <test-method signature="HLDAPHomeLoanSalariedNRI()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@5d52e3ef]" started-at="2022-06-30T17:07:20 IST" name="HLDAPHomeLoanSalariedNRI" finished-at="2022-06-30T17:07:21 IST" duration-ms="416" status="SKIP">
+        <test-method signature="HLDAPHomeLoanSalariedNRI()[pri:0, instance:TestCases.TC04HLDAPHomeLoanSalariedNRI@5d52e3ef]" started-at="2022-07-12T14:21:19 IST" name="HLDAPHomeLoanSalariedNRI" finished-at="2022-07-12T14:21:20 IST" duration-ms="510" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanSalariedNRI sas the Run mode is NO]]>
@@ -189,9 +189,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPHomeLoanSalariedNRI -->
       </class> <!-- TestCases.TC04HLDAPHomeLoanSalariedNRI -->
     </test> <!-- HLDAP Salaried Home loan NRI -->
-    <test started-at="2022-06-30T17:07:21 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-06-30T17:07:21 IST" duration-ms="544">
+    <test started-at="2022-07-12T14:21:20 IST" name="HLDAP SelfEmployed Individual Home loan " finished-at="2022-07-12T14:21:21 IST" duration-ms="629">
       <class name="TestCases.TC05HLDAPHomeLoanIndividual">
-        <test-method signature="HLDAPHomeLoanIndividual()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@4f8caaf3]" started-at="2022-06-30T17:07:21 IST" name="HLDAPHomeLoanIndividual" finished-at="2022-06-30T17:07:21 IST" duration-ms="541" status="SKIP">
+        <test-method signature="HLDAPHomeLoanIndividual()[pri:0, instance:TestCases.TC05HLDAPHomeLoanIndividual@4f8caaf3]" started-at="2022-07-12T14:21:20 IST" name="HLDAPHomeLoanIndividual" finished-at="2022-07-12T14:21:21 IST" duration-ms="627" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanIndividual as the Run mode is NO]]>
@@ -235,9 +235,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPHomeLoanIndividual -->
       </class> <!-- TestCases.TC05HLDAPHomeLoanIndividual -->
     </test> <!-- HLDAP SelfEmployed Individual Home loan  -->
-    <test started-at="2022-06-30T17:07:21 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-06-30T17:07:22 IST" duration-ms="557">
+    <test started-at="2022-07-12T14:21:21 IST" name="HLDAP SelfEmployed NonIndividual Home loan " finished-at="2022-07-12T14:21:21 IST" duration-ms="791">
       <class name="TestCases.TC06HLDAPHomeLoanNonIndividual">
-        <test-method signature="HLDAPHomeLoanNonIndividual()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@678040b3]" started-at="2022-06-30T17:07:21 IST" name="HLDAPHomeLoanNonIndividual" finished-at="2022-06-30T17:07:22 IST" duration-ms="555" status="SKIP">
+        <test-method signature="HLDAPHomeLoanNonIndividual()[pri:0, instance:TestCases.TC06HLDAPHomeLoanNonIndividual@678040b3]" started-at="2022-07-12T14:21:21 IST" name="HLDAPHomeLoanNonIndividual" finished-at="2022-07-12T14:21:21 IST" duration-ms="788" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPHomeLoanNonIndividual as the Run mode is NO]]>
@@ -281,9 +281,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPHomeLoanNonIndividual -->
       </class> <!-- TestCases.TC06HLDAPHomeLoanNonIndividual -->
     </test> <!-- HLDAP SelfEmployed NonIndividual Home loan  -->
-    <test started-at="2022-06-30T17:07:22 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-06-30T17:07:22 IST" duration-ms="660">
+    <test started-at="2022-07-12T14:21:21 IST" name="HLDAP Salaried Balance Transfer Indian " finished-at="2022-07-12T14:21:22 IST" duration-ms="736">
       <class name="TestCases.TC07HLDAPBalanceTransferSalariedIndian">
-        <test-method signature="HLDAPBalanceTransferSalariedIndian()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@6aa648b9]" started-at="2022-06-30T17:07:22 IST" name="HLDAPBalanceTransferSalariedIndian" finished-at="2022-06-30T17:07:22 IST" duration-ms="658" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferSalariedIndian()[pri:0, instance:TestCases.TC07HLDAPBalanceTransferSalariedIndian@6aa648b9]" started-at="2022-07-12T14:21:21 IST" name="HLDAPBalanceTransferSalariedIndian" finished-at="2022-07-12T14:21:22 IST" duration-ms="734" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferSalariedIndian as the Run mode is NO]]>
@@ -327,9 +327,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPBalanceTransferSalariedIndian -->
       </class> <!-- TestCases.TC07HLDAPBalanceTransferSalariedIndian -->
     </test> <!-- HLDAP Salaried Balance Transfer Indian  -->
-    <test started-at="2022-06-30T17:07:22 IST" name="HLDAP Salaried Balance Transfer NRI " finished-at="2022-06-30T17:07:23 IST" duration-ms="698">
+    <test started-at="2022-07-12T14:21:22 IST" name="HLDAP Salaried Balance Transfer NRI " finished-at="2022-07-12T14:21:23 IST" duration-ms="766">
       <class name="TestCases.TC08HLDAPBalanceTransferSalariedNRI">
-        <test-method signature="HLDAPBalanceTransferSalariedNRI()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@680bddf5]" started-at="2022-06-30T17:07:22 IST" name="HLDAPBalanceTransferSalariedNRI" finished-at="2022-06-30T17:07:23 IST" duration-ms="696" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferSalariedNRI()[pri:0, instance:TestCases.TC08HLDAPBalanceTransferSalariedNRI@680bddf5]" started-at="2022-07-12T14:21:22 IST" name="HLDAPBalanceTransferSalariedNRI" finished-at="2022-07-12T14:21:23 IST" duration-ms="763" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferSalariedNRI as the Run mode is NO]]>
@@ -373,9 +373,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPBalanceTransferSalariedNRI -->
       </class> <!-- TestCases.TC08HLDAPBalanceTransferSalariedNRI -->
     </test> <!-- HLDAP Salaried Balance Transfer NRI  -->
-    <test started-at="2022-06-30T17:07:23 IST" name="HLDAP Salaried Balance Transfer Individual " finished-at="2022-06-30T17:07:24 IST" duration-ms="731">
+    <test started-at="2022-07-12T14:21:23 IST" name="HLDAP Salaried Balance Transfer Individual " finished-at="2022-07-12T14:21:24 IST" duration-ms="833">
       <class name="TestCases.TC09HLDAPBalanceTransferIndividual">
-        <test-method signature="HLDAPBalanceTransferIndividual()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@26f1249d]" started-at="2022-06-30T17:07:23 IST" name="HLDAPBalanceTransferIndividual" finished-at="2022-06-30T17:07:24 IST" duration-ms="729" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferIndividual()[pri:0, instance:TestCases.TC09HLDAPBalanceTransferIndividual@26f1249d]" started-at="2022-07-12T14:21:23 IST" name="HLDAPBalanceTransferIndividual" finished-at="2022-07-12T14:21:24 IST" duration-ms="831" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferIndividual as the Run mode is NO]]>
@@ -419,9 +419,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPBalanceTransferIndividual -->
       </class> <!-- TestCases.TC09HLDAPBalanceTransferIndividual -->
     </test> <!-- HLDAP Salaried Balance Transfer Individual  -->
-    <test started-at="2022-06-30T17:07:24 IST" name="HLDAP Salaried Balance Transfer Non Individual " finished-at="2022-06-30T17:07:25 IST" duration-ms="786">
+    <test started-at="2022-07-12T14:21:24 IST" name="HLDAP Salaried Balance Transfer Non Individual " finished-at="2022-07-12T14:21:25 IST" duration-ms="944">
       <class name="TestCases.TC10HLDAPBalanceTransferNonIndividual">
-        <test-method signature="HLDAPBalanceTransferNonIndividual()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@18151a14]" started-at="2022-06-30T17:07:24 IST" name="HLDAPBalanceTransferNonIndividual" finished-at="2022-06-30T17:07:25 IST" duration-ms="783" status="SKIP">
+        <test-method signature="HLDAPBalanceTransferNonIndividual()[pri:0, instance:TestCases.TC10HLDAPBalanceTransferNonIndividual@18151a14]" started-at="2022-07-12T14:21:24 IST" name="HLDAPBalanceTransferNonIndividual" finished-at="2022-07-12T14:21:25 IST" duration-ms="942" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPBalanceTransferNonIndividual as the Run mode is NO]]>
@@ -465,9 +465,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPBalanceTransferNonIndividual -->
       </class> <!-- TestCases.TC10HLDAPBalanceTransferNonIndividual -->
     </test> <!-- HLDAP Salaried Balance Transfer Non Individual  -->
-    <test started-at="2022-06-30T17:07:25 IST" name="HLDAP Salaried Only Top Up Indian " finished-at="2022-06-30T17:07:25 IST" duration-ms="799">
+    <test started-at="2022-07-12T14:21:25 IST" name="HLDAP Salaried Only Top Up Indian " finished-at="2022-07-12T14:21:26 IST" duration-ms="1000">
       <class name="TestCases.TC11HLDAPOnlyTopUpSalariedIndian">
-        <test-method signature="HLDAPOnlyTopUpSalariedIndian()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@56bc3fac]" started-at="2022-06-30T17:07:25 IST" name="HLDAPOnlyTopUpSalariedIndian" finished-at="2022-06-30T17:07:25 IST" duration-ms="797" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpSalariedIndian()[pri:0, instance:TestCases.TC11HLDAPOnlyTopUpSalariedIndian@56bc3fac]" started-at="2022-07-12T14:21:25 IST" name="HLDAPOnlyTopUpSalariedIndian" finished-at="2022-07-12T14:21:26 IST" duration-ms="998" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpSalariedIndian as the Run mode is NO]]>
@@ -511,9 +511,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPOnlyTopUpSalariedIndian -->
       </class> <!-- TestCases.TC11HLDAPOnlyTopUpSalariedIndian -->
     </test> <!-- HLDAP Salaried Only Top Up Indian  -->
-    <test started-at="2022-06-30T17:07:25 IST" name="HLDAP Salaried Only Top Up NRI " finished-at="2022-06-30T17:07:26 IST" duration-ms="896">
+    <test started-at="2022-07-12T14:21:26 IST" name="HLDAP Salaried Only Top Up NRI " finished-at="2022-07-12T14:21:27 IST" duration-ms="1146">
       <class name="TestCases.TC12HLDAPOnlyTopUpSalariedNRI">
-        <test-method signature="HLDAPOnlyTopUpSalariedNRI()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@3ecedf21]" started-at="2022-06-30T17:07:25 IST" name="HLDAPOnlyTopUpSalariedNRI" finished-at="2022-06-30T17:07:26 IST" duration-ms="894" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpSalariedNRI()[pri:0, instance:TestCases.TC12HLDAPOnlyTopUpSalariedNRI@3ecedf21]" started-at="2022-07-12T14:21:26 IST" name="HLDAPOnlyTopUpSalariedNRI" finished-at="2022-07-12T14:21:27 IST" duration-ms="1145" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpSalariedNRI as the Run mode is NO]]>
@@ -557,9 +557,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPOnlyTopUpSalariedNRI -->
       </class> <!-- TestCases.TC12HLDAPOnlyTopUpSalariedNRI -->
     </test> <!-- HLDAP Salaried Only Top Up NRI  -->
-    <test started-at="2022-06-30T17:07:26 IST" name="HLDAP Salaried Only Top Up Individual " finished-at="2022-06-30T17:07:27 IST" duration-ms="958">
+    <test started-at="2022-07-12T14:21:27 IST" name="HLDAP Salaried Only Top Up Individual " finished-at="2022-07-12T14:21:28 IST" duration-ms="1126">
       <class name="TestCases.TC13HLDAPOnlyTopUpIndividual">
-        <test-method signature="HLDAPOnlyTopUpIndividual()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@125c082e]" started-at="2022-06-30T17:07:26 IST" name="HLDAPOnlyTopUpIndividual" finished-at="2022-06-30T17:07:27 IST" duration-ms="956" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpIndividual()[pri:0, instance:TestCases.TC13HLDAPOnlyTopUpIndividual@125c082e]" started-at="2022-07-12T14:21:27 IST" name="HLDAPOnlyTopUpIndividual" finished-at="2022-07-12T14:21:28 IST" duration-ms="1124" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpIndividual as the Run mode is NO]]>
@@ -603,9 +603,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPOnlyTopUpIndividual -->
       </class> <!-- TestCases.TC13HLDAPOnlyTopUpIndividual -->
     </test> <!-- HLDAP Salaried Only Top Up Individual  -->
-    <test started-at="2022-06-30T17:07:27 IST" name="HLDAP Salaried Only Top Up Non Individual " finished-at="2022-06-30T17:07:28 IST" duration-ms="1053">
+    <test started-at="2022-07-12T14:21:28 IST" name="HLDAP Salaried Only Top Up Non Individual " finished-at="2022-07-12T14:21:29 IST" duration-ms="1195">
       <class name="TestCases.TC14HLDAPOnlyTopUpNonIndividual">
-        <test-method signature="HLDAPOnlyTopUpNonIndividual()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@341a8659]" started-at="2022-06-30T17:07:27 IST" name="HLDAPOnlyTopUpNonIndividual" finished-at="2022-06-30T17:07:28 IST" duration-ms="1051" status="SKIP">
+        <test-method signature="HLDAPOnlyTopUpNonIndividual()[pri:0, instance:TestCases.TC14HLDAPOnlyTopUpNonIndividual@341a8659]" started-at="2022-07-12T14:21:28 IST" name="HLDAPOnlyTopUpNonIndividual" finished-at="2022-07-12T14:21:29 IST" duration-ms="1193" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPOnlyTopUpNonIndividual as the Run mode is NO]]>
@@ -649,22 +649,16 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPOnlyTopUpNonIndividual -->
       </class> <!-- TestCases.TC14HLDAPOnlyTopUpNonIndividual -->
     </test> <!-- HLDAP Salaried Only Top Up Non Individual  -->
-    <test started-at="2022-06-30T17:07:28 IST" name="HLDAP Salaried Kotak Smart Home Indian " finished-at="2022-06-30T17:19:47 IST" duration-ms="738545">
+    <test started-at="2022-07-12T14:21:29 IST" name="HLDAP Salaried Kotak Smart Home Indian " finished-at="2022-07-12T14:21:31 IST" duration-ms="1277">
       <class name="TestCases.TC15HLDAPKotakSmartHomeSalariedIndian">
-        <test-method signature="HLDAPKotakSmartHomeSalariedIndian()[pri:0, instance:TestCases.TC15HLDAPKotakSmartHomeSalariedIndian@7f4d9395]" started-at="2022-06-30T17:07:28 IST" name="HLDAPKotakSmartHomeSalariedIndian" finished-at="2022-06-30T17:19:22 IST" duration-ms="713340" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="HLDAPKotakSmartHomeSalariedIndian()[pri:0, instance:TestCases.TC15HLDAPKotakSmartHomeSalariedIndian@7f4d9395]" started-at="2022-07-12T14:21:29 IST" name="HLDAPKotakSmartHomeSalariedIndian" finished-at="2022-07-12T14:21:31 IST" duration-ms="1275" status="SKIP">
+          <exception class="org.testng.SkipException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='PFContainer2']' (tried for 70 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Skipping the test HLDAPKotakSmartHomeSalariedIndian as the Run mode is NO]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@name='PFContainer2']' (tried for 70 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-at CommonUtility.CommonMethods.ExWait(CommonMethods.java:87)
-at CommonUtility.CommonMethods.getElementText(CommonMethods.java:70)
-at POM_HLSalesDAP.HLDAPEndJourney.ProcessingFeeScreen(HLDAPEndJourney.java:136)
-at POM_HLSalesDAP.HLDAPEndJourney.runEndJourney(HLDAPEndJourney.java:37)
-at TestCases.TC15HLDAPKotakSmartHomeSalariedIndian.HLDAPKotakSmartHomeSalariedIndian(TC15HLDAPKotakSmartHomeSalariedIndian.java:41)
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPKotakSmartHomeSalariedIndian as the Run mode is NO
+at TestCases.TC15HLDAPKotakSmartHomeSalariedIndian.HLDAPKotakSmartHomeSalariedIndian(TC15HLDAPKotakSmartHomeSalariedIndian.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -693,49 +687,17 @@ at org.testng.TestNG.run(TestNG.java:1031)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@name='PFContainer2']"}
-  (Session info: chrome=102.0.5005.115)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.1.0', revision: '87802e897b'
-System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [03b4eeb73e08bb7e2a133afe288ec967, findElement {using=xpath, value=//div[@name='PFContainer2']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64445}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64445/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 03b4eeb73e08bb7e2a133afe288ec967
-at jdk.internal.reflect.GeneratedConstructorAccessor67.newInstance(Unknown Source)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy30.isDisplayed(Unknown Source)
-at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HLDAPKotakSmartHomeSalariedIndian -->
       </class> <!-- TestCases.TC15HLDAPKotakSmartHomeSalariedIndian -->
     </test> <!-- HLDAP Salaried Kotak Smart Home Indian  -->
-    <test started-at="2022-06-30T17:19:47 IST" name="HLDAP Salaried Kotak Smart Home NRI " finished-at="2022-06-30T17:20:13 IST" duration-ms="25924">
+    <test started-at="2022-07-12T14:21:31 IST" name="HLDAP Salaried Kotak Smart Home NRI " finished-at="2022-07-12T14:21:32 IST" duration-ms="1324">
       <class name="TestCases.TC16HLDAPKotakSmartHomeSalariedNRI">
-        <test-method signature="HLDAPKotakSmartHomeSalariedNRI()[pri:0, instance:TestCases.TC16HLDAPKotakSmartHomeSalariedNRI@27f3b6d6]" started-at="2022-06-30T17:19:47 IST" name="HLDAPKotakSmartHomeSalariedNRI" finished-at="2022-06-30T17:20:13 IST" duration-ms="25922" status="SKIP">
+        <test-method signature="HLDAPKotakSmartHomeSalariedNRI()[pri:0, instance:TestCases.TC16HLDAPKotakSmartHomeSalariedNRI@27f3b6d6]" started-at="2022-07-12T14:21:31 IST" name="HLDAPKotakSmartHomeSalariedNRI" finished-at="2022-07-12T14:21:32 IST" duration-ms="1322" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPKotakSmartHomeSalariedNRI sas the Run mode is NO]]>
@@ -779,9 +741,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPKotakSmartHomeSalariedNRI -->
       </class> <!-- TestCases.TC16HLDAPKotakSmartHomeSalariedNRI -->
     </test> <!-- HLDAP Salaried Kotak Smart Home NRI  -->
-    <test started-at="2022-06-30T17:20:13 IST" name="HLDAP Individual Kotak Smart Home " finished-at="2022-06-30T17:20:38 IST" duration-ms="24603">
+    <test started-at="2022-07-12T14:21:32 IST" name="HLDAP Individual Kotak Smart Home " finished-at="2022-07-12T14:21:33 IST" duration-ms="1370">
       <class name="TestCases.TC17HLDAPKotakSmartHomeIndividual">
-        <test-method signature="HLDAPKotakSmartHomeIndividual()[pri:0, instance:TestCases.TC17HLDAPKotakSmartHomeIndividual@5e63cad]" started-at="2022-06-30T17:20:13 IST" name="HLDAPKotakSmartHomeIndividual" finished-at="2022-06-30T17:20:38 IST" duration-ms="24601" status="SKIP">
+        <test-method signature="HLDAPKotakSmartHomeIndividual()[pri:0, instance:TestCases.TC17HLDAPKotakSmartHomeIndividual@5e63cad]" started-at="2022-07-12T14:21:32 IST" name="HLDAPKotakSmartHomeIndividual" finished-at="2022-07-12T14:21:33 IST" duration-ms="1368" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Skipping the test HLDAPKotakSmartHomeIndividual as the Run mode is NO]]>
@@ -825,5 +787,234 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- HLDAPKotakSmartHomeIndividual -->
       </class> <!-- TestCases.TC17HLDAPKotakSmartHomeIndividual -->
     </test> <!-- HLDAP Individual Kotak Smart Home  -->
+    <test started-at="2022-07-12T14:21:33 IST" name="HLDAP Salaried Home Loan Overdraft Indian " finished-at="2022-07-12T14:21:35 IST" duration-ms="1480">
+      <class name="TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian">
+        <test-method signature="HLDAPHomeLoanOverdraftSalariedIndian()[pri:0, instance:TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian@654b72c0]" started-at="2022-07-12T14:21:33 IST" name="HLDAPHomeLoanOverdraftSalariedIndian" finished-at="2022-07-12T14:21:35 IST" duration-ms="1478" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test HLDAPHomeLoanOverdraftSalariedIndian as the Run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPHomeLoanOverdraftSalariedIndian as the Run mode is NO
+at TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian.HLDAPHomeLoanOverdraftSalariedIndian(TC18HLDAPHomeLoanOverdraftSalariedIndian.java:26)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPHomeLoanOverdraftSalariedIndian -->
+      </class> <!-- TestCases.TC18HLDAPHomeLoanOverdraftSalariedIndian -->
+    </test> <!-- HLDAP Salaried Home Loan Overdraft Indian  -->
+    <test started-at="2022-07-12T14:21:35 IST" name="HLDAP Salaried Home Loan Overdraft Individual " finished-at="2022-07-12T14:21:36 IST" duration-ms="1547">
+      <class name="TestCases.TC19HLDAPHomeLoanOverdraftIndividual">
+        <test-method signature="HLDAPHomeLoanOverdraftIndividual()[pri:0, instance:TestCases.TC19HLDAPHomeLoanOverdraftIndividual@7da10b5b]" started-at="2022-07-12T14:21:35 IST" name="HLDAPHomeLoanOverdraftIndividual" finished-at="2022-07-12T14:21:36 IST" duration-ms="1546" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test HLDAPHomeLoanOverdraftIndividual as the Run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPHomeLoanOverdraftIndividual as the Run mode is NO
+at TestCases.TC19HLDAPHomeLoanOverdraftIndividual.HLDAPHomeLoanOverdraftIndividual(TC19HLDAPHomeLoanOverdraftIndividual.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPHomeLoanOverdraftIndividual -->
+      </class> <!-- TestCases.TC19HLDAPHomeLoanOverdraftIndividual -->
+    </test> <!-- HLDAP Salaried Home Loan Overdraft Individual  -->
+    <test started-at="2022-07-12T14:21:36 IST" name="HLDAP Salaried Home Loan Overdraft NonIndividual " finished-at="2022-07-12T14:21:38 IST" duration-ms="1602">
+      <class name="TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual">
+        <test-method signature="HLDAPHomeLoanOverdraftNonIndividual(java.lang.String)[pri:0, instance:TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual@11ce2e22]" started-at="2022-07-12T14:21:36 IST" name="HLDAPHomeLoanOverdraftNonIndividual" finished-at="2022-07-12T14:21:38 IST" duration-ms="1599" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Home Loan Overdraft]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test HLDAPHomeLoanOverdraftNonIndividual as the Run mode is NO]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test HLDAPHomeLoanOverdraftNonIndividual as the Run mode is NO
+at TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual.HLDAPHomeLoanOverdraftNonIndividual(TC20HLDAPHomeLoanOverdraftNonIndividual.java:28)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPHomeLoanOverdraftNonIndividual -->
+      </class> <!-- TestCases.TC20HLDAPHomeLoanOverdraftNonIndividual -->
+    </test> <!-- HLDAP Salaried Home Loan Overdraft NonIndividual  -->
+    <test started-at="2022-07-12T14:21:38 IST" name="HLDAP Salaried Home Loan Indian Add Financial CoApplicant " finished-at="2022-07-12T14:39:08 IST" duration-ms="1050444">
+      <class name="TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp">
+        <test-method signature="HLDAPHomeLoanSalIndianAddFinCoApp()[pri:0, instance:TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp@62d0ac62]" started-at="2022-07-12T14:21:38 IST" name="HLDAPHomeLoanSalIndianAddFinCoApp" finished-at="2022-07-12T14:38:17 IST" duration-ms="998904" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='notification-message']' (tried for 60 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[@class='notification-message']' (tried for 60 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at CommonUtility.CommonMethods.ExWait(CommonMethods.java:89)
+at CommonUtility.CommonMethods.getElementText(CommonMethods.java:72)
+at POM_HLSalesDAP.HLDAPIntialJourney.OTPVerification(HLDAPIntialJourney.java:771)
+at POM_HLSalesDAP.HLDAPFinancialCoApplicant.addFinancialCoApp(HLDAPFinancialCoApplicant.java:33)
+at TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp.HLDAPHomeLoanSalIndianAddFinCoApp(TC21HLDAPHomeLoanSalIndianAddFinCoApp.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='notification-message']"}
+  (Session info: chrome=103.0.5060.114)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.0', revision: '87802e897b'
+System info: host: 'VRUNDAV', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c7dd141c6b5a8f2163bcf43d3c4edb9e, findElement {using=xpath, value=//div[@class='notification-message']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VRUNDA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64794}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64794/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c7dd141c6b5a8f2163bcf43d3c4edb9e
+at jdk.internal.reflect.GeneratedConstructorAccessor65.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:383)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:375)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy31.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HLDAPHomeLoanSalIndianAddFinCoApp -->
+      </class> <!-- TestCases.TC21HLDAPHomeLoanSalIndianAddFinCoApp -->
+    </test> <!-- HLDAP Salaried Home Loan Indian Add Financial CoApplicant  -->
   </suite> <!-- Suite -->
 </testng-results>

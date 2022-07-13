@@ -40,7 +40,7 @@ public class TC08HLDAPBalanceTransferSalariedNRI extends SetUp
 				HLSalesIntial.runIntialJourney(sheetName);
 				
 				HLSalesModule = new HLDAPModulesJourney(driver);
-				HLSalesModule.Digital_InprincipleSanction(sheetName);
+				HLSalesModule.Digital_InprincipleSanction(sheetName,"MainApplicant");
 
 				HLSalesModule.NRIPANCibilScreen(sheetName);
 				HLSalesModule.incomeDetails(sheetName);

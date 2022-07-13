@@ -41,15 +41,16 @@ public class TC13HLDAPOnlyTopUpIndividual extends SetUp{
 			HLSalesIntial.intiateDAPJourney(sheetName);
 			HLSalesIntial.productSelection(sheetName);
 			HLSalesIntial.subSourceSelection(sheetName);
-			HLSalesIntial.applicantTypeSelection(sheetName);
+			String applicantTypeExcel = ExcelOperation.getCellData(sheetName,"Applicant Type", 1);
+			HLSalesIntial.applicantTypeSelection(sheetName,applicantTypeExcel);
 			HLSalesIntial.SelfEMPTypeSelection(sheetName);
 			HLSalesIntial.Sal_ETB_NTBCheck(sheetName);
-			HLSalesIntial.OTPVerification(sheetName);
+			HLSalesIntial.OTPVerification(sheetName,"MainApplicant");
 			HLSalesIntial.selectBusinessVintage(sheetName);
 			HLSalesIntial.ResidentStatusSelection(sheetName);
 			
 			HLSalesModule = new HLDAPModulesJourney(driver);
-			HLSalesModule.Digital_InprincipleSanction(sheetName);
+			HLSalesModule.Digital_InprincipleSanction(sheetName,"MainApplicant");
 			HLSalesModule.PANCibilDeatils(sheetName);
 			HLSalesModule.incomeDetails(sheetName);
 			
